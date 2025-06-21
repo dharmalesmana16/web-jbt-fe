@@ -1,0 +1,31 @@
+{
+    "msg":"success",
+    "data":
+    [
+        {
+            "id":1,
+            "nama": "Menyediakan jasa layanan jalan tol yang lancar, aman, nyaman, dan efisien"
+            
+        },
+        {
+            "id":2,
+            "nama": "Meningkatkan nilai tambah dengan memanfaatkan keindahan sekitar atau lingkungan jalan tol"
+            
+        },
+        {
+            "id":3,
+            "nama": "Mengoperasikan jalan tol dengan tetap menjaga keasrian lingkungan hidup dan budaya Bali"
+            
+        },
+        {
+            "id":4,
+            "nama": "Mengelola sumber daya perusahaan memanfaatkan teknologi ciptakan nilai tambah bagi seluruh pemangku kepentingan"
+            
+        },
+        {
+            "id":5,
+            "nama": "Mengembangkan sistem pembelajaran yang berorientasi pada kompetensi inti untuk keberlanjutan perusahaan"
+        }
+        
+    ]
+}

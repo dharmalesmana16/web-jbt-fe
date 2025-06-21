@@ -1,0 +1,42 @@
+{
+    "msg":"success",
+    "data":
+    [
+        {
+            "id":1,
+            "nama": "AMANAH",
+            "deskripsi":"Memegang teguh kepercayaan yang diberikan"
+        
+        },
+        {
+            "id":2,
+            "nama": "KOMPETEN",
+            "deskripsi":"Terus belajar dan mengembangkan kapabilitas"
+        
+        },
+        {
+            "id":3,
+            "nama": "HARMONIS",
+            "deskripsi":"Saling peduli dan menghargai perbedaan"
+        
+        },
+        {
+            "id":4,
+            "nama": "Loyal",
+            "deskripsi":"Berdedikasi dan mengutamakan kepentingan Bangsa dan Negara"
+        
+        },
+        {
+            "id":5,
+            "nama": "Adaptif",
+            "deskripsi":"Terus berinovasi dan antusias dalam menggerakkan ataupun menghadapi perubahan"
+        
+        },
+        {
+            "id":6,
+            "nama": "KOLABORATIF",
+            "deskripsi":"Membangun kerjasama yang sinergis"
+    
+        }
+    ]
+}

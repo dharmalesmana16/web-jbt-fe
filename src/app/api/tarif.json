@@ -1,0 +1,48 @@
+{
+    "msg":"success",
+    "data":
+    [
+        {
+            "id":1,
+            "nama": "Golongan I",
+            "deskripsi":"Kendaraan roda empat, seperti: sedan, jip, pick up, truk kecil dan bus",
+            "harga": 14000,
+            "gambar":"/image/golongan/golongani.png"
+        },
+        {
+            "id":2,
+            "nama": "Golongan II",
+            "deskripsi":"Kendaraan truk muatan besar dengan dua gandar",
+            "harga": 21000,
+            "gambar":"/image/golongan/golonganii.png"
+        },
+        {
+            "id":3,
+            "nama": "Golongan III",
+            "deskripsi":"Kendaraan truk muatan besar dengan tiga gandar",
+            "harga": 21000,
+            "gambar":"/image/golongan/golonganiii.png"
+        },
+        {
+            "id":4,
+            "nama": "Golongan IV",
+            "deskripsi":"Kendaraan truk muatan besar dengan empat gandar",
+            "harga": 28000,
+            "gambar":"/image/golongan/golonganiv.png"
+        },
+        {
+            "id":5,
+            "nama": "Golongan V",
+            "deskripsi":"Kendaraan truk muatan besar dengan lima gandar",
+            "harga": 28000,
+            "gambar":"/image/golongan/golonganv.png"
+        },
+        {
+            "id":6,
+            "nama": "Golongan VI",
+            "deskripsi":"Kendaraan bermotor roda dua, seperti : Sepeda motor",
+            "harga": 5000,
+            "gambar":"/image/golongan/golonganvi.png"
+        }
+    ]
+}

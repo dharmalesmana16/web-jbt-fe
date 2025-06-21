@@ -1,0 +1,57 @@
+{
+    "msg":"success",
+    "data":
+    [
+        {
+            "id":1,
+            "nama": "Prestasi JBT Satu",
+            "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+            "tahun":"16 Agustus 2025",
+            "ext":".pdf",
+            "size":24,
+            "file":"/image/prestasi/satu.png"
+        
+        },
+         {
+            "id":2,
+            "nama": "Prestasi JBT Dua",
+            "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+            "tahun":"16 Agustus 2025",
+            "ext":".pdf",
+            "size":24,
+            "file":"/image/prestasi/satu.png"
+        
+        },
+        {
+            "id":3,
+            "nama": "Prestasi JBT Tiga",
+            "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+            "tahun":"16 Agustus 2025",
+            "ext":".pdf",
+            "size":24,
+            "file":"/image/prestasi/satu.png"
+        
+        },
+        {
+            "id":4,
+            "nama": "Prestasi JBT Empat",
+            "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+            "tahun":"16 Agustus 2025",
+            "ext":".pdf",
+            "size":24,
+            "file":"/image/prestasi/satu.png"
+        
+        },
+        {
+            "id":5,
+            "nama": "Prestasi JBT Lima",
+            "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+            "tahun":"16 Agustus 2025",
+            "ext":".pdf",
+            "size":24,
+            "file":"/image/prestasi/satu.png"
+        
+        }
+    
+    ]
+}

@@ -1,0 +1,37 @@
+'use client'
+import Link from "next/link";
+import { usePathname } from 'next/navigation';
+import React from "react";
+export type propsDireksi = {
+    id: number;
+    nama: string;
+    jabatan: string;
+    tempat_lahir?: string;
+    tgl_lahir?: string;
+    tipe_direksi: string;
+    deskripsi?: string;
+    file?: string;
+}
+export default  function DireksiCard(props: propsDireksi) {
+
+    const path = usePathname()
+    const url = new URL(path ? path : "", "http://localhost:3000");
+
+    url.searchParams.set("modal", "true");
+    url.searchParams.set("id", props.id.toString());
+    return (
+             <div className=" max-w-[450px] ">
+                <Link href={url.toString()} scroll={false} className='block group'>
+
+
+                  <div className="mx-auto text-center pt-8 pl-8 pr-8 pb-2 border-1 h-[400px] md:h-[400px] lg:h-[475px] border-gray-200 shadow-lg hover:border-main  hover:scale-105 hover:transition hover:duration-200  bg-white  rounded-3xl overflow-hidden relative">
+                    <img src={props.file} className=' mx-auto h-48 md:h-42 lg:h-64' alt="" srcSet="" />
+                    <div className="hover:text-main text-left py-4 md:py-8">
+                      <h1 className='  text-md md:text-md lg:text-xl font-semibold tracking-normal '>{props.nama}</h1>
+                      <p className='text-sm text-gray-500'>{props.jabatan}</p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+    )
+}

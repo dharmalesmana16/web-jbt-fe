@@ -1,0 +1,28 @@
+{
+    "msg":"success",
+    "data":
+    [
+        {
+            "id":1,
+            "nama": "Call Center",
+            "deskripsi":"14080",
+            "icon":"/image/Icon/phone.png",
+            "link":""
+        },
+        {
+            "id":2,
+            "nama": "E-mail",
+            "deskripsi":"humas@jasamargabalitol.co.id",
+            "icon":"/image/Icon/emailnew.png",
+            "link":""
+        },
+        {
+            "id":3,
+            "nama": "Whatsapp",
+            "deskripsi":"+6281337927210",
+            "icon":"/image/Icon/whatsapp.png",
+            "link":"https://wa.me/6281337927210"
+        }
+
+    ]
+}

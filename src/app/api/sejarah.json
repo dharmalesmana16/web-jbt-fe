@@ -1,0 +1,62 @@
+{
+    "msg":"success",
+    "data":
+    [
+        {
+            "id":1,
+            "nama": "2013",
+            "slug":"sejarah2013",
+            "icon":"/image/Icon/icon-drivethru.png",
+            "deskripsi":"Isi ulang dan beli uang elektronik tanpa turun dari kendaraan.",
+            "gambar":"/image/office.jpg"
+           
+        },
+        {
+            "id":2,
+            "nama": "2014",
+            "slug":"sejarah2014",
+            "icon":"/image/Icon/icon-transaksi.png",
+            "deskripsi":"Pembayaran elektronik di setiap gerbang tol untuk perjalanan lebih lancar.",
+            "gambar":"/image/office.jpg"
+      
+        },
+        {
+            "id":3,
+            "nama": "2015",
+            "slug":"sejarah2015",
+            "icon":"/image/Icon/icon-lalin.png",
+            "deskripsi":"Pemantauan real-time untuk perjalanan aman dan nyaman.",
+            "gambar":"/image/office.jpg"
+           
+        },
+        {
+            "id":4,
+            "nama": "2016",
+            "slug":"sejarah2016",
+            "icon":"/image/Icon/icon-lalin.png",
+            "deskripsi":"Pemantauan real-time untuk perjalanan aman dan nyaman.",
+            "gambar":"/image/office.jpg"
+           
+        },
+        {
+            "id":5,
+            "nama": "2017",
+            "slug":"sejarah2017",
+            "icon":"/image/Icon/icon-lalin.png",
+            "deskripsi":"Pemantauan real-time untuk perjalanan aman dan nyaman.",
+            "gambar":"/image/sekilas-layanan.jpg"
+           
+        },
+        {
+            "id":6,
+            "nama": "2018",
+            "slug":"sejarah2018",
+            "icon":"/image/Icon/icon-lalin.png",
+            "deskripsi":"Pemantauan real-time untuk perjalanan aman dan nyaman.",
+            "gambar":"/image/office.jpg"
+           
+        }
+       
+        
+    ]
+}

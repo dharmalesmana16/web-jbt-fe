@@ -18,7 +18,7 @@ export default async function page({ searchParams }: any) {
   const prestasiModal = parameter?.prestasi === "true";
   const headersList = await headers()
   const pathname = await headersList.get("x-pathname")
-  const url = new URL(pathname ? pathname : "", "http://localhost:3000");
+  const url = new URL(pathname ? pathname : "", process.env.FE_URL);
 
   const query = parameter.slug ? parameter.slug : "sejarah2013";
   const response = await apiSejarah["data"].find((item) => item.slug == query);

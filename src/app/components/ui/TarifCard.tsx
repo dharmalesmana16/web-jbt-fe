@@ -13,7 +13,7 @@ export type propsTarif = {
 export default async function TarifCard(props: propsTarif) {
     const headersList = await headers();
     const pathname = await headersList.get("x-pathname");
-    const url = new URL(pathname ? pathname : "", "http://localhost:3000");
+    const url = new URL(pathname ? pathname : "", process.env.NEXT_PUBLIC_FRONTEND_URL);
     url.searchParams.set("modal", "true");
     url.searchParams.set("id", props.id.toString());
     return (
@@ -23,6 +23,7 @@ export default async function TarifCard(props: propsTarif) {
                     <div className="content">
                         <h1 className="text-sm md:text-2xl font-normal">
                             {props.nama}
+                            
                         </h1>
                         <h1 className="text-md md:text-5xl text-second font-bold py-3">
                             {`Rp${props.harga.toLocaleString('id-ID')}`}

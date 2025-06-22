@@ -1,11 +1,10 @@
 'use client'
 import React from "react";
-import apiContact from '../api/contact.json'
 import Link from "next/link";
+import Image from "next/image";
 import { FaInstagram, FaLocationDot, FaSquarePhone, FaTiktok, FaYoutube } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { usePathname } from "next/navigation";
-type contact = {
+export type contact = {
 	id: number;
 	nama: string;
 	icon: string;
@@ -13,55 +12,23 @@ type contact = {
 	link?: string;
 }
 export default function Footer() {
-	const path = usePathname();
-	// const headerList = await headers();
-	// const pathname = headerList.get('x-pathname');
-	const url = new URL(path ? path : "", "http://localhost:3000")
-	// console.log(pathname)
 	return (
 		<footer className="bg-[#F4F4F4] shadow-lg w-[100%] top-full sticky ">
 			<div className="mx-auto  w-full p-4 ">
-				{
-					path == "/" ? (
-						<section className="py-18  container mx-auto">
-							<div className=" rounded-3xl p-4 md:p-5 bg-main mx-auto text-center">
-								<h1 className="text-white font-bold text-md md:text-3xl">Hubungi Kami, Kapan Saja</h1>
-								<div className=" grid grid-cols-3 container mx-auto py-8">
-									{
-										apiContact["data"].map((res: contact, idx: number) => (
-											<div key={idx} className=" w-full flex flex-col">
-												<div className="p-2 md:p-3 bg-[#8EA0DA] rounded-2xl w-16 container mx-auto hover:bg-white hover:duration-500" >
-													{
-														res.link != "" ? (
-													<a href={res.link} target="_blank">
-														<img src={res.icon} className="w-8 h-8 text-center mx-auto" alt="" srcSet="" />
-													</a>
-														):(
-
-													<Link href={{ pathname: url.toString(), query: { shown: true } }} scroll={false}>
-														<img src={res.icon} className="w-8 h-8 text-center mx-auto" alt="" srcSet="" />
-													</Link>
-														)
-													}
-												</div>
-												<div className="content py-8">
-													<h1 className="text-white text-sm md:text-2xl font-bold tracking-wide">{res.nama}</h1>
-													<p className=" text-md font-normal tracking-wide leading-none text-gray-200 py-4 md:text-2xl">{res.deskripsi}</p>
-												</div>
-											</div>
-										))
-									}
-								</div>
-							</div>
-						</section>
-					) : ""
-				}
+				
 
 				<div className="md:flex md:justify-between container mx-auto py-20 ">
 					<div className="mb-6 md:mb-0">
 						<div className="md:pb-20">
-
-						<img src="/image/logojbt.png" alt="" srcSet="" />
+						<Image
+													src={"/image/logojbt.png"}
+													alt="kantor"
+													width={0}
+													height={0}
+													sizes="100vw"
+													loading="lazy"
+													style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+												/>
 						</div>
 
 						<div className="flex w-full justify-end">

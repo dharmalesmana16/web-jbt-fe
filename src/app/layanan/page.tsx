@@ -4,6 +4,7 @@ import apiLayanan from '../api/layanan.json'
 import Link from 'next/link';
 import { headers } from 'next/headers';
 import InfoLayanan from '../components/ui/Layanan/InfoLayanan';
+import Image from 'next/image';
 
 export type propsLayanan = {
     id: number;
@@ -20,7 +21,7 @@ export default async function page({ searchParams }: any) {
     const pathname = await headersList.get("x-pathname")
     const router = await searchParams
     const query = router.slug ? router.slug : "drivethru";
-    const url = new URL(pathname ? pathname : "", "http://localhost:3000");
+    const url = new URL(pathname ? pathname : "", process.env.NEXT_PUBLIC_FRONTEND_URL);
     // const formShown = parameter?.shown === "true";
     console.log(query)
     // const response = await apiLayanan["data"].find((item: propsLayanan) => item.id == query);
@@ -30,8 +31,15 @@ export default async function page({ searchParams }: any) {
         <div >
             <section className='bg-[#F8FAFF] rounded-br-[3rem]  pt-28 top-full shadow-xl relative z-10 '>
                 <div className="mx-auto container">
-                    <img src="/image/gtngr.png" className='md:rounded-xl w-full h-[200px] md:h-full' alt="" srcSet="" />
-                    <div className="px-4  py-12 grid md:grid-cols-6">
+     <Image
+                                                src={"/image/jumbotron-layanan.png"}
+                                                alt="kantor"
+                                                width={0}
+                                                height={0}
+                                                sizes="100vw"
+                                                loading="lazy"
+                                                style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                            />                    <div className="px-4  py-12 grid md:grid-cols-6">
                         <div className="pb-2 max-w-xl  col-span-4">
                             <h1 className='text-main tracking-wide font-semibold text-xl md:text-4xl'>Layanan Terbaik untuk Kelola Perjalanan Nyaman untuk Anda</h1>
                         </div>

@@ -1,14 +1,11 @@
 "use client"
 import React, { Suspense } from 'react'
 import { redirect, useSearchParams } from "next/navigation";
-import apiTarif from '../../../api/tarif.json'
-import { propsTarif } from '../TarifCard';
-import Link from 'next/link';
-import SliderLayout from '../../../components/layout/SliderLayout'
 
 import { FaRegCheckCircle } from 'react-icons/fa';
 import TarifModal from '../TarifModal';
 import { TarifLoading } from '../TarifLoading';
+import Image from 'next/image';
 interface formLayanan {
     slug?: string;
 }
@@ -28,27 +25,69 @@ export default function InfoLayanan({ slug }: formLayanan) {
                     slug == "drivethru" && (
 
                         <div>
-                            <h1 className="text-main text-2xl tracking-wide leading-none font-semibold">Gerbang Tol dan Sistem Transaksi Elektronik</h1>
+                            <h1 className='text-main font-black leading-loose text-3xl'>Isi Ulang Kartu E-Toll</h1>
+                            <hr className="w-34 text-second  border-t-12 " />
                             <div className='py-5'>
-                                <ul className=" text-gray-500 list-outside dark:text-gray-400">
-                                    <li className="flex  items-top py-2 tracking-wide">
-                                        <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                                <div className="grid grid-cols-3 gap-4">
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/transaksi/transaksi-1.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/transaksi/transaksi-2.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/transaksi/transaksi-3.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="py-5">
 
 
-                                        Seiring dengan pemberlakuan 100% elektronifikasi Jalan Tol Bali Mandara, banyak penguna jalan tol kesulitan melakukan isi ulang maupun membeli uang elektronik. Hal tersebut mengakibatkan terjadinya antrian panjang di gerbang tol.                                    </li>
-                                    <li className="flex  items-top py-2 tracking-wide">
-                                        <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                                    <div className="bg-blue-100 p-1 rounded-3xl w-24">
+
+                                        <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
+                                    </div>
+
+                                    <ul className=" text-gray-500 list-outside dark:text-gray-400">
+                                        <li className="flex  items-top py-2 tracking-wide">
+                                            <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
 
 
-                                        Mengatasi masalah tersebut, pada tanggal 1 Maret 2018 PT JBT berinovasi membangun layanan drive thru top up uang eletronik yang berlokasi di Pool Ruas PT Jasamarga Bali Tol, Jalan Pelabuhan Benoa atau di bawah Simpang Susun Benoa. Drive Thru UNIK beroperasi setap hari mulai pukul 06.00-21.00 WITA.
-                                    </li>
-                                    <li className="flex  items-top py-2 tracking-wide">
-                                        <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                                            Seiring dengan pemberlakuan 100% elektronifikasi Jalan Tol Bali Mandara, banyak penguna jalan tol kesulitan melakukan isi ulang maupun membeli uang elektronik. Hal tersebut mengakibatkan terjadinya antrian panjang di gerbang tol.                                    </li>
+                                        <li className="flex  items-top py-2 tracking-wide">
+                                            <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
 
 
-                                        Drive Thru Top Up UNIK melayani penjualan dan isi ulang uang elektronik secara tunai dan nontunai.Isi Ulang TunaiMandiri (e-money dan produk co-brandingnya), BNI (Tapcash), dan BCA (Flazz)Isi Ulang Non-Tunai Bank Mandiri (e-money dan produk co-brandingnya), BRI (Brizzi), BNI (Tapcash), dan BCA (Flazz)                                       </li>
+                                            Mengatasi masalah tersebut, pada tanggal 1 Maret 2018 PT JBT berinovasi membangun layanan drive thru top up uang eletronik yang berlokasi di Pool Ruas PT Jasamarga Bali Tol, Jalan Pelabuhan Benoa atau di bawah Simpang Susun Benoa. Drive Thru UNIK beroperasi setap hari mulai pukul 06.00-21.00 WITA.
+                                        </li>
+                                        <li className="flex  items-top py-2 tracking-wide">
+                                            <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
 
-                                </ul>
+
+                                            Drive Thru Top Up UNIK melayani penjualan dan isi ulang uang elektronik secara tunai dan nontunai.Isi Ulang TunaiMandiri (e-money dan produk co-brandingnya), BNI (Tapcash), dan BCA (Flazz)Isi Ulang Non-Tunai Bank Mandiri (e-money dan produk co-brandingnya), BRI (Brizzi), BNI (Tapcash), dan BCA (Flazz)                                       </li>
+
+                                    </ul>
+                                </div>
                             </div>
 
                         </div>
@@ -57,242 +96,417 @@ export default function InfoLayanan({ slug }: formLayanan) {
                 {
                     slug == "transaksi" && (
                         <div>
-                            <h1 className="text-main text-2xl tracking-wide leading-none font-semibold">Gerbang Tol dan Sistem Transaksi Elektronik</h1>
-                            <div className='py-5'>
-                                <ul className=" text-gray-500 list-outside dark:text-gray-400">
-                                    <li className="flex  items-top py-2 tracking-wide">
-                                        <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                            <h1 className='text-main font-black leading-loose text-3xl'>Gerbang Tol dan Sistem Transaksi</h1>
+                            <hr className="w-34 text-second  border-t-12 " />
+                            <div className='py-5 '>
 
-
-
-                                        Transaksi mudah dan cepat dengan sistem pembayaran elektronik di setiap gerbang tol, memastikan perjalanan tetap lancar tanpa hambatan.
-                                    </li>
-                                    <li className="flex  items-top py-2 tracking-wide">
-                                        <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
-
-
-                                        Pertanggal 1 Oktober 2017 keseluruhan Gardu Tol Bali Mandara
-                                        hanya melayani transaksi elektronik mengunakan Uang Elektronik
-                                        (Unik). Adapun kartu
-                                        yang dapat digunakan transaksi tol adalah Bank Mandiri (e-money
-                                        dan co-branding), BRI (Brizzi), BNI (Tapcash), dan BCA
-                                        (Flazz).                                        </li>
-
-                                </ul>
-                            </div>
-                            <div className="py-2">
-                                <div className="grid md:grid-cols-2 gap-5">
-                                    <div>
-                                        <div className="bg-main p-5 md:p-8 w-full h-full  text-left   rounded-2xl ">
-                                            <img
-                                                src="/image/icon/tarif.png"
-                                                className="h-8 md:h-18"
-                                                alt=""
-                                            />
-                                            <div className="content pt-20">
-                                                <h1 className="text-md md:text-4xl font-bold text-white ">
-                                                    Tarif
-                                                    Tol
-                                                    Bali
-                                                    Mandara
-                                                </h1>
-                                                <p className="text-xs md:text-lg text-gray-300 font-light py-2">
-                                                    Ketahui
-                                                    tarif
-                                                    tol
-                                                    sesuai
-                                                    golongan
-                                                    kendaraan
-                                                    anda
-                                                </p>
-                                            </div>
-                                        </div>
+                                <div className="grid grid-cols-3 gap-4">
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/transaksi/transaksi-1.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
                                     </div>
-                                    <div className='grid grid-cols-2 gap-4'>
-                                        {
-                                            apiTarif["data"].map((res: propsTarif, key: number) => (
-                                                <Link href={{ pathname: "http://localhost:3000/layanan", query: { slug: "transaksi", modaltarif: "true", id: res.id } }} key={key} scroll={false}>
-                                                    <div className="bg-gray-100 p-2 md:p-5  text-center  rounded-2xl hover:bg-radial-[at_50%_50%] hover:-translate-y-1 hover:scale-100 hover:transition hover:duration-500 from-white via-amber-100 to-second to-90% " >
-                                                        <div className="content">
-                                                            <h1 className="text-sm md:text-xl font-normal">
-                                                                {res.nama}
-                                                            </h1>
-                                                            <h1 className="text-md md:text-3xl text-second font-bold py-3">
-                                                                {`Rp${res.harga.toLocaleString('id-ID')}`}
-                                                            </h1>
-
-                                                        </div>
-                                                        <div className="rounded-full bg-main  w-7 h-7 md:w-10 md:h-10 relative md:top-10 top-8 inline-block  text-white ">
-                                                            <svg viewBox="-9.6 -9.6 67.20 67.20" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect width="48" height="48" fill="white" fillOpacity="0.01"></rect> <path d="M19 11H37V29" stroke="#ffffff" strokeWidth="3.8400000000000007" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M11.5441 36.4559L36.9999 11" stroke="#ffffff" strokeWidth="3.8400000000000007" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
-                                                        </div>
-                                                    </div>
-                                                </Link>
-                                            ))
-                                        }
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/transaksi/transaksi-2.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/transaksi/transaksi-3.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
                                     </div>
                                 </div>
-
-                            </div>
-                        </div>
-                    )
-                }
-                {
-                    slug == "backup-lalulintas" && (
-
-                        <div>
-                            <div className="">
-
-
-                                <h1 className="text-main text-2xl tracking-wide leading-none font-semibold">1. Sentral Komunikasi</h1>
                                 <div className="py-5">
-                                    <div className="grid grid-cols-6 gap-[20px]">
-                                        <div className="col-span-2">
-                                            <img src="/image/layanan/lalin/lalulintas-1.jpg" className="w-full h-full rounded-3xl" alt="" srcSet="" />
-                                        </div>
-                                        <div className="col-span-4">
-                                            <h1 className="text-main font-semibold text-2xl tracking-wide leading-loose"></h1>
-                                            <p className="text-gray-700 tracking-wide">Sentral Komunikasi merupakan kantor pusat komunikasi untuk melakukan pemantauan lalu lintas di Tol Bali Mandara, adapun fasilitas dan layanan: </p>
-                                            <ul className=" text-gray-500 list-inside list-disc dark:text-gray-400">
+                                    <div className="bg-blue-100 p-1 rounded-3xl w-24">
 
-                                                <li className="  items-top  tracking-wide">
-                                                    90 Kamera CCTV
-                                                </li>
-                                                <li className="  items-top  tracking-wide">
-                                                    6 titik Anemometer berbasis Internet of Things
-                                                </li>
-                                                <li className="  items-top  tracking-wide">
-                                                    Integrasi Informasi Melalui 10 titik VMS
-                                                </li>
-                                                <li className="  items-top  tracking-wide">
-                                                    Pelayanan 24 Jam
-                                                </li>
-                                            </ul>
-                                        </div>
+                                        <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="">
 
-
-                                <h1 className="text-main text-2xl tracking-wide leading-none font-semibold">2. Patroli Jalan Tol</h1>
-                                <div className="py-5">
-                                    <div className="grid grid-cols-6 gap-[20px]">
-                                        <div className="col-span-2">
-                                            <img src="/image/layanan/lalin/lalulintas-2.jpg" className="w-full h-full rounded-3xl" alt="" srcSet="" />
-                                        </div>
-                                        <div className="col-span-4">
-                                            <h1 className="text-main font-semibold text-2xl tracking-wide leading-loose"></h1>
-                                            <p className="text-gray-700 tracking-wide">Patroli Jalan Tol melakukan tugas untuk pengecekan keadaan lalu lintas di sepanjang Tol Bali Mandara </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="">
-
-
-                                <h1 className="text-main text-2xl tracking-wide leading-none font-semibold">2. Rescue Jalan Tol</h1>
-                                <div className="py-5">
-                                    <div className="grid grid-cols-6 gap-[20px]">
-                                        <div className="col-span-2">
-                                            <img src="/image/layanan/lalin/lalulintas-2.jpg" className="w-full h-full rounded-3xl" alt="" srcSet="" />
-                                        </div>
-                                        <div className="col-span-4">
-                                            <h1 className="text-main font-semibold text-2xl tracking-wide leading-loose"></h1>
-                                            <p className="text-gray-700 tracking-wide">Rescue Jalan Tol melakukan tugas untuk melakukan pertolongan ketika terjadi insiden kecelakaan di Tol Bali Mandara  </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='py-5'>
-                                <ul className=" text-gray-500 list-outside dark:text-gray-400">
-                                    <li className="flex  items-top py-2 tracking-wide">
-                                        <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
-
-                                        Jalan Tol Bali Mandara memiliki armada yang standby selama 24 jam sehari ialah Patroli Jalan Tol, baik untuk jalur motor maupun mobil, Ambulance, Rescue, Derek. Jalan Tol Bali Mandara juga dikawal Polisi Jalan Raya (PJR) bekerjasama dengan Polda Bali.                                    </li>
-                                    <li className="flex  items-top py-2 tracking-wide">
-                                        <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
-
-
-                                        Untuk pemantauan arus traffic telah dipasang kamera CCTV, dan untuk menjaga keselamatan pengguna jalan dari terpaan angin telah dipasang alat pengukur kecepatan angin (wind-speed) yang secara real time dapat dipantau langsung dari Sentral Komunikasi JBT yang beroperasi 24 jam melayani informasi melalui hotline service dan VMS (variable message service).                                        </li>
-
-                                </ul>
-                            </div>
-
-
-                        </div>
-                    )
-                }
-                {
-                    slug == "lalulintas" && (
-
-                        <div>
-                                <div className="grid grid-cols-3 gap-[20px]">
-
-                            
-                                    <div className="flex flex-col p-5  w-full bg-[#F4F4F4] shadow-xl rounded-3xl">
-
-                                        <img src="/image/layanan/lalin/lalulintas-1.jpg" className="w-[250px] h-[150px] mx-auto rounded-3xl" alt="" srcSet="" />
-                                        <div className="py-2">
-                                            <h1 className="text-main text-2xl font-bold">Sentral Komunikasi</h1>
-                                            <p className="leading-7 text-gray-500 text-base text-justify">Kantor pusat informasi untuk memantau kondisi lalu lintas secara real-time melalui CCTV, Senkom juga berperan sebagai pusat pengendali operasional petugas jalan tol, termasuk layanan customer service, derek, ambulans, dan PJR.  </p>
-                                        </div>
-                                    </div>
-                                     <div className="flex flex-col p-5 w-full bg-[#F4F4F4] shadow-xl rounded-3xl">
-                                        <img src="/image/layanan/lalin/lalulintas-2.jpg" className="w-[250px] h-[150px] mx-auto rounded-3xl" alt="" srcSet="" />
-                                        <div className="py-2 h-full">
-                                            <h1 className="text-main text-2xl font-bold">Patroli Jalan Tol</h1>
-                                            <p className="leading-7 text-gray-500 text-base text-justify">Melakukan patroli di Tol Bali Mandara untuk melakukan pemantauan keadaan lalu lintas </p>
-                                        </div>
-                                    </div>
-                                     <div className="flex flex-col p-5 w-full bg-[#F4F4F4] shadow-xl rounded-3xl">
-                                        <img src="/image/layanan/lalin/lalulintas-2.jpg" className="w-[250px] h-[150px] mx-auto rounded-3xl" alt="" srcSet="" />
-                                        <div className="py-2 h-full">
-                                            <h1 className="text-main text-2xl font-bold">Rescue Jalan Tol</h1>
-                                            <p className="leading-7 text-gray-500 text-base text-justify">Melakukan patroli di Tol Bali Mandara untuk melakukan pemantauan keadaan lalu lintas </p>
-                                        </div>
-                                    </div>
-                                     <div className="flex flex-col p-5 w-full bg-[#F4F4F4] shadow-xl rounded-3xl">
-                                        <img src="/image/layanan/lalin/lalulintas-2.jpg" className="w-[250px] h-[150px] mx-auto rounded-3xl" alt="" srcSet="" />
-                                        <div className="py-2 h-full">
-                                            <h1 className="text-main text-2xl font-bold">Derek</h1>
-                                            <p className="leading-7 text-gray-500 text-base text-justify">Melakukan patroli di Tol Bali Mandara untuk melakukan pemantauan keadaan lalu lintas </p>
-                                        </div>
-                                    </div>
-                                     <div className="flex flex-col p-5 w-full bg-[#F4F4F4] shadow-xl rounded-3xl">
-                                        <img src="/image/layanan/lalin/lalulintas-2.jpg" className="w-[250px] h-[150px] mx-auto rounded-3xl" alt="" srcSet="" />
-                                        <div className="py-2 h-full">
-                                            <h1 className="text-main text-2xl font-bold">Patroli Motor</h1>
-                                            <p className="leading-7 text-gray-500 text-base text-justify">Melakukan patroli di Tol Bali Mandara untuk melakukan pemantauan keadaan lalu lintas </p>
-                                        </div>
-                                    </div>
-                                     <div className="flex flex-col p-5 w-full bg-[#F4F4F4] shadow-xl rounded-3xl">
-                                        <img src="/image/layanan/lalin/lalulintas-2.jpg" className="w-[250px] h-[150px] mx-auto rounded-3xl" alt="" srcSet="" />
-                                        <div className="py-2 h-full">
-                                            <h1 className="text-main text-2xl font-bold">Patroli Jalan Raya</h1>
-                                            <p className="leading-7 text-gray-500 text-base text-justify">Melakukan patroli di Tol Bali Mandara untuk melakukan pemantauan keadaan lalu lintas </p>
-                                        </div>
-                                    </div>
-                                  
-                                  
-
-                                </div>
-                                <div className='py-5'>
                                     <ul className=" text-gray-500 list-outside dark:text-gray-400">
                                         <li className="flex  items-top py-2 tracking-wide">
                                             <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
 
-                                            Jalan Tol Bali Mandara memiliki armada yang standby selama 24 jam sehari ialah Patroli Jalan Tol, baik untuk jalur motor maupun mobil, Ambulance, Rescue, Derek. Jalan Tol Bali Mandara juga dikawal Polisi Jalan Raya (PJR) bekerjasama dengan Polda Bali.                                    </li>
+                                            Transaksi mudah dan cepat dengan sistem pembayaran elektronik di setiap gerbang tol, memastikan perjalanan tetap lancar tanpa hambatan.
+                                        </li>
                                         <li className="flex  items-top py-2 tracking-wide">
                                             <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
 
 
-                                            Untuk pemantauan arus traffic telah dipasang kamera CCTV, dan untuk menjaga keselamatan pengguna jalan dari terpaan angin telah dipasang alat pengukur kecepatan angin (wind-speed) yang secara real time dapat dipantau langsung dari Sentral Komunikasi JBT yang beroperasi 24 jam melayani informasi melalui hotline service dan VMS (variable message service).                                        </li>
+                                            Pertanggal 1 Oktober 2017 keseluruhan Gardu Tol Bali Mandara
+                                            hanya melayani transaksi elektronik mengunakan Uang Elektronik
+                                            (Unik). Adapun kartu
+                                            yang dapat digunakan transaksi tol adalah Bank Mandiri (e-money
+                                            dan co-branding), BRI (Brizzi), BNI (Tapcash), dan BCA
+                                            (Flazz).                                        </li>
 
                                     </ul>
                                 </div>
+                            </div>
 
+                        </div>
+                    )
+                }
+
+                {
+                    slug == "lalulintas" && (
+
+                        <div>
+                            <div>
+                                <h1 className='text-main font-black leading-loose text-3xl'>Sentral Komunikasi</h1>
+                                <hr className="w-34 text-second  border-t-12 " />
+
+                                <div className="grid grid-cols-3 gap-2 py-5">
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/lalin/lalin-kantorsenkom.jpeg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/lalin/lalin-senkom.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/lalin/lalin-ws.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                </div>
+                                <div className='py-5'>
+                                    <div className="bg-blue-100 p-1 rounded-3xl w-24">
+                                        <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
+                                    </div>
+                                    <ul className=" text-gray-500 list-outside dark:text-gray-400">
+                                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                                            <div className="text-justify ">
+
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+
+                                                    memantau dan mengelola lalu lintas di jalan tol, serta memberikan pelayanan informasi kepada pengguna jalan.
+                                                </li>
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                                                    Menggunakan CCTV dan sistem pemantauan lainnya untuk memonitor kondisi lalu lintas secara real-time di seluruh ruas jalan tol.
+                                                </li>
+                                            </div>
+                                            <div className="text-justify ">
+                                                <li className="flex  items-top py-2 tracking-wide ">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+
+                                                    Menanggapi pertanyaan, keluhan, dan saran dari pengguna jalan melalui berbagai saluran komunikasi, seperti hotline, media sosial, atau aplikasi.
+                                                </li>
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                                                    Mendeteksi dan menganalisis potensi gangguan lalu lintas, seperti kecelakaan, kendaraan mogok, atau kepadatan lalu lintas.
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+
+                                <h1 className='text-main font-black leading-loose text-3xl'>Patroli Jalan Tol</h1>
+                                <hr className="w-34 text-second  border-t-12 " />
+                                <div className="grid grid-cols-3 gap-2 py-5 ">
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/lalin/lalin-patroli.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/lalin/lalulintas-2.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/lalin/lalin-ws.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                </div>
+                                <div className='py-5'>
+                                    <ul className=" text-gray-500 list-outside dark:text-gray-400">
+                                        <div className="bg-blue-100 p-1 rounded-3xl w-24">
+
+                                            <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
+                                        </div>
+                                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 py-2">
+                                            <div className="text-justify">
+
+
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+
+                                                    Melakukan pemantauan terhadap kondisi jalan dan asset jalan tol.
+                                                </li>
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                                                    Memberikan informasi dan edukasi kepada pengguna jalan mengenai keselamatan berlalu lintas.
+                                                </li>
+                                            </div>
+                                            <div className="text-justify">
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+
+                                                    Memberikan pertolongan pertama pada korban kecelakaan, mengamankan lokasi kejadian, dan membantu proses evakuasi.
+                                                </li>
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                                                    Menindak pelanggaran lalu lintas seperti pelanggaran batas kecepatan, marka jalan, atau penggunaan bahu jalan.
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+
+                                <h1 className='text-main font-black leading-loose text-3xl'>Derek Jalan Tol</h1>
+                                <hr className="w-34 text-second  border-t-12 " />
+                                <div className="grid grid-cols-3 gap-2  py-5">
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/lalin/lalin-derek.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                        {/* <img src="/image/layanan/lalin/lalin-derek.jpg" className='w-full h-[200px] rounded-3xl mx-auto' alt="" srcSet="" /> */}
+                                    </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/lalin/lalin-derek-2.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/lalin/lalin-derek-3.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                </div>
+                                <div className='py-5'>
+                                    <ul className=" text-gray-500 list-outside dark:text-gray-400">
+                                        <div className="bg-blue-100 p-1 rounded-3xl w-24">
+
+                                            <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
+                                        </div>
+                                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 py-2">
+                                            <div className="text-justify">
+
+
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+
+                                                    Mengevakuasi kendaraan dari lokasi kejadian di jalan tol ke tempat yang lebih aman
+                                                </li>
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                                                    Memberikan bantuan awal, seperti membantu menyalakan kendaraan atau memberikan informasi mengenai bengkel terdekat.
+                                                </li>
+                                            </div>
+
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+
+                                <h1 className='text-main font-black leading-loose text-3xl'>Patroli Jalan Raya</h1>
+                                <hr className="w-34 text-second  border-t-12 " />
+                                <div className="grid grid-cols-3 gap-2  py-5">
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/lalin/lalin-derek.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                        {/* <img src="/image/layanan/lalin/lalin-derek.jpg" className='w-full h-[200px] rounded-3xl mx-auto' alt="" srcSet="" /> */}
+                                    </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/lalin/lalin-derek-2.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/lalin/lalin-derek-3.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                </div>
+                                <div className='py-5'>
+                                    <ul className=" text-gray-500 list-outside dark:text-gray-400">
+                                        <div className="bg-blue-100 p-1 rounded-3xl w-24">
+
+                                            <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
+                                        </div>
+                                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 py-2">
+                                            <div className="text-justify">
+
+
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+
+                                                    Melakukan pengaturan lalu lintas di titik-titik rawan macet, simpang jalan, dan lokasi kegiatan masyarakat untuk menjaga kelancaran arus lalu lintas.
+                                                </li>
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                                                    Memberikan informasi dan edukasi kepada pengguna jalan mengenai keselamatan berlalu lintas.
+                                                </li>
+                                            </div>
+                                            <div className="text-justify">
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+
+                                                    Menindak pelanggaran lalu lintas seperti pelanggaran batas kecepatan, menerobos lampu merah, dan pelanggaran lainnya.
+                                                </li>
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                                                    Melakukan pengawasan terhadap potensi tindak kriminalitas di jalan raya dan sekitarnya
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+
+                                <h1 className='text-main font-black leading-loose text-3xl'>Rescue Jalan Tol</h1>
+                                <hr className="w-34 text-second  border-t-12 " />
+                                <div className="grid grid-cols-3 gap-2  py-5">
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/lalin/lalin-derek.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                        {/* <img src="/image/layanan/lalin/lalin-derek.jpg" className='w-full h-[200px] rounded-3xl mx-auto' alt="" srcSet="" /> */}
+                                    </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/lalin/lalin-derek-2.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/lalin/lalin-derek-3.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                </div>
+                                <div className='py-5'>
+                                    <ul className=" text-gray-500 list-outside dark:text-gray-400">
+                                        <div className="bg-blue-100 p-1 rounded-3xl w-24">
+
+                                            <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
+                                        </div>
+                                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 py-2">
+                                            <div className="text-justify">
+
+
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+
+                                                    Melakukan patroli rutin untuk memantau kondisi jalan tol, mengidentifikasi potensi masalah, dan mencegah terjadinya kecelakaan.                                                 </li>
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                                                    Memberikan bantuan teknis kepada pengendara yang membutuhkan, seperti perbaikan ringan atau penggantian ban                                                </li>
+                                            </div>
+                                            <div className="text-justify">
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+
+                                                    Berkoordinasi dengan instansi terkait, seperti kepolisian dan petugas medis, untuk penanganan situasi darurat.                                                 </li>
+
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     )
                 }
@@ -300,21 +514,127 @@ export default function InfoLayanan({ slug }: formLayanan) {
                     slug == "keamanan-dan-kebersihan" && (
 
                         <div>
-                            <h1 className="text-main text-2xl tracking-wide leading-none font-semibold">Pengamanan Laut Infrastruktur Jalan Tol</h1>
-                            <div className='py-5'>
-                                <ul className=" text-gray-500 list-outside dark:text-gray-400">
-                                    <li className="flex  items-top py-2 tracking-wide">
-                                        <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                            <div>
+                                <h1 className='text-main font-black leading-loose text-3xl'>Pengamanan Laut Infrastruktur Tol Bali Mandara</h1>
+                                <hr className="w-34 text-second  border-t-12 " />
+
+                                <div className="grid grid-cols-3 gap-2 py-8">
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/kebersihan/patroli-lat.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+
+                                </div>
+                                <div className='py-2'>
+                                    <div className="bg-blue-100 p-1 rounded-3xl w-24">
+
+                                        <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
+                                    </div>
+                                    <ul className=" text-gray-500 list-outside dark:text-gray-400">
+                                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                                            <div className="text-justify ">
+
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+
+                                                    memantau dan mengelola lalu lintas di jalan tol, serta memberikan pelayanan informasi kepada pengguna jalan.
+                                                </li>
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                                                    Menggunakan CCTV dan sistem pemantauan lainnya untuk memonitor kondisi lalu lintas secara real-time di seluruh ruas jalan tol.
+                                                </li>
+                                            </div>
+                                            <div className="text-justify ">
+                                                <li className="flex  items-top py-2 tracking-wide ">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+
+                                                    Menanggapi pertanyaan, keluhan, dan saran dari pengguna jalan melalui berbagai saluran komunikasi, seperti hotline, media sosial, atau aplikasi.
+                                                </li>
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                                                    Mendeteksi dan menganalisis potensi gangguan lalu lintas, seperti kecelakaan, kendaraan mogok, atau kepadatan lalu lintas.
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+
+                                <h1 className='text-main font-black leading-loose text-3xl'>Kebersihan Jalan Tol bali Mandara</h1>
+                                <hr className="w-34 text-second  border-t-12 " />
+                                <div className="grid grid-cols-3 gap-2 py-8 ">
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/kebersihan/kebersihan-tol.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/kebersihan/kebersihan-2.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/kebersihan/kebersihan-3.jpg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                        />
+                                    </div>
+                                </div>
+                                <div className='py-2'>
+                                    <ul className=" text-gray-500 list-outside dark:text-gray-400">
+                                        <div className="bg-blue-100 p-1 rounded-3xl w-24">
+
+                                            <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
+                                        </div>
+                                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 py-2">
+                                            <div className="text-justify">
 
 
-                                        PT Jasamarga Bali Tol bekerja sama dengan Denpom Lanal Denpasar yang kemudian membentuk Satuan Tugas Pengamanan Laut Jalan Tol Bali Mandara untuk melakukan pemantauan rutin, khususnya untuk pengamanan struktur bawah jalan tol.                                    </li>
-                                    <li className="flex  items-top py-2 tracking-wide">
-                                        <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
 
+                                                    Melakukan pemantauan terhadap kondisi jalan dan asset jalan tol.
+                                                </li>
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                                                    Memberikan informasi dan edukasi kepada pengguna jalan mengenai keselamatan berlalu lintas.
+                                                </li>
+                                            </div>
+                                            <div className="text-justify">
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
 
-                                        Dalam rangka mengoptimalkan pelayanan kepada masyarakat dan untuk menjaga kebersihan lajur dan lingkungan Jalan Tol Bali Mandara, PT Jasamarga Bali Tol melengkapi armada kebersihan dengan menyediakan 1 unit mobil Road Sweeper.                                         </li>
-
-                                </ul>
+                                                    Memberikan pertolongan pertama pada korban kecelakaan, mengamankan lokasi kejadian, dan membantu proses evakuasi.
+                                                </li>
+                                                <li className="flex  items-top py-2 tracking-wide">
+                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
+                                                    Menindak pelanggaran lalu lintas seperti pelanggaran batas kecepatan, marka jalan, atau penggunaan bahu jalan.
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
                             </div>
 
                         </div>
@@ -324,9 +644,46 @@ export default function InfoLayanan({ slug }: formLayanan) {
                     slug == "konstruksi" && (
 
                         <div>
-                            <h1 className="text-main text-2xl tracking-wide leading-none font-semibold">Teknologi Pemantauan Konstruksi yang Andal</h1>
+                            <h1 className='text-main font-black leading-loose text-3xl'>Teknologi Pemantauan Konstruksi yang Andal</h1>
+                            <hr className="w-34 text-second  border-t-12 " />
+
+                            <div className="grid grid-cols-3 gap-4 py-2">
+                                <div className="">
+                                    <Image
+                                        src={"/image/layanan/konstruksi/konstruksi-1.jpg"}
+                                        alt="derek"
+                                        width={0}
+                                        height={0}
+                                        sizes='100vw'
+                                        style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                    />
+                                </div>
+                                <div className="">
+                                    <Image
+                                        src={"/image/layanan/konstruksi/konstruksi-2.jpg"}
+                                        alt="derek"
+                                        width={0}
+                                        height={0}
+                                        sizes='100vw'
+                                        style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                    />
+                                </div>
+                                <div className="">
+                                    <Image
+                                        src={"/image/layanan/konstruksi/konstruksi-3.jpg"}
+                                        alt="derek"
+                                        width={0}
+                                        height={0}
+                                        sizes='100vw'
+                                        style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                    />
+                                </div>
+                            </div>
                             <div className='py-5'>
-                                <ul className=" text-gray-500 list-outside dark:text-gray-400">
+                                <div className="bg-blue-100 p-1 rounded-3xl w-24">
+                                    <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
+                                </div>
+                                <ul className=" text-gray-500 list-outside dark:text-gray-400 py-2">
                                     <li className="flex  items-top py-2 tracking-wide">
                                         <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
 

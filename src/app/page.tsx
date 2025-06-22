@@ -14,6 +14,12 @@ import { FaCheckCircle } from "react-icons/fa";
 import SliderLayout from "./components/layout/SliderLayout";
 import CardLayanan, { propsLayanan } from "./components/ui/CardLayanan";
 import ModalLayanan from "./components/ui/Layanan/ModalLayanan";
+import Image from "next/image";
+import apiContact from './api/contact.json'
+import { headers } from "next/headers";
+import { contact } from "./components/Footer";
+import LayananSlider from "./components/layout/LayananSlider";
+
 export type Props =
 	{
 		searchParams:
@@ -37,6 +43,9 @@ export default async function Home({
 	const idlayanan = parameter?.idlayanan;
 	const contactmodal = parameter?.shown === "true";
 	const formShown = parameter?.shown === "true";
+		const headerList = await headers();
+	const pathname = headerList.get('x-pathname');
+	const url = new URL(pathname ? pathname : "", "http://localhost:3000")
 
 	return (
 		<div>
@@ -158,8 +167,42 @@ export default async function Home({
 							</Link>
 						</div> */}
 					</div>
-					<div className=" block max-w-xl">
-						<img src="/image/office.jpg" className="rounded-3xl h-full " alt="" srcSet="" />
+					<div className="max-w-xl">
+						<LayananSlider>
+							<div>
+						<Image
+							src={"/image/konstruksi-2.jpg"}
+							alt="kantor"
+							width={0}
+							height={0}
+							sizes="100vw"
+							
+							style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+						/>
+						</div>
+							<div>
+						<Image
+							src={"/image/plts.jpg"}
+							alt="kantor2"
+							width={0}
+							height={0}
+							sizes="100vw"
+							
+							style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+						/>
+						</div>
+							<div>
+						<Image
+							src={"/image/konstruksi-3.jpg"}
+							alt="kantor3"
+							width={0}
+							height={0}
+							sizes="100vw"
+							
+							style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+						/>
+						</div>
+						</LayananSlider>
 					</div>
 				</div>
 			</section>
@@ -184,9 +227,9 @@ export default async function Home({
 
 						{
 							apiLayanan["data"].map((res: propsLayanan, idx: number) => (
-						
-								 <CardLayanan key={idx} {...res} />
-							
+
+								<CardLayanan key={idx} {...res} />
+
 							))
 						}
 					</div>
@@ -280,8 +323,8 @@ export default async function Home({
 				</div>
 
 			</section>
-			<section className="container mx-auto md:py-20">
-				<div className="md:grid md:grid-cols-6 gap-4 ">
+			<section className="rounded-t-3xl md:py-20 bg-[#F4F4F4]">
+				<div className="container mx-auto md:grid md:grid-cols-6 gap-4 ">
 					<div className="md:col-span-2">
 						<div className="flex p-2 flex-col max-w-xl rounded-3xl  h-full bg-white border border-gray-200  shadow-xl dark:bg-gray-800 dark:border-gray-700">
 							<div className="relative ">
@@ -320,6 +363,37 @@ export default async function Home({
 						<iframe className="rounded-3xl w-full h-full" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jl.%20Raya%20Pelabuhan%20Benoa%20No.88,%20Pedungan,%20Denpasar%20Selatan,%20Kota%20Denpasar,%20Bali+(Grha%20Bali%20Tol)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
 					</div>
 				</div>
+				<section className="py-18  container mx-auto">
+					<div className=" rounded-3xl p-4 md:p-5 bg-main mx-auto text-center">
+						<h1 className="text-white font-bold text-md md:text-3xl">Hubungi Kami, Kapan Saja</h1>
+						<div className=" grid md:grid-cols-3 container mx-auto py-8">
+							{
+								apiContact["data"].map((res: contact, idx: number) => (
+									<div key={idx} className=" w-full flex flex-col">
+										<div className="p-2 md:p-3 bg-[#8EA0DA] rounded-2xl w-16 container mx-auto hover:bg-white hover:duration-500" >
+											{
+												res.link != "" ? (
+													<a href={res.link} target="_blank">
+														<img src={res.icon} className="w-8 h-8 text-center mx-auto" alt="" srcSet="" />
+													</a>
+												) : (
+
+													<Link href={{ pathname: url.toString(), query: { shown: true } }} scroll={false}>
+														<img src={res.icon} className="w-8 h-8 text-center mx-auto" alt="" srcSet="" />
+													</Link>
+												)
+											}
+										</div>
+										<div className="content py-8">
+											<h1 className="text-white text-sm md:text-2xl font-bold tracking-wide">{res.nama}</h1>
+											<p className=" text-md font-normal tracking-wide leading-none text-gray-200 py-4 md:text-2xl">{res.deskripsi}</p>
+										</div>
+									</div>
+								))
+							}
+						</div>
+					</div>
+				</section>
 			</section>
 			{modal && (
 				<Suspense key={tarifID?.toString()} fallback={<TarifLoading />}>

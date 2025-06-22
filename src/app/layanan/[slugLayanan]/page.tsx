@@ -4,16 +4,17 @@ import apiTarif from '../../api/tarif.json'
 import Link from 'next/link';
 import { FaRegCheckCircle } from 'react-icons/fa';
 import { propsTarif } from '@/app/components/ui/TarifCard';
-export default function page({
+export default async function page({
   params }: {
-    params: { slugLayanan: string }
+    params:  Promise<{slugLayanan:string}>
   }) {
+    const {slugLayanan} = await params
   return (
     <div>
             <div className="bg-white p-12 rounded-3xl shadow-xl h-full">
 
       {
-        params.slugLayanan == "drivethru" && (
+        slugLayanan == "drivethru" && (
 
           <div>
             <h1 className="text-main text-2xl tracking-wide leading-none font-semibold">Gerbang Tol dan Sistem Transaksi Elektronik</h1>
@@ -43,7 +44,7 @@ export default function page({
         )
       }
       {
-                    params.slugLayanan == "transaksi" && (
+                    slugLayanan == "transaksi" && (
                         <div>
                             <h1 className="text-main text-2xl tracking-wide leading-none font-semibold">Gerbang Tol dan Sistem Transaksi Elektronik</h1>
                             <div className='py-5'>
@@ -125,7 +126,7 @@ export default function page({
                     )
                 }
                 {
-                    params.slugLayanan == "lalulintas" && (
+                    slugLayanan == "lalulintas" && (
 
                         <div>
                             <h1 className="text-main text-2xl tracking-wide leading-none font-semibold">Layanan Lalu Lintas 24 Jam</h1>
@@ -205,7 +206,7 @@ export default function page({
                     )
                 }
                 {
-                    params.slugLayanan == "keamanan-dan-kebersihan" && (
+                    slugLayanan == "keamanan-dan-kebersihan" && (
 
                         <div>
                             <h1 className="text-main text-2xl tracking-wide leading-none font-semibold">Pengamanan Laut Infrastruktur Jalan Tol</h1>
@@ -229,7 +230,7 @@ export default function page({
                     )
                 }
                 {
-                    params.slugLayanan == "konstruksi" && (
+                    slugLayanan == "konstruksi" && (
 
                         <div>
                             <h1 className="text-main text-2xl tracking-wide leading-none font-semibold">Teknologi Pemantauan Konstruksi yang Andal</h1>

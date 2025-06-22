@@ -1,14 +1,23 @@
 import React from 'react'
 import Link from 'next/link'
 import Jumbotron from './../components/ui/Berita/JumbotronBerita';
-import { propsBerita } from '../components/ui/CardBerita';
 import apiBerita from '../api/berita.json'
+import Image from 'next/image';
+
 export default function page() {
   return (
     <div>
       <section className='bg-[#F8FAFF] rounded-br-[3rem]  pt-28 top-full shadow-xl relative z-10 '>
         <div className="mx-auto container">
-          <img src="/image/gtngr.png" className='md:rounded-xl w-full h-[200px] md:h-full' alt="" srcSet="" />
+        <Image
+                                                       src={"/image/jumbotron-berita.png"}
+                                                       alt="kantor"
+                                                       width={0}
+                                                       height={0}
+                                                       sizes="100vw"
+                                                       loading="lazy"
+                                                       style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                                   />    
           <div className="px-4  py-12 grid md:grid-cols-6">
             <div className="pb-2 max-w-xl  col-span-4">
               <h1 className='text-main tracking-wide font-semibold text-xl md:text-4xl'>Kabar & Informasi Terkini Jalan Tol Bali Mandara</h1>

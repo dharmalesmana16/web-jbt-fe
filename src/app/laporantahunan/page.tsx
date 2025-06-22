@@ -2,6 +2,7 @@
 import React from 'react'
 import apiLaporan from '../api/laporan.json'
 import Link from 'next/link';
+import Image from 'next/image';
 import { headers } from 'next/headers';
 import { IoDocumentText } from 'react-icons/io5';
 
@@ -21,8 +22,9 @@ export default async function page({ searchParams }: any) {
     const headersList = await headers()
     const pathname = await headersList.get("x-pathname")
     console.log(pathname)
-    const query = await searchParams.id ? searchParams.id : "1";
-    const url = new URL(pathname ? pathname : "", "http://localhost:3000");
+    const parameter = await searchParams
+    const query =  parameter.id ? parameter.id : "1";
+    const url = new URL(pathname ? pathname : "", process.env.NEXT_PUBLIC_FRONTEND_URL);
     console.log(query)
     const response = await apiLaporan["data"].find((item: propsLaporan) => item.id == query);
     // url.searchParams.set("id", response?.id);
@@ -32,7 +34,16 @@ export default async function page({ searchParams }: any) {
         <div>
             <section className='bg-[#F8FAFF] rounded-br-[3rem]  pt-28 top-full shadow-xl relative z-10 '>
                 <div className="mx-auto container">
-                    <img src="/image/gtngr.png" className='md:rounded-xl w-full h-[200px] md:h-full' alt="" srcSet="" />
+                    <Image
+                                                src={"/image/jumbotron-report.png"}
+                                                alt="kantor"
+                                                width={0}
+                                                height={0}
+                                                sizes="100vw"
+                                                loading="lazy"
+                                                style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                            />
+                    {/* <img src="/image/jumbotron-report.png" className='md:rounded-xl w-full h-[200px] md:h-full' alt="" srcSet="" /> */}
                     <div className="px-4  py-12 grid md:grid-cols-6">
                         <div className="pb-2 max-w-xl  col-span-4">
                             <h1 className='text-main tracking-wide font-semibold text-xl md:text-4xl'>Laporan Tahunan: Transparansi & Kinerja dalam Angka</h1>
@@ -77,7 +88,7 @@ export default async function page({ searchParams }: any) {
 
                     </div>
                     <div className="max-w-xl w-full">
-                        <img src="/image/report/2024.png" className="w-full h-full" alt="" srcSet="" />
+                        <img src={response?.cover} className="w-full h-full" alt="" srcSet="" />
                     </div>
                     <div className="max-w-lg w-full px-5">
                         <div className="pb-8">

@@ -11,20 +11,16 @@ import PrestasiModal from '../components/ui/PrestasiModal';
 import Link from 'next/link';
 import { FaCircle } from 'react-icons/fa6';
 import { headers } from 'next/headers';
-export default async function page({
-  searchParams
-}: {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
-}) {
+export default async function page({ searchParams }: any) {
   const parameter = await searchParams;
   const id = parameter?.id;
   const modal = parameter?.modal === "true";
   const prestasiModal = parameter?.prestasi === "true";
   const headersList = await headers()
   const pathname = await headersList.get("x-pathname")
+  const url = new URL(pathname ? pathname : "", "http://localhost:3000");
 
   const query = parameter.slug ? parameter.slug : "sejarah2013";
-  const url = new URL(pathname ? pathname : "", process.env.FE_URL);
   const response = await apiSejarah["data"].find((item) => item.slug == query);
 
   return (

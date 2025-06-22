@@ -12,7 +12,7 @@ export default async function PrestasiModal({ id }: prestasiModal) {
     if (!id || isNaN(parseInt(id))) {
         redirect("/tentangkami");
     }
-    console.log(apiPrestasi["data"].find((item: any) => item.id === parseInt(id)))
+    // console.log(apiPrestasi["data"].find((item: any) => item.id === parseInt(id)))
     // Filter data berdasarkan ID
     const response = apiPrestasi["data"].find((item: propsPrestasi) => item.id === parseInt(id));
     return (

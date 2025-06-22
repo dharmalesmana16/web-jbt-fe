@@ -13,7 +13,7 @@ export type propsTarif = {
 export default async function TarifCard(props: propsTarif) {
     const headersList = await headers();
     const pathname = await headersList.get("x-pathname");
-    const url = new URL(pathname ? pathname : "", process.env.NEXT_PUBLIC_FRONTEND_URL);
+    const url = new URL(pathname ? pathname : "", process.env.FE_URL);
     url.searchParams.set("modal", "true");
     url.searchParams.set("id", props.id.toString());
     return (

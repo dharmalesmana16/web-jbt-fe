@@ -13,7 +13,7 @@ export default async function CardLayanan(props:propsLayanan) {
     
            const headerList = await headers();
            const pathname = headerList.get('x-pathname');
-           const url = new URL(pathname ? pathname : "",process.env.NEXT_PUBLIC_FRONTEND_URL)
+           const url = new URL(pathname ? pathname : "",process.env.FE_URL)
         url.searchParams.set("layanan", "true");
         url.searchParams.set("idlayanan", props.id.toString());
     return (

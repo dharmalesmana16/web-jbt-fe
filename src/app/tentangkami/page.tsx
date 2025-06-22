@@ -24,7 +24,7 @@ export default async function page({
   const pathname = await headersList.get("x-pathname")
 
   const query = parameter.slug ? parameter.slug : "sejarah2013";
-  const url = new URL(pathname ? pathname : "", process.env.NEXT_PUBLIC_FRONTEND_URL);
+  const url = new URL(pathname ? pathname : "", process.env.FE_URL);
   const response = await apiSejarah["data"].find((item) => item.slug == query);
 
   return (

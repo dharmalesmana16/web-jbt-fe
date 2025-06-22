@@ -7,7 +7,7 @@ export default async function ReportLayout(props:propsLaporan) {
     const headersList = await headers()
   const pathname = headersList.get('x-pathname')
 
-    const url = new URL(pathname ? pathname : "", process.env.FRONTEND_URL);
+    const url = new URL(pathname ? pathname : "", process.env.FE_URL);
     url.searchParams.set("modal", "true");
     url.searchParams.set("id", props.id.toString());
     

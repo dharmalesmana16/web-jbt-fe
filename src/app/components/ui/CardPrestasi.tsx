@@ -15,7 +15,7 @@ export type propsPrestasi = {
 export default async function CardPrestasi() {
     const headerList = await headers();
     const pathname = headerList.get('x-pathname');
-    const url = new URL(pathname ? pathname : "",process.env.NEXT_PUBLIC_FRONTEND_URL)
+    const url = new URL(pathname ? pathname : "",process.env.FE_URL)
     return (
         <div>
             <SliderLayout>

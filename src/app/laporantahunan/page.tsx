@@ -24,7 +24,7 @@ export default async function page({ searchParams }: any) {
     console.log(pathname)
     const parameter = await searchParams
     const query =  parameter.id ? parameter.id : "1";
-    const url = new URL(pathname ? pathname : "", process.env.NEXT_PUBLIC_FRONTEND_URL);
+    const url = new URL(pathname ? pathname : "", process.env.FE_URL);
     console.log(query)
     const response = await apiLaporan["data"].find((item: propsLaporan) => item.id == query);
     // url.searchParams.set("id", response?.id);
@@ -43,7 +43,6 @@ export default async function page({ searchParams }: any) {
                                                 loading="lazy"
                                                 style={{ width: "100%", height: "100%", borderRadius: "20px" }}
                                             />
-                    {/* <img src="/image/jumbotron-report.png" className='md:rounded-xl w-full h-[200px] md:h-full' alt="" srcSet="" /> */}
                     <div className="px-4  py-12 grid md:grid-cols-6">
                         <div className="pb-2 max-w-xl  col-span-4">
                             <h1 className='text-main tracking-wide font-semibold text-xl md:text-4xl'>Laporan Tahunan: Transparansi & Kinerja dalam Angka</h1>

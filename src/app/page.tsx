@@ -45,7 +45,7 @@ export default async function Home({
 	const formShown = parameter?.shown === "true";
 		const headerList = await headers();
 	const pathname = headerList.get('x-pathname');
-	const url = new URL(pathname ? pathname : "", "http://localhost:3000")
+	const url = new URL(pathname ? pathname : "", process.env.FE_URL)
 
 	return (
 		<div>

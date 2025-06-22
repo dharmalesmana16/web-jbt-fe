@@ -21,7 +21,7 @@ export default async function page({ searchParams }: any) {
     const pathname = await headersList.get("x-pathname")
     const router = await searchParams
     const query = router.slug ? router.slug : "drivethru";
-    const url = new URL(pathname ? pathname : "", process.env.NEXT_PUBLIC_FRONTEND_URL);
+    const url = new URL(pathname ? pathname : "", process.env.FE_URL);
     // const formShown = parameter?.shown === "true";
     console.log(query)
     // const response = await apiLayanan["data"].find((item: propsLayanan) => item.id == query);
@@ -39,7 +39,8 @@ export default async function page({ searchParams }: any) {
                                                 sizes="100vw"
                                                 loading="lazy"
                                                 style={{ width: "100%", height: "100%", borderRadius: "20px" }}
-                                            />                    <div className="px-4  py-12 grid md:grid-cols-6">
+                                            />    
+                                                            <div className="px-4  py-12 grid md:grid-cols-6">
                         <div className="pb-2 max-w-xl  col-span-4">
                             <h1 className='text-main tracking-wide font-semibold text-xl md:text-4xl'>Layanan Terbaik untuk Kelola Perjalanan Nyaman untuk Anda</h1>
                         </div>

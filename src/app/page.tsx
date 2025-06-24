@@ -242,7 +242,7 @@ export default async function Home({
 						<div className="bg-main p-5 md:p-8 md:w-[60%] lg:w-[30%] text-left   rounded-2xl flex flex-col justify-between ">
 							<div>
 							<img
-								src="/image/icon/tarif.png"
+								src="/image/Icon/tarif.png"
 								className="h-8 w-8 md:h-24 md:w-24"
 								alt=""
 								/>

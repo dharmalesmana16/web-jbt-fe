@@ -29,15 +29,15 @@ export default async function page({ searchParams }: any) {
       <section className='bg-[#F8FAFF] rounded-br-[3rem]  pt-28 top-full shadow-xl relative z-10 '>
         <div className="mx-auto container">
           <Image
-                                                                 src={"/image/gtngr.png"}
-                                                                 alt="kantor"
-                                                                 width={0}
-                                                                 height={0}
-                                                                 sizes="100vw"
-                                                                 loading="lazy"
-                                                                 className="w-full h-[25vh] md:h-full rounded-3xl"
-                                                          // style={{ width: "100%", height: "100%", borderRadius: "20px" }}
-                                                             />  
+            src={"/image/gtngr.png"}
+            alt="kantor"
+            width={0}
+            height={0}
+            sizes="100vw"
+            loading="lazy"
+            className="w-full h-[25vh] md:h-full rounded-3xl"
+          // style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+          />
           <div className="px-4  py-12 grid md:grid-cols-6">
             <div className="pb-2 max-w-2xl  col-span-4">
               <h1 className='text-main tracking-wide font-semibold text-xl md:text-4xl'>Tentang Kami dalam Mewujudkan Konektivitas Terbaik di Bali</h1>
@@ -67,13 +67,15 @@ export default async function page({ searchParams }: any) {
       </section>
       {/* Section Sejarah */}
       <section className="bg-center mx-auto w-full p-12 md:p-24 min-h-[100vh] bg-cover bg-no-repeat  bg-[#F4F4F4] shadow-t-xl  rounded-t-4xl">
-         
-  
-          <div className="container mx-auto border-b-4 border-b-second ">
 
-                        <h1 className='font-black text-3xl text-main leading-7'>Sejarah Jasamarga Bali Tol</h1>
-                        <p className="text-gray-500 py-5 text-base tracking-wide">Sekilas sejarah pembangunan Tol Bali Mandara dan Kantor Jasamarga Bali Tol</p>
-          </div>
+
+        <div className="container mx-auto  ">
+
+          <h1 className='font-black text-3xl text-main leading-9'>Sejarah Jasamarga Bali Tol</h1>
+          <p className="text-gray-500 py-5 text-base tracking-wide">Sekilas sejarah pembangunan Tol Bali Mandara dan Kantor Jasamarga Bali Tol</p>
+                                        <hr className="w-28 md:w-34 text-second  border-t-8 md:border-t-12 " />
+
+        </div>
         <div className="container mx-auto">
           <div className="flex flex-col items-center  md:flex-row md:gap-[20px] ">
             <div className=" max-w-32 w-full  mt-10 md:mt-20   md:border-r-2 border-gray-200">
@@ -82,7 +84,7 @@ export default async function page({ searchParams }: any) {
                 {
                   apiSejarah["data"].map((res: any, key: number) => (
                     <li key={key} className="flex flex-col md:flex-row  items-center py-12 hover:scale-102 hover:transition-transform duration-200">
-                      
+
                       <div className="text-end">
 
                         <Link href={{ pathname: url.toString(), query: { slug: res.slug } }} scroll={false} className="text-main text-3xl font-black ">
@@ -101,7 +103,7 @@ export default async function page({ searchParams }: any) {
                 }
               </ul>
             </div>
-            
+
             <div className="w-full text-center md:text-left">
 
               <div className="py-5">
@@ -118,9 +120,9 @@ export default async function page({ searchParams }: any) {
 
               <div className="py-5">
 
-              <img src={response?.gambar} className="h-full w-full rounded-3xl" alt="" srcSet="" />
+                <img src={response?.gambar} className="h-full w-full rounded-3xl" alt="" srcSet="" />
               </div>
-              
+
             </div>
           </div>
         </div>
@@ -255,9 +257,9 @@ export default async function page({ searchParams }: any) {
       </section>
       {/* End Section Sejarah */}
       {/* Section Dewan Direksi */}
-      <section className='py-12 container mx-auto '>
+      <section className='py-12 container mx-auto px-5 '>
         <h1 className='text-main text-2xl tracking-wide text-center font-bold py-12'>DEWAN KOMISARIS</h1>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-[20px] md:gap-[20px]">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-[20px]">
           {
             apiDireksi["data"].filter(res => res.tipe_direksi === "d_komisaris").map((res: propsDireksi, idx: number) => (
               <DireksiCard key={idx} {...res} />
@@ -267,9 +269,9 @@ export default async function page({ searchParams }: any) {
 
 
       </section>
-      <section className='py-12 container mx-auto '>
+      <section className='py-12 container mx-auto px-5'>
         <h1 className='text-main text-2xl tracking-wide text-center font-bold py-12'>DEWAN DIREKSI</h1>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-[20px] md:gap-[20px]">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-[20px]">
           {
             apiDireksi["data"].filter(res => res.tipe_direksi === "d_direksi").map((res: propsDireksi, idx: number) => (
               <DireksiCard key={idx} {...res} />

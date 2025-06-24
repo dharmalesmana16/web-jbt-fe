@@ -58,7 +58,7 @@ export default function Footer() {
 							</div>
 						</div>
 					</div>
-					<div className="grid grid-cols-2 gap-4 sm:gap-12 ">
+					<div className="grid grid-cols-1 gap-4 sm:gap-12 ">
 						<div>
 							<h2 className="mb-6 text-sm md:text-lg font-semibold tracking-wide  text-main uppercase dark:text-main">
 								KENALI JASAMARGA BALI TOL

@@ -20,17 +20,17 @@ export default function ResponsiveLayout(props: PropsWithChildren) {
     return (
         <div>
             {deviceType == 'mobile' && (
-                <SliderLayout>
-
+                <SliderLayout shown={1} center={true} infinite={true} >
               {props.children}
+
                 </SliderLayout>
           )}
             {deviceType == 'browser' && (
-                
-                <div className='grid grid-cols-5'>
-
+                	<div className="grid md:grid-cols-5 ">
+						
               {props.children}
-                </div>
+                          </div>
+                
           )}
         </div>
     )

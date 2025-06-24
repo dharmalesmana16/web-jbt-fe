@@ -54,14 +54,15 @@ export default async function page({ searchParams }: any) {
                     </div>
                 </div>
             </section>
-            <section className='container mx-auto min-h-screen py-20'>
-                <div className="">
+            <section className='container px-5 mx-auto min-h-screen py-20'>
+                <div className="pb-12">
 
-                    <h1 className="font-medium text-3xl ">Laporan Tahunan</h1>
-                    <hr className='text-second py-4 mt-4 font-bold h-12' />
+                    <h1 className="font-bold text-main text-3xl pb-4">Laporan Tahunan</h1>
+                                               <hr className="w-28 md:w-34 text-second  border-t-8 md:border-t-12 " />
+
                 </div>
                 <div className="flex flex-col md:flex-row gap-[20px]">
-                    <div className="overflow-y-scroll scrollbar max-w-lg w-full max-h-[325px] md:max-h-[600px]">
+                    <div className="overflow-y-scroll md:no-scrollbar bg-white shadow-lg rounded-3xl p-5 scrollbar max-w-lg w-full max-h-[325px] md:max-h-[600px]">
                         {
                             apiLaporan["data"].map((res: any, idx: number) => (
                                 <div key={idx} className="py-2">

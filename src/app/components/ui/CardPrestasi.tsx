@@ -18,7 +18,7 @@ export default async function CardPrestasi() {
     const url = new URL(pathname ? pathname : "",process.env.FE_URL)
     return (
         <div>
-            <SliderLayout>
+        <SliderLayout shown={3}>
                 {
                     apiPrestasi["data"].map((res: propsPrestasi, idx: number) => (
                         <div key={idx} className="hover:translate-tranform hover:scale-102 hover:duration-300 p-2">

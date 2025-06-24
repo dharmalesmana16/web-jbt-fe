@@ -25,7 +25,7 @@ export default  function DireksiCard(props: propsDireksi) {
 
 
                   <div className="mx-auto text-center pt-8 pl-8 pr-8 pb-2 border-1 h-[400px] md:h-[400px] lg:h-[475px] border-gray-200 shadow-lg hover:border-main  hover:scale-105 hover:transition hover:duration-200  bg-white  rounded-3xl overflow-hidden relative">
-                    <img src={props.file} className=' mx-auto h-48 md:h-42 lg:h-64' alt="" srcSet="" />
+                    <img src={props.file} className=' mx-auto h-42 md:h-42 lg:h-64' alt="" srcSet="" />
                     <div className="hover:text-main text-left py-4 md:py-8">
                       <h1 className='  text-md md:text-md lg:text-xl font-semibold tracking-normal '>{props.nama}</h1>
                       <p className='text-sm text-gray-500'>{props.jabatan}</p>

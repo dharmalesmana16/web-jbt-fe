@@ -18,7 +18,6 @@ import Image from "next/image";
 import apiContact from './api/contact.json'
 import { headers } from "next/headers";
 import { contact } from "./components/Footer";
-import LayananSlider from "./components/layout/LayananSlider";
 import ResponsiveLayout from "./components/layout/ResponsiveLayout";
 
 export type Props =
@@ -167,9 +166,9 @@ export default async function Home({
 							</Link>
 						</div> */}
 					</div>
-					<div className="max-w-3xl">
-						<LayananSlider>
-							<div>
+					<div className="max-w-3xl h-full items-center align-center content-center">
+						<SliderLayout dots={true} center={false} shown={1}>
+							<div className="px-2">
 						<Image
 							src={"/image/konstruksi-2.jpg"}
 							alt="kantor"
@@ -180,7 +179,7 @@ export default async function Home({
 							style={{ width: "100%", height: "100%", borderRadius: "20px" }}
 						/>
 						</div>
-							<div>
+							<div className="px-2">
 						<Image
 							src={"/image/plts.jpg"}
 							alt="kantor2"
@@ -191,7 +190,7 @@ export default async function Home({
 							style={{ width: "100%", height: "100%", borderRadius: "20px" }}
 						/>
 						</div>
-							<div>
+							<div className="px-2">
 						<Image
 							src={"/image/konstruksi-3.jpg"}
 							alt="kantor3"
@@ -202,7 +201,7 @@ export default async function Home({
 							style={{ width: "100%", height: "100%", borderRadius: "20px" }}
 						/>
 						</div>
-						</LayananSlider>
+						</SliderLayout>
 					</div>
 				</div>
 			</section>
@@ -224,30 +223,30 @@ export default async function Home({
 				</div>
 				<div className="pb-5 px-5 md:pb-12 md:px-12 ">
 
-					{/* <div className="grid md:grid-cols-5 gap-4"> */}
 					<ResponsiveLayout>
-							<>
+				
 						{
 							apiLayanan["data"].map((res: propsLayanan, idx: number) => (
 								<CardLayanan key={idx} {...res} />
 							))
 						}
-						</>
+						
 						</ResponsiveLayout>
-					{/* </div> */}
 
 				</div>
 
 			</section>
 			<section className="py-24 bg-top w-full md:bg-cover min-h-screen  bg-no-repeat   bg-[url('/image/frameTarif.jpg')]">
-				<div className=" mx-auto  text-center py-12 lg:py-24 max-w-[75%]">
+				<div className=" mx-auto  text-center py-12 lg:py-24 container md:max-w-[75%] px-5">
 					<div className="md:flex md:justify-between gap-4 ">
-						<div className="bg-main p-5 md:p-8 md:w-[60%] lg:w-[30%] text-left   rounded-2xl ">
+						<div className="bg-main p-5 md:p-8 md:w-[60%] lg:w-[30%] text-left   rounded-2xl flex flex-col justify-between ">
+							<div>
 							<img
 								src="/image/icon/tarif.png"
-								className="h-8 md:h-18"
+								className="h-8 w-8 md:h-24 md:w-24"
 								alt=""
-							/>
+								/>
+								</div>
 							<div className="content">
 								<h1 className="text-md md:text-4xl font-bold text-white ">
 									Tarif
@@ -313,8 +312,8 @@ export default async function Home({
 						</Link>
 					</div>
 				</div>
-				<div className="p-12 ">
-					<SliderLayout>
+				<div className="p-4 md:p-12 ">
+					<SliderLayout shown={4} infinite={true}>
 						{
 							apiBerita["data"].map((res: propsBerita, idx: number) => (
 								
@@ -363,7 +362,7 @@ export default async function Home({
 						</div>
 					</div>
 					<div className="md:col-span-4 py-2 ">
-						<iframe className="rounded-3xl w-full h-[50vh]" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jl.%20Raya%20Pelabuhan%20Benoa%20No.88,%20Pedungan,%20Denpasar%20Selatan,%20Kota%20Denpasar,%20Bali+(Grha%20Bali%20Tol)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+						<iframe className="rounded-3xl w-full h-[50vh] md:h-full" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jl.%20Raya%20Pelabuhan%20Benoa%20No.88,%20Pedungan,%20Denpasar%20Selatan,%20Kota%20Denpasar,%20Bali+(Grha%20Bali%20Tol)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
 					</div>
 				</div>
 				<section className="py-18  container mx-auto">

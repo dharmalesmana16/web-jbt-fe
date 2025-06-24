@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaRegCheckCircle } from 'react-icons/fa';
-import LayananSlider from '../../layout/LayananSlider';
+import SliderLayout from '../../layout/SliderLayout';
 interface formLayanan {
     idLayanan?: string;
 }
@@ -176,12 +176,12 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                     idLayanan == "3" && (
 
                         <div>
-                            <LayananSlider>
+                            <SliderLayout dots={true} center={false} shown={1}>
 
                          
                            
                            
-                            <div>
+                            <div className='px-5'>
                                 <h1 className='text-main font-black leading-loose text-3xl'>Sentral Komunikasi</h1>
                                 <hr className="w-34 text-second  border-t-12 " />
 
@@ -251,7 +251,7 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                                 </div>
                                 
                             </div>
-                             <div>
+                             <div className="px-5">
                             
                                                             <h1 className='text-main font-black leading-loose text-3xl'>Patroli Jalan Tol</h1>
                                                             <hr className="w-34 text-second  border-t-12 " />
@@ -522,7 +522,7 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                                                                 </ul>
                                                             </div>
                                                         </div>
-   </LayananSlider>
+   </SliderLayout>
                         </div>
                     )
                 }
@@ -597,7 +597,7 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                     idLayanan == "5" && (
 
                         <div>
-                            <LayananSlider>
+                            <SliderLayout shown={1}>
                                                   <div>
                                                       <h1 className='text-main font-black leading-loose text-3xl'>Pengamanan Laut Infrastruktur Tol Bali Mandara</h1>
                                                       <hr className="w-34 text-second  border-t-12 " />
@@ -721,7 +721,7 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                                                       </div>
                                                   </div>
                       
-                                              </LayananSlider>
+                                              </SliderLayout>
                                               </div>
                     )
                 }

@@ -1,8 +1,8 @@
 
 import React from 'react'
 import apiMisi from '../../api/misi.json'
-import MisiLayout from '../layout/MisiLayout';
 import {  FaRegCheckCircle } from 'react-icons/fa';
+import SliderLayout from '../layout/SliderLayout';
 export type propsMisi = {
     id: number;
     nama: string;
@@ -11,7 +11,7 @@ export type propsMisi = {
 export default async function CardMisi() {
 
     return (
-        <MisiLayout>
+        <SliderLayout shown={3} infinite={true}>
 
             {
                 apiMisi["data"].map((res: propsMisi, key: number) => (
@@ -29,6 +29,6 @@ export default async function CardMisi() {
                     </div>
                 ))
             }
-        </MisiLayout>
+        </SliderLayout>
     )
 }

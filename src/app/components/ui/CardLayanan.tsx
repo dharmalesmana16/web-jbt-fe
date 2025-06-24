@@ -20,7 +20,7 @@ export default async function CardLayanan(props: propsLayanan) {
         <div className="px-2">
 
         <Link href={url.toString()} scroll={false}>
-            <div className="flex p-5 flex-col max-w-xl rounded-3xl hover:-translate-y-1 hover:scale-100 hover:transition hover:duration-500  h-[225px] text-center bg-[#F4F4F4] border border-gray-200  shadow-xl dark:bg-gray-800 dark:border-gray-700">
+            <div className="flex p-5 flex-col max-w-xl rounded-3xl hover:-translate-y-1 hover:scale-100 hover:transition hover:duration-500  h-[250px] md:h-full text-center bg-[#F4F4F4] border border-gray-200  shadow-xl dark:bg-gray-800 dark:border-gray-700">
                 <div className={"p-4  rounded-xl block mx-auto bg-[#B8C5EF]"}>
                     {/* <IoDocumentText className="inline-block w-7 h-7 text-main" /> */}
                     <img src={props.icon} className=' w-7 h-7 ' alt="" srcSet="" />

@@ -34,11 +34,11 @@ searchParams:
           Berita Lainnya
           </h1>
         </div>
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
   
           {
             apiBerita["data"].filter(res => res.slug != response?.slug && res.id <=4 ).map((res: propsBerita, idx: number) => (
-           <div className='flex flex-col w-96 block mx-auto' key={idx}>
+           <div className='flex flex-col w-full block mx-auto' key={idx}>
                       <div className="">
                         <img src={res.gambar} className="rounded-3xl h-[250px]" alt="" srcSet="" />
                       </div>

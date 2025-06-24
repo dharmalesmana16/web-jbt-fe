@@ -48,8 +48,11 @@ export default function Nav() {
 			}>
 			<div className="container flex flex-wrap items-center justify-between mx-auto  ">
 				
-					<Logo />
-
+					     <Link
+								href="/"
+								className="flex items-center hidden md:block ">
+								<img src="/image/logojbt.png" className="w-full h-10 " alt="Dalsfindo Logo" />
+							  </Link>
 				<button
 					data-collapse-toggle="navbar-default"
 					type="button"
@@ -82,6 +85,13 @@ export default function Nav() {
 					<ul className="font-medium flex flex-col p-4 md:p-0 mt-4  rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0   ">
 					
 
+						<li className="py-2 md:py-0">
+							 <Link
+								href="/"
+								className=" items-center md:hidden ">
+								<img src="/image/logojbt.png" className="max-w-sm h-10 " alt="Dalsfindo Logo" />
+							  </Link>
+						</li>
 						<li className="py-2 md:py-0">
 							<Link
 								href="/"

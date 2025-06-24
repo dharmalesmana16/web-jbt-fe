@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 export default function SliderLayout(props: PropsWithChildren) {
     const settingProjects = {
         className: "center",
-        centerMode: false,
+        centerMode: true,
         infinite: true,
         dots: false,
         speed: 500,

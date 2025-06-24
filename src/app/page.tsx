@@ -19,6 +19,7 @@ import apiContact from './api/contact.json'
 import { headers } from "next/headers";
 import { contact } from "./components/Footer";
 import LayananSlider from "./components/layout/LayananSlider";
+import ResponsiveLayout from "./components/layout/ResponsiveLayout";
 
 export type Props =
 	{
@@ -49,7 +50,7 @@ export default async function Home({
 
 	return (
 		<div>
-			<section className="">
+			<section className="pt-18 md:pt-0">
 
 
 				<video
@@ -89,8 +90,8 @@ export default async function Home({
 						</Link>
 					</div>
 				</div>
-				<div className="  container relative bottom-15 md:bottom-25  left-0 right-0 ml-auto mr-auto  ">
-					<div className="bg-main p-4 rounded-4xl container mx-auto">
+				<div className="  container relative bottom-1 md:bottom-25  left-0 right-0 ml-auto mr-auto  ">
+					<div className="bg-main p-4 rounded-b-3xl md:rounded-4xl container mx-auto">
 						<div className="pb-5">
 
 							<p className="text-sm md:text-md text-gray-200 font-light tracking-wide text-center">Sekilas mengenai informasi dan fasilitas Tol Bali Mandara</p>
@@ -141,23 +142,22 @@ export default async function Home({
 					<div className="md:px-5 md:max-w-3xl">
 						<h1 className="text-lg md:text-3xl font-semibold">Sebagai bagian dari Jasamarga Group, kami menghadirkan solusi transportasi modern di bali melalui Tol Bali Mandara</h1>
 						<p className="text-gray-400 text-md py-5">Dengan standar keselamatan tinggi dan infrastruktur berkualitas kami berkomitmen memberikan pengalaman berkendara terbaik untuk Anda</p>
-						<div className="bg-gray-100 mb-3 p-4 md:p-8 rounded-3xl hover:border-2 hover:border-main  hover:scale-102">
-							<p className="text-gray-950 text-lg tracking-wide">
-								<FaCheckCircle className="inline-flex text-main text-2xl md:mr-5" />
+						<div className="bg-gray-100 mb-3 p-4 md:p-8 rounded-3xl border-2 border-transparent hover:border-2 hover:border-main hover:transition-transform hover:scale-102">
+							<p className="text-gray-950 text-md md:text-lg tracking-wide">
+								<FaCheckCircle className="inline-flex text-main text-md md:text-2xl md:mr-5" />
 								Tol diatas laut pertama di Indonesia
 							</p>
 						</div>
-						<div className="bg-gray-100 mb-3 p-4 md:p-8 rounded-3xl hover:border-2  hover:border-main  hover:scale-102">
-							<p className="text-gray-950 text-lg tracking-wide">
-								<FaCheckCircle className="inline-flex text-main text-2xl md:mr-5" />
+						<div className="bg-gray-100 mb-3 p-4 md:p-8 rounded-3xl border-2 border-transparent hover:border-2 hover:transition-transform hover:border-main  hover:scale-102">
+							<p className="text-gray-950 text-md md:text-lg tracking-wide">
+								<FaCheckCircle className="inline-flex text-main text-md md:text-2xl md:mr-5" />
 
 								Penerapan PLTS di Tol pertama di Indonesia
 							</p>
 						</div>
-						<div className="bg-gray-100 mb-3 p-4 md:p-8 rounded-3xl hover:border-2 hover:border-main  hover:scale-102">
-							<p className="text-gray-950 text-lg tracking-wide">
-								<FaCheckCircle className="inline-flex text-main text-2xl md:mr-5" />
-
+						<div className="bg-gray-100 mb-3 p-4 md:p-8 rounded-3xl border-2 border-transparent hover:border-2 hover:border-main hover:transition-transform hover:scale-102">
+							<p className="text-gray-950 text-md md:text-lg tracking-wide">
+								<FaCheckCircle className="inline-flex text-main text-md md:text-2xl md:mr-5" />
 								Orientasi Green Toll Road
 							</p>
 						</div>
@@ -167,7 +167,7 @@ export default async function Home({
 							</Link>
 						</div> */}
 					</div>
-					<div className="max-w-xl">
+					<div className="max-w-3xl">
 						<LayananSlider>
 							<div>
 						<Image
@@ -206,7 +206,7 @@ export default async function Home({
 					</div>
 				</div>
 			</section>
-			<section className="bg-center mx-auto w-full  md:max-w-[75%] bg-cover bg-no-repeat bg-[url('/image/sekilas-layanan.jpg')] bg-blue-900 bg-blend-multiply rounded-4xl my-12">
+			<section className="bg-center mx-auto  md:max-w-[75%] bg-cover bg-no-repeat bg-[url('/image/sekilas-layanan.jpg')] bg-blue-900 bg-blend-multiply rounded-4xl my-12">
 				<div className="px-4 mx-auto max-w-screen-lg text-center py-12 lg:py-24">
 					<h1 className="mb-4 text-2xl font-bold tracking-tight leading-none text-white md:text-4xl">
 						Layanan Terintegrasi untuk Perjalanan yang Lebih Baik
@@ -222,17 +222,19 @@ export default async function Home({
 						</Link>
 					</div>
 				</div>
-				<div className="pb-12 px-12 ">
-					<div className="grid md:grid-cols-5 gap-5">
+				<div className="pb-5 px-5 md:pb-12 md:px-12 ">
 
+					{/* <div className="grid md:grid-cols-5 gap-4"> */}
+					<ResponsiveLayout>
+							<>
 						{
 							apiLayanan["data"].map((res: propsLayanan, idx: number) => (
-
 								<CardLayanan key={idx} {...res} />
-
 							))
 						}
-					</div>
+						</>
+						</ResponsiveLayout>
+					{/* </div> */}
 
 				</div>
 
@@ -264,7 +266,7 @@ export default async function Home({
 								</p>
 							</div>
 						</div>
-						<div className="grid grid-cols-3 gap-4 md:gap-6 py-2">
+						<div className="grid grid-cols-3 gap-2 gap-y-6 md:gap-6 py-2">
 							{
 								apiTarif["data"].map((res: propsTarif, key: number) => (
 									<TarifCard key={key} {...res} />
@@ -311,10 +313,11 @@ export default async function Home({
 						</Link>
 					</div>
 				</div>
-				<div className="p-2 ">
+				<div className="p-12 ">
 					<SliderLayout>
 						{
 							apiBerita["data"].map((res: propsBerita, idx: number) => (
+								
 								<CardBerita key={idx} {...res} />
 							))
 						}
@@ -359,8 +362,8 @@ export default async function Home({
 							</div>
 						</div>
 					</div>
-					<div className="md:col-span-4 ">
-						<iframe className="rounded-3xl w-full h-full" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jl.%20Raya%20Pelabuhan%20Benoa%20No.88,%20Pedungan,%20Denpasar%20Selatan,%20Kota%20Denpasar,%20Bali+(Grha%20Bali%20Tol)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+					<div className="md:col-span-4 py-2 ">
+						<iframe className="rounded-3xl w-full h-[50vh]" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jl.%20Raya%20Pelabuhan%20Benoa%20No.88,%20Pedungan,%20Denpasar%20Selatan,%20Kota%20Denpasar,%20Bali+(Grha%20Bali%20Tol)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
 					</div>
 				</div>
 				<section className="py-18  container mx-auto">

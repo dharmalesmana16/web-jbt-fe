@@ -21,7 +21,7 @@ export default function RootLayout({
       >
 
         <Nav></Nav>
-        <div className="  mx-auto min-h-screen ">
+        <div className="  mx-auto min-h-screen overflow-y-hidden">
 
 
           {children}

@@ -11,6 +11,7 @@ import PrestasiModal from '../components/ui/PrestasiModal';
 import Link from 'next/link';
 import { FaCircle } from 'react-icons/fa6';
 import { headers } from 'next/headers';
+import Image from 'next/image';
 export default async function page({ searchParams }: any) {
   const parameter = await searchParams;
   const id = parameter?.id;
@@ -27,7 +28,16 @@ export default async function page({ searchParams }: any) {
     <div>
       <section className='bg-[#F8FAFF] rounded-br-[3rem]  pt-28 top-full shadow-xl relative z-10 '>
         <div className="mx-auto container">
-          <img src="/image/gtngr.png" className='md:rounded-xl w-full h-[200px] md:h-full' alt="" srcSet="" />
+          <Image
+                                                                 src={"/image/gtngr.png"}
+                                                                 alt="kantor"
+                                                                 width={0}
+                                                                 height={0}
+                                                                 sizes="100vw"
+                                                                 loading="lazy"
+                                                                 className="w-full h-[25vh] md:h-full rounded-3xl"
+                                                          // style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                                             />  
           <div className="px-4  py-12 grid md:grid-cols-6">
             <div className="pb-2 max-w-2xl  col-span-4">
               <h1 className='text-main tracking-wide font-semibold text-xl md:text-4xl'>Tentang Kami dalam Mewujudkan Konektivitas Terbaik di Bali</h1>
@@ -66,12 +76,12 @@ export default async function page({ searchParams }: any) {
           </div>
         <div className="container mx-auto">
           <div className="flex flex-col items-center  md:flex-row md:gap-[20px] ">
-            <div className="   max-w-32 w-full  mt-10 md:mt-20   md:border-r-2 border-gray-200">
+            <div className=" max-w-32 w-full  mt-10 md:mt-20   md:border-r-2 border-gray-200">
               <ul className="list-outside">
 
                 {
                   apiSejarah["data"].map((res: any, key: number) => (
-                    <li key={key} className="flex flex-col md:flex-row  items-center py-12 hover:scale-102 hover:translate-1 duration-200">
+                    <li key={key} className="flex flex-col md:flex-row  items-center py-12 hover:scale-102 hover:transition-transform duration-200">
                       
                       <div className="text-end">
 

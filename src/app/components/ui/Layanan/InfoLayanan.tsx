@@ -25,10 +25,10 @@ export default function InfoLayanan({ slug }: formLayanan) {
                     slug == "drivethru" && (
 
                         <div>
-                            <h1 className='text-main font-black leading-loose text-3xl'>Isi Ulang Kartu E-Toll</h1>
-                            <hr className="w-34 text-second  border-t-12 " />
+                            <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Isi Ulang Kartu E-Toll</h1>
+                            <hr className="w-28 md:w-34 text-second  border-t-8 md:border-t-12 " />
                             <div className='py-5'>
-                                <div className="grid grid-cols-3 gap-4">
+                                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                     <div className="">
                                         <Image
                                             src={"/image/layanan/transaksi/transaksi-1.jpg"}
@@ -36,7 +36,8 @@ export default function InfoLayanan({ slug }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                            className="w-full h-full rounded-3xl"
+                                            // style={{ width: "100%", height: "100%", borderRadius: "20px" }}
                                         />
                                     </div>
                                     <div className="">
@@ -96,11 +97,11 @@ export default function InfoLayanan({ slug }: formLayanan) {
                 {
                     slug == "transaksi" && (
                         <div>
-                            <h1 className='text-main font-black leading-loose text-3xl'>Gerbang Tol dan Sistem Transaksi</h1>
-                            <hr className="w-34 text-second  border-t-12 " />
+                            <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Gerbang Tol dan Sistem Transaksi</h1>
+                            <hr className="w-28 md:w-34 text-second  border-t-8 md:border-t-12 " />
                             <div className='py-5 '>
 
-                                <div className="grid grid-cols-3 gap-4">
+                                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                     <div className="">
                                         <Image
                                             src={"/image/layanan/transaksi/transaksi-1.jpg"}
@@ -168,10 +169,10 @@ export default function InfoLayanan({ slug }: formLayanan) {
 
                         <div>
                             <div>
-                                <h1 className='text-main font-black leading-loose text-3xl'>Sentral Komunikasi</h1>
+                                <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Sentral Komunikasi</h1>
                                 <hr className="w-34 text-second  border-t-12 " />
 
-                                <div className="grid grid-cols-3 gap-2 py-5">
+                                <div className="grid grid-cols-2 md:grid-cols-3 gap-2 py-5">
                                     <div className="">
                                         <Image
                                             src={"/image/layanan/lalin/lalin-kantorsenkom.jpeg"}
@@ -238,9 +239,9 @@ export default function InfoLayanan({ slug }: formLayanan) {
                             </div>
                             <div>
 
-                                <h1 className='text-main font-black leading-loose text-3xl'>Patroli Jalan Tol</h1>
+                                <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Patroli Jalan Tol</h1>
                                 <hr className="w-34 text-second  border-t-12 " />
-                                <div className="grid grid-cols-3 gap-2 py-5 ">
+                                <div className="grid grid-cols-2 md:grid-cols-3 gap-2 py-5 ">
                                     <div className="">
                                         <Image
                                             src={"/image/layanan/lalin/lalin-patroli.jpg"}
@@ -309,9 +310,9 @@ export default function InfoLayanan({ slug }: formLayanan) {
                             </div>
                             <div>
 
-                                <h1 className='text-main font-black leading-loose text-3xl'>Derek Jalan Tol</h1>
+                                <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Derek Jalan Tol</h1>
                                 <hr className="w-34 text-second  border-t-12 " />
-                                <div className="grid grid-cols-3 gap-2  py-5">
+                                <div className="grid grid-cols-2 md:grid-cols-3 gap-2  py-5">
                                     <div className="">
                                         <Image
                                             src={"/image/layanan/lalin/lalin-derek.jpg"}
@@ -371,9 +372,9 @@ export default function InfoLayanan({ slug }: formLayanan) {
                             </div>
                             <div>
 
-                                <h1 className='text-main font-black leading-loose text-3xl'>Patroli Jalan Raya</h1>
+                                <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Patroli Jalan Raya</h1>
                                 <hr className="w-34 text-second  border-t-12 " />
-                                <div className="grid grid-cols-3 gap-2  py-5">
+                                <div className="grid grid-cols-2 md:grid-cols-3 gap-2  py-5">
                                     <div className="">
                                         <Image
                                             src={"/image/layanan/lalin/lalin-derek.jpg"}
@@ -443,9 +444,9 @@ export default function InfoLayanan({ slug }: formLayanan) {
                             </div>
                             <div>
 
-                                <h1 className='text-main font-black leading-loose text-3xl'>Rescue Jalan Tol</h1>
+                                <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Rescue Jalan Tol</h1>
                                 <hr className="w-34 text-second  border-t-12 " />
-                                <div className="grid grid-cols-3 gap-2  py-5">
+                                <div className="grid grid-cols-2 md:grid-cols-3 gap-2  py-5">
                                     <div className="">
                                         <Image
                                             src={"/image/layanan/lalin/lalin-derek.jpg"}
@@ -515,10 +516,10 @@ export default function InfoLayanan({ slug }: formLayanan) {
 
                         <div>
                             <div>
-                                <h1 className='text-main font-black leading-loose text-3xl'>Pengamanan Laut Infrastruktur Tol Bali Mandara</h1>
+                                <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Pengamanan Laut Infrastruktur Tol Bali Mandara</h1>
                                 <hr className="w-34 text-second  border-t-12 " />
 
-                                <div className="grid grid-cols-3 gap-2 py-8">
+                                <div className="grid grid-cols-2 md:grid-cols-3 gap-2 py-8">
                                     <div className="">
                                         <Image
                                             src={"/image/layanan/kebersihan/patroli-lat.jpg"}
@@ -567,9 +568,9 @@ export default function InfoLayanan({ slug }: formLayanan) {
                             </div>
                             <div>
 
-                                <h1 className='text-main font-black leading-loose text-3xl'>Kebersihan Jalan Tol bali Mandara</h1>
-                                <hr className="w-34 text-second  border-t-12 " />
-                                <div className="grid grid-cols-3 gap-2 py-8 ">
+                                <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Kebersihan Jalan Tol Bali Mandara</h1>
+                                <hr className="w-28 md:w-34 text-second  border-t-8 md:border-t-12  " />
+                                <div className="grid grid-cols-2 md:grid-cols-3 gap-2 py-8 ">
                                     <div className="">
                                         <Image
                                             src={"/image/layanan/kebersihan/kebersihan-tol.jpg"}
@@ -644,8 +645,8 @@ export default function InfoLayanan({ slug }: formLayanan) {
                     slug == "konstruksi" && (
 
                         <div>
-                            <h1 className='text-main font-black leading-loose text-3xl'>Teknologi Pemantauan Konstruksi yang Andal</h1>
-                            <hr className="w-34 text-second  border-t-12 " />
+                            <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Teknologi Pemantauan Konstruksi yang Andal</h1>
+                            <hr className="w-28 md:w-34 text-second  border-t-8 md:border-t-12 " />
 
                             <div className="grid grid-cols-3 gap-4 py-2">
                                 <div className="">

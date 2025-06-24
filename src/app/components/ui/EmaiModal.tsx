@@ -19,7 +19,7 @@ export default async function EmailModal({ shown }: formModal) {
 				href="/"
 				scroll={false}
 			/>
-			<div className="relative w-full max-w-5xl bg-main rounded-3xl shadow-md">
+			<div className="relative w-full max-w-sm md:max-w-5xl bg-main rounded-3xl shadow-md">
 				<div className="flex justify-between items-start">
 					<Link
 						className="absolute top-2.5 right-2.5 h-6 w-6 bg-black text-white rounded justify-center items-center flex "
@@ -34,7 +34,7 @@ export default async function EmailModal({ shown }: formModal) {
 
 					<div className="grid md:grid-cols-2 ">
 						<div className=" mix-blend-multiply   ">
-							<img src="/image/walpapper-dummy.jpg" className="h-[600px] max-h-full w-full rounded-tr-3xl "  alt="" srcSet="" />
+							<img src="/image/walpapper-dummy.jpg" className="hidden md:block md:h-[600px] max-h-full w-full rounded-tr-3xl "  alt="" srcSet="" />
 						</div>
 						<div className="p-5 h-full items-center">
 							<h1 className='font-medium text-xl text-white'>Butuh Bantuan?</h1>

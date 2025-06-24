@@ -16,11 +16,12 @@ export default function page() {
                                                        height={0}
                                                        sizes="100vw"
                                                        loading="lazy"
-                                                       style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                                       className="w-full h-[25vh] md:h-full rounded-3xl"
+                                                // style={{ width: "100%", height: "100%", borderRadius: "20px" }}
                                                    />    
           <div className="px-4  py-12 grid md:grid-cols-6">
             <div className="pb-2 max-w-xl  col-span-4">
-              <h1 className='text-main tracking-wide font-semibold text-xl md:text-4xl'>Kabar & Informasi Terkini Jalan Tol Bali Mandara</h1>
+              <h1 className='text-main tracking-wide font-semibold text-xl md:text-4xl leading-12'>Kabar & Informasi Terkini Jalan Tol Bali Mandara</h1>
             </div>
             <div className=" w-full col-span-2">
               <p className='leading-normal text-gray-500 text-md '>Baca berita terbaru tentang proyek, layanan, serta inovasi yang kami hadirkan untuk meningkatkan pengalaman berkendara Anda. </p>

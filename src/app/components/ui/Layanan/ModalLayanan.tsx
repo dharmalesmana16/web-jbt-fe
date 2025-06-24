@@ -180,75 +180,7 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
 
                          
                            
-                            <div>
-                                <h1 className='text-main font-black leading-loose text-3xl'>Sentral Komunikasi</h1>
-                                <hr className="w-34 text-second  border-t-12 " />
-
-                                <div className="grid grid-cols-3 gap-2 py-5">
-                                    <div className="">
-                                        <Image
-                                            src={"/image/layanan/lalin/lalin-kantorsenkom.jpeg"}
-                                            alt="derek"
-                                            width={0}
-                                            height={0}
-                                            sizes='100vw'
-                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
-                                        />
-                                    </div>
-                                    <div className="">
-                                        <Image
-                                            src={"/image/layanan/lalin/lalin-senkom.jpg"}
-                                            alt="derek"
-                                            width={0}
-                                            height={0}
-                                            sizes='100vw'
-                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
-                                        />
-                                    </div>
-                                    <div className="">
-                                        <Image
-                                            src={"/image/layanan/lalin/lalin-ws.jpg"}
-                                            alt="derek"
-                                            width={0}
-                                            height={0}
-                                            sizes='100vw'
-                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
-                                        />
-                                    </div>
-                                </div>
-                                <div className='py-5'>
-                                    <div className="bg-blue-100 p-1 rounded-3xl w-24">
-                                        <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
-                                    </div>
-                                    <ul className=" text-gray-500 list-outside dark:text-gray-400">
-                                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                                            <div className="text-justify ">
-
-                                                <li className="flex  items-top py-2 tracking-wide">
-                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
-
-                                                    memantau dan mengelola lalu lintas di jalan tol, serta memberikan pelayanan informasi kepada pengguna jalan.
-                                                </li>
-                                                <li className="flex  items-top py-2 tracking-wide">
-                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
-                                                    Menggunakan CCTV dan sistem pemantauan lainnya untuk memonitor kondisi lalu lintas secara real-time di seluruh ruas jalan tol.
-                                                </li>
-                                            </div>
-                                            <div className="text-justify ">
-                                                <li className="flex  items-top py-2 tracking-wide ">
-                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
-
-                                                    Menanggapi pertanyaan, keluhan, dan saran dari pengguna jalan melalui berbagai saluran komunikasi, seperti hotline, media sosial, atau aplikasi.
-                                                </li>
-                                                <li className="flex  items-top py-2 tracking-wide">
-                                                    <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" />
-                                                    Mendeteksi dan menganalisis potensi gangguan lalu lintas, seperti kecelakaan, kendaraan mogok, atau kepadatan lalu lintas.
-                                                </li>
-                                            </div>
-                                        </div>
-                                    </ul>
-                                </div>
-                            </div>
+                           
                             <div>
                                 <h1 className='text-main font-black leading-loose text-3xl'>Sentral Komunikasi</h1>
                                 <hr className="w-34 text-second  border-t-12 " />

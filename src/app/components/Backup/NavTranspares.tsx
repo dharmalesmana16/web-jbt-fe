@@ -7,6 +7,7 @@ import {
 } from "react";
 import Logo from "./Logo";
 import Link from "next/link";
+import { isMobile } from "react-device-detect";
 import { usePathname } from "next/navigation";
 
 export default function Nav() {
@@ -41,12 +42,12 @@ export default function Nav() {
 	return (
 		<nav
 			className={
-				"dark:bg-gray-900 fixed w-full  z-20 top-0 start-0  p-5  md:rounded-b-[3rem] " +
+				"dark:bg-gray-900 fixed w-full  z-20 top-0 start-0  p-5  rounded-b-[3rem] " +
 				(path == "/" ? (bgNav
 					? "bg-white transition duration-500 shadow-md"
-					: "bg-opacity-0 bg-white transition duration-500") : "bg-white transition duration-500 shadow-md")
+					: "bg-opacity-0 bg-transparent transition duration-500") : "bg-white transition duration-500 shadow-md")
 			}>
-			<div className="container flex flex-wrap items-center justify-between mx-auto  ">
+			<div className="container flex flex-wrap items-center justify-between mx-auto ">
 				
 					<Logo />
 
@@ -80,9 +81,15 @@ export default function Nav() {
 					className="hidden w-full md:block md:w-auto"
 					id="navbar-default">
 					<ul className="font-medium flex flex-col p-4 md:p-0 mt-4  rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0   ">
-					
+						{isMobile && (
+							<li className="">
+								
+									<Logo />
+							
+							</li>
+						)}
 
-						<li className="py-2 md:py-0">
+						<li>
 							<Link
 								href="/"
 								className={"text-base text-main  rounded-sm dark:text-main md:dark:text-blue-500 font-normal " + (path == "/" ? "bg-gray-100 py-2 px-3 font-semibold" :" hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}
@@ -90,33 +97,33 @@ export default function Nav() {
 								Home
 							</Link>
 						</li>
-						<li className="py-2 md:py-0">
+						<li>
 							<Link
 								href="/tentangkami"
-								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") + "dark:text-main md:dark:text-blue-500 font-normal " + (path == "/tentangkami" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
+								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-white ") : "text-main") + "dark:text-main md:dark:text-blue-500 font-normal " + (path == "/tentangkami" ? "bg-gray-100 py-2 px-3 font-semibold" : " hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
 								Tentang
 								Kami
 							</Link>
 						</li>
-								<li className="py-2 md:py-0">
+						<li>
 							<Link
 								href="/layanan"
-								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") + "dark:text-main md:dark:text-blue-500 font-normal " + (path == "/layanan" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
+								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-white ") : "text-main") + "dark:text-main md:dark:text-blue-500 font-normal " + (path == "/layanan" ? "bg-gray-100 py-2 px-3 font-semibold" : " hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
 								Layanan
 							</Link>
 						</li>
-								<li className="py-2 md:py-0">
+						<li>
 							<Link
 								href="/laporantahunan"
-								className={"text-base text-main  rounded-sm " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") + "dark:text-main md:dark:text-blue-500 font-normal " + (path == "/laporantahunan" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
+								className={"text-base text-main  rounded-sm " + (path == "/"  ? (bgNav ? "text-main " : "text-white ") : "text-main") + "dark:text-main md:dark:text-blue-500 font-normal " + (path == "/laporantahunan" ? "bg-gray-100 py-2 px-3 font-semibold" : " hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
 								Laporan
 								Tahunan
 							</Link>
 						</li>
-								<li className="py-2 md:py-0">
+						<li>
 							<Link
 								href="/berita"
-								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") +  "dark:text-main md:dark:text-blue-500 font-normal " + (path == "/berita" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
+								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-white ") : "text-main") +  "dark:text-main md:dark:text-blue-500 font-normal " + (path == "/berita" ? "bg-gray-100 py-2 px-3 font-semibold" : " hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
 								Berita
 								&
 								Publikasi
@@ -130,7 +137,7 @@ export default function Nav() {
 
 				<div className="hidden md:block">
 					<a
-						href="/"
+						href="#"
 						className="text-sm text-blue-800 font-semibold  bg-amber-300 p-3 rounded-xl">
 						Hubungi
 						Kami

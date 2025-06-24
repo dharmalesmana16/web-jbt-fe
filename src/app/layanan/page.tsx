@@ -43,7 +43,7 @@ export default async function page({ searchParams }: any) {
                                             />    
                                                             <div className="px-4  py-12 grid md:grid-cols-6">
                         <div className="pb-2 max-w-xl  col-span-4">
-                            <h1 className='text-main tracking-wide font-semibold text-xl md:text-4xl leading-12'>Layanan Terbaik untuk Kelola Perjalanan Nyaman untuk Anda</h1>
+                            <h1 className='text-main tracking-wide font-semibold text-xl md:text-4xl leading-8 md:leading-12'>Layanan Terbaik untuk Kelola Perjalanan Nyaman untuk Anda</h1>
                         </div>
                         <div className=" w-full col-span-2">
                             <p className='leading-normal text-gray-400 text-md'>Kami berkomitmen menghadirkan layanan yang mendukung kelancaran perjalanan Anda. Nikmati akses tol yang mudah, sistem pembayaran digital, serta informasi lalu lintas terkini agar perjalanan Anda semakin praktis dan efisien. </p>

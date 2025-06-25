@@ -20,7 +20,7 @@ export default function SliderLayout({  center,dots,shown,infinite,children }: P
         speed: 500,
         slidesToShow: shown != null ? shown : 3,
         slidesToScroll: 1,
-
+        
         autoplaySpeed: 2000,
         responsive: [
             {

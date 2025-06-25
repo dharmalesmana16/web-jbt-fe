@@ -35,7 +35,7 @@ export default async function PrestasiModal({ id }: prestasiModal) {
                 </div>
                 <div className="bg-white     overflow-auto z-20">
                     <div className="grid  md:grid-cols-2 ">
-                        <div className="mx-auto ">
+                        <div className="mx-auto container">
                             <img src={response?.file} className=' md:h-72  ' alt="" srcSet="" />
                         </div>
                         <div className="text-left mx-auto">
@@ -47,11 +47,11 @@ export default async function PrestasiModal({ id }: prestasiModal) {
                                 <h1 className='tracking-wide text-xl text-gray-900 font-medium pb-1'>Tanggal Penghargaan</h1>
                                 <p className='tracking-wide text-gray-500'>{response?.tahun}</p>
                             </div>
-                            <div className="pb-5">
+                            <div className="pb-5 hidden md:block    ">
                                 <h1 className='tracking-wide text-xl text-gray-900 font-medium pb-1'>Jenis File</h1>
                                 <p className='tracking-wide text-gray-500'>{response?.ext.toUpperCase()}</p>
                             </div>
-                            <div className="pb-5">
+                            <div className="pb-5 hidden md:block    ">
                                 <h1 className='tracking-wide text-xl text-gray-900 font-medium pb-1'>Ukuran File</h1>
                                 <p className='tracking-wide text-gray-500'>{response?.size} Mb</p>
                             </div>

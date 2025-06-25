@@ -70,10 +70,10 @@ export default async function page({ searchParams }: any) {
 
 
         <div className="container mx-auto  ">
-
+      
           <h1 className='font-black text-3xl text-main leading-9'>Sejarah Jasamarga Bali Tol</h1>
           <p className="text-gray-500 py-5 text-base tracking-wide">Sekilas sejarah pembangunan Tol Bali Mandara dan Kantor Jasamarga Bali Tol</p>
-                                        <hr className="w-28 md:w-34 text-second  border-t-8 md:border-t-12 " />
+                                          <hr className="w-28 md:w-34 text-second  border-t-8 md:border-t-12 " />
 
         </div>
         <div className="container mx-auto">

@@ -5,13 +5,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 interface iProps {
     shown?:number | null;
+    shownMobile?:number | null;
     dots?:boolean| null
     center?:boolean|null
     infinite?:boolean | null
+    infiniteMobile?:boolean | null
+    centerMobile?:boolean | null
 }
 
 type Props = PropsWithChildren<iProps>;
-export default function SliderLayout({  center,dots,shown,infinite,children }: Props) {
+export default function SliderLayout({  center,centerMobile,dots,shown,shownMobile,infinite,infiniteMobile,children }: Props) {
     const settingProjects = {
         className: "center",
         centerMode: center != null? center : true,
@@ -37,11 +40,11 @@ export default function SliderLayout({  center,dots,shown,infinite,children }: P
                 breakpoint: 480,
                 settings: {
                     className: "center",
-                    centerMode: true,
-                    infinite: true,
+                    center: centerMobile != null ? centerMobile : true,
+                    infinite: infiniteMobile != null ? infiniteMobile : false,
                     dots: true,
                     arrows: false,
-                    slidesToShow: 1,
+                    slidesToShow: shownMobile != null ? shownMobile :1,
                     swipeToSlide: true,
                     slidesToScroll: 1
                 }

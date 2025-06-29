@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FaInstagram, FaLocationDot, FaSquarePhone, FaTiktok, FaYoutube } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaLocationDot, FaSquarePhone, FaTiktok, FaYoutube } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 export type contact = {
 	id: number;
@@ -13,7 +13,7 @@ export type contact = {
 }
 export default function Footer() {
 	return (
-		<footer className="bg-[#F4F4F4] dark:bg-gray-700 shadow-lg w-[100%] top-full sticky ">
+		<footer className="bg-[#F4F4F4] dark:bg-[#F4F4F4] shadow-lg w-[100%] top-full sticky ">
 			<div className="mx-auto  w-full p-4 ">
 				
 
@@ -56,6 +56,14 @@ export default function Footer() {
 									</a>
 								</div>
 							</div>
+							<div className="px-2">
+
+								<div className="border-2 border-main p-2 rounded-full hover:bg-second duration-100">
+									<a href="https://www.facebook.com/tolbalimandara17/?locale=id_ID" target="_blank" >
+										<FaFacebook className="text-main text-2xl" />
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-12 ">
@@ -63,7 +71,7 @@ export default function Footer() {
 							<h2 className="mb-6 text-sm md:text-lg font-semibold tracking-wide  text-main uppercase dark:text-main">
 								KENALI JASAMARGA BALI TOL
 							</h2>
-							<ul className="text-gray-500 dark:text-white font-medium">
+							<ul className="text-gray-500  font-medium">
 								<li className="mb-4">
 									<Link
 										href="/"
@@ -95,10 +103,10 @@ export default function Footer() {
 							</ul>
 						</div>
 						<div className="container">
-							<h2 className="mb-6 text-sm md:text-lg tracking-wide font-semibold text-main uppercase dark:text-white">
+							<h2 className="mb-6 text-sm md:text-lg tracking-wide font-semibold text-main uppercase ">
 								HUBUNGI KAMI
 							</h2>
-							<ul className="text-gray-500 dark:text-white font-medium">
+							<ul className="text-gray-500  font-medium">
 								<li className="mb-4">
 									<Link
 										href="#"
@@ -110,21 +118,21 @@ export default function Footer() {
 									<Link
 										href="#"
 										className="group hover:text-gray-900 text-sm tracking-light ">
-										<FaSquarePhone className="text-lg inline-block group-hover:text-second duration-200" /> 14080 (Call Center)
-									</Link>
-								</li>
-								<li className="mb-4">
-									<Link
-										href="#"
-										className="group hover:text-gray-900 text-sm tracking-light ">
-										<MdEmail className="text-lg inline-block group-hover:text-second duration-200 group-hover:scale-105" /> humas@jasamargabalitol.co.id
+										<FaSquarePhone className="text-lg inline-block group-hover:text-second duration-200" /> Call Center: 14080
 									</Link>
 								</li>
 								<li className="mb-4 ">
 									<Link
 										href="#"
 										className="group hover:text-gray-900  text-sm tracking-light ">
-										<FaSquarePhone className="text-lg inline-block group-hover:text-second duration-200 " /> 0361 725326
+										<FaSquarePhone className="text-lg inline-block group-hover:text-second duration-200 " /> Telp Kantor: (0361) 725326
+									</Link>
+								</li>
+								<li className="mb-4">
+									<Link
+										href="#"
+										className="group hover:text-gray-900 text-sm tracking-light ">
+										<MdEmail className="text-lg inline-block group-hover:text-second duration-200 group-hover:scale-105" /> corporate@jasamargabalitol.co.id
 									</Link>
 								</li>
 
@@ -133,9 +141,9 @@ export default function Footer() {
 
 					</div>
 				</div>
-				<hr className="my-6 border-gray-300 container sm:mx-auto dark:border-gray-700 lg:my-8" />
+				<hr className="my-6 border-gray-300 container sm:mx-auto dark:border-gray-300 lg:my-8" />
 				<div className="container sm:flex sm:items-center sm:justify-between  mx-auto">
-					<span className="text-sm text-gray-500 sm:text-center dark:text-white">
+					<span className="text-sm text-gray-500 sm:text-center ">
 
 						<Link
 							href="/"

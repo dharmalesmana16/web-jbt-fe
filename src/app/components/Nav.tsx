@@ -41,7 +41,7 @@ export default function Nav() {
 	return (
 		<nav
 			className={
-				"dark:bg-gray-900 fixed w-full  z-20 top-0 start-0  p-5  md:rounded-b-[3rem] " +
+				"dark:white fixed w-full  z-20 top-0 start-0  p-5  md:rounded-b-[3rem] " +
 				(path == "/" ? (bgNav
 					? "bg-white transition duration-500 shadow-md"
 					: "bg-opacity-0 bg-white transition duration-500") : "bg-white transition duration-500 shadow-md")
@@ -95,7 +95,7 @@ export default function Nav() {
 						<li className="py-2 md:py-0">
 							<Link
 								href="/"
-								className={"text-base text-main  rounded-sm dark:text-main md:dark:text-blue-500 font-normal " + (path == "/" ? "bg-gray-100 py-2 px-3 font-semibold" :" hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}
+								className={"text-base text-main  rounded-sm dark:text-main  font-normal " + (path == "/" ? "bg-gray-100 py-2 px-3 font-semibold" :" hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}
 								aria-current="page">
 								Home
 							</Link>
@@ -103,7 +103,7 @@ export default function Nav() {
 						<li className="py-2 md:py-0">
 							<Link
 								href="/tentangkami"
-								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") + "dark:text-main md:dark:text-blue-500 font-normal " + (path == "/tentangkami" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
+								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") + "dark:text-main  font-normal " + (path == "/tentangkami" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
 								Tentang
 								Kami
 							</Link>
@@ -111,14 +111,14 @@ export default function Nav() {
 								<li className="py-2 md:py-0">
 							<Link
 								href="/layanan"
-								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") + "dark:text-main md:dark:text-blue-500 font-normal " + (path == "/layanan" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
+								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") + "dark:text-main  font-normal " + (path == "/layanan" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
 								Layanan
 							</Link>
 						</li>
 								<li className="py-2 md:py-0">
 							<Link
 								href="/laporantahunan"
-								className={"text-base text-main  rounded-sm " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") + "dark:text-main md:dark:text-blue-500 font-normal " + (path == "/laporantahunan" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
+								className={"text-base text-main  rounded-sm " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") + "dark:text-main  font-normal " + (path == "/laporantahunan" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
 								Laporan
 								Tahunan
 							</Link>
@@ -126,7 +126,7 @@ export default function Nav() {
 								<li className="py-2 md:py-0">
 							<Link
 								href="/berita"
-								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") +  "dark:text-main md:dark:text-blue-500 font-normal " + (path == "/berita" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
+								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") +  "dark:text-main  font-normal " + (path == "/berita" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
 								Berita
 								&
 								Publikasi

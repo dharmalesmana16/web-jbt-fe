@@ -7,22 +7,23 @@
             "nama": "Call Center",
             "deskripsi":"14080",
             "icon":"/image/Icon/phone.png",
-            "link":""
+            "link":"-"
         },
         {
             "id":2,
+            "nama": "Telp Kantor",
+            "deskripsi":"(0361) 725326",
+            "icon":"/image/Icon/icon-cust-service.png",
+            "link":"-"
+        },
+        {
+            "id":3,
             "nama": "E-mail",
             "deskripsi":"corporate@jasamargabalitol.co.id",
             "icon":"/image/Icon/emailnew.png",
             "link":""
-        },
-        {
-            "id":3,
-            "nama": "Whatsapp",
-            "deskripsi":"+6281337927210",
-            "icon":"/image/Icon/whatsapp.png",
-            "link":"https://wa.me/6281337927210"
         }
+      
 
     ]
 }

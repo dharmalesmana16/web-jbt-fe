@@ -21,6 +21,7 @@ import { contact } from "./components/Footer";
 import ResponsiveLayout from "./components/layout/ResponsiveLayout";
 import { IoDocumentText } from "react-icons/io5";
 import CardOffice from "./components/ui/CardOffice";
+import CardTravoy from "./components/ui/CardTravoy";
 
 export type Props =
 	{
@@ -227,66 +228,70 @@ export default async function Home({
 
 					<ResponsiveLayout>
 
-							{
-								apiLayanan["data"].map((res: propsLayanan, idx: number) => (
-									<CardLayanan key={idx} {...res} />
-								))
-							}
-						
+						{
+							apiLayanan["data"].map((res: propsLayanan, idx: number) => (
+								<CardLayanan key={idx} {...res} />
+							))
+						}
+
 					</ResponsiveLayout>
 
 				</div>
 
 			</section>
 			<section className="py-24 bg-top w-full md:bg-cover min-h-screen  bg-no-repeat   bg-[url('/image/frameTarif.jpg')]">
-				<div className=" mx-auto  text-center py-12 lg:py-24 container md:max-w-[75%] px-5">
+				<div className=" mx-auto  text-center py-12 lg:py-24 container md:container px-5">
 					<div className="md:flex md:justify-between gap-4 ">
 						<div className="bg-main p-5 md:p-8 md:w-[60%] lg:w-[30%] text-left   rounded-2xl flex flex-col  ">
-							<div className=" h-full">
+							<div className="py-2">
 								<img
 									src="/image/Icon/tarif.png"
 									className="h-8 w-8 md:h-24 md:w-24"
 									alt=""
 								/>
-							</div>
-							<div className="h-full">
-								<p className="text-base md:text-base text-gray-200 tracking-wide font-light align-top md:pb-4 ">
-									Dasar Penyesuaian tarif Tol diatur dalam:
-								</p>
-								<div className="flex md:flex-row items-center content-center">
-
-									<div className={"p-2  rounded-xl bg-[#B8C5EF]"}>
-										<IoDocumentText className="inline-block w-7 h-7 text-main" />
-									</div>
-									<div className="md:px-3">
-
-										<a className=" border-b-2 border-transparent hover:border-b-2 hover:border-white text-base md:text-base inline-flex items-center text-gray-100 tracking-wide font-bold " target="_blank" href={"/doc/setariftol.pdf"}>
-											21/SE/M/2024
-											<svg
-												className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-												aria-hidden="true"
-												xmlns="http://www.w3.org/2000/svg"
-												fill="none"
-												viewBox="0 0 14 10">
-												<path
-													stroke="currentColor"
-													strokeLinecap="round"
-													strokeLinejoin="round"
-													strokeWidth="2"
-													d="M1 5h12m0 0L9 1m4 4L9 9"
-												/>
-											</svg>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div className="content">
 								<h1 className="text-md md:text-4xl font-bold text-white ">
 									Tarif
 									Tol
 									Bali
 									Mandara
 								</h1>
+							</div>
+							<div className="h-full">
+								<div className="border-2 border-white rounded-3xl p-5">
+
+									<p className="text-sm md:text-base text-justify text-gray-200 tracking-wide font-light align-top md:pb-4 ">
+										Berdasarkan Keputusan Menteri Pekerjaan Umum dan Perumahan Rakyat Nomor: 769/KPTS/M/2024,  tentang Penyesuaian Tarif Tol pada Jalan Tol Bali Mandara (Nusa Dua – Ngurah Rai – Benoa), maka terhitung mulai Sabtu, 27 April 2024, pukul 00:00 Wita, Jalan Tol Bali Mandara memberlakukan tarif baru sebagai berikut:
+									</p>
+									<div className="flex md:flex-row items-center content-center">
+
+										<div className={"p-2  rounded-xl bg-[#B8C5EF]"}>
+											<IoDocumentText className="inline-block w-7 h-7 text-main" />
+										</div>
+										<div className="md:px-3">
+
+											<a className=" border-b-2 border-transparent hover:border-b-2 hover:border-white text-base md:text-base inline-flex items-center text-gray-100 tracking-wide font-bold " target="_blank" href={"/doc/setariftol.pdf"}>
+												769/KPTS/M/2024
+												<svg
+													className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+													aria-hidden="true"
+													xmlns="http://www.w3.org/2000/svg"
+													fill="none"
+													viewBox="0 0 14 10">
+													<path
+														stroke="currentColor"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth="2"
+														d="M1 5h12m0 0L9 1m4 4L9 9"
+													/>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div className="content">
+
 								<p className="text-xs md:text-lg text-gray-300 font-light py-2">
 									Ketahui
 									tarif
@@ -401,7 +406,44 @@ export default async function Home({
 							/>
 						</a>
 					</div>
-					<div className=" rounded-3xl p-4 md:p-5 bg-main mx-auto text-center">
+					<div className="grid md:grid-cols-2 gap-4">
+						<div className="">
+
+							<CardTravoy/>
+						</div>
+						<div className=" ">
+							<div className="rounded-3xl p-5 bg-main-900 mx-auto w-full h-full shadow-xl">
+								<h1 className="text-white font-black text-md md:text-2xl text-center">Hubungi Kami</h1>
+								<div className=" py-2">
+									{
+										apiContact["data"].map((res: contact, idx: number) => (
+											<div key={idx} className=" flex flex-row gap-4 py-4">
+												<div className="p-2 md:p-3 bg-second rounded-2xl w-14 h-14 container  hover:bg-white hover:duration-500" >
+													{
+														res.link == "-" ? (
+															<Link href={"#"} scroll={false} >
+																<img src={res.icon} className="w-8 h-8 text-center mx-auto" alt="" srcSet="" />
+															</Link>
+														) : (
+
+															<Link href={{ pathname: url.toString(), query: { shown: true } }} scroll={false}>
+																<img src={res.icon} className="w-8 h-8 text-center mx-auto" alt="" srcSet="" />
+															</Link>
+														)
+													}
+												</div>
+												<div className="div-hubungi-kami  ">
+													<h1 className="text-second text-sm md:text-2xl font-bold tracking-wide">{res.nama}</h1>
+													<p className=" text-md font-normal tracking-wide leading-none text-second  md:text-2xl">{res.deskripsi}</p>
+												</div>
+											</div>
+										))
+									}
+								</div>
+							</div>
+						</div>
+					</div>
+					{/* <div className=" rounded-3xl p-4 md:p-5 bg-main mx-auto text-center">
 						<h1 className="text-white font-bold text-md md:text-3xl">Hubungi Kami, Kapan Saja</h1>
 						<div className=" grid md:grid-cols-3 container mx-auto py-8">
 							{
@@ -429,7 +471,7 @@ export default async function Home({
 								))
 							}
 						</div>
-					</div>
+					</div> */}
 				</section>
 			</section>
 			{modal && (

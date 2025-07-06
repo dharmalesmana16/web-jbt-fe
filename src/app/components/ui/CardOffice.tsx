@@ -1,7 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import { FaClock, FaClockRotateLeft, FaLocationDot, FaNewspaper, FaPhone } from 'react-icons/fa6'
-import { IoDocumentText } from 'react-icons/io5'
 
 export default function CardOffice() {
     const [type, setType] = useState("desc");
@@ -25,7 +24,7 @@ export default function CardOffice() {
                 <h5 className=" text-xl text-left font-black tracking-tight text-main ">Grha Bali Tol</h5>
                 <div className="py-2">
 
-                    <div className="border-t-2 border-b-2 p-2 pl-0 flex flex-row">
+                    <div className="border-t-2 border-b-2 border-[#F4f4f4] p-2 pl-0 flex flex-row">
                         <div className="px-2">
 
                             <button onClick={() => setType("desc")} className={"border-2   rounded-3xl text-left  p-2 inline-flex items-center  text-gray-900 cursor-pointer  " + (type == "desc" ? "border-main" : "font-normal border-main-100")}>

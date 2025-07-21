@@ -30,7 +30,7 @@ export default async function page({ searchParams }: any) {
       <section className='bg-[#F8FAFF] rounded-br-[3rem]  pt-28 top-full shadow-xl relative z-10 '>
         <div className="mx-auto container">
           <Image
-            src={"/image/gtngr.png"}
+            src={"/image/bgtentangkami.png"}
             alt="kantor"
             width={0}
             height={0}

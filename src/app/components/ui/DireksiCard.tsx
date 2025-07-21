@@ -10,7 +10,7 @@ export type propsDireksi = {
     tgl_lahir?: string;
     tipe_direksi: string;
     deskripsi?: string;
-    file?: string;
+    file: string;
 }
 export default  function DireksiCard(props: propsDireksi) {
 

@@ -14,7 +14,7 @@ export default async function TarifCard(props: propsTarif) {
     const headersList = await headers();
     const pathname = await headersList.get("x-pathname");
     const url = new URL(pathname ? pathname : "", process.env.FE_URL);
-    url.searchParams.set("modal", "true");
+    url.searchParams.set("tarifmodal", "true");
     url.searchParams.set("id", props.id.toString());
     return (
         <div>

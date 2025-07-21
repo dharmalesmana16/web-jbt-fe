@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { FaArrowAltCircleRight } from 'react-icons/fa';
-import { FaClockRotateLeft, FaNewspaper } from 'react-icons/fa6'
+import {  FaNewspaper } from 'react-icons/fa6'
 import { BiLogoPlayStore } from "react-icons/bi";
 import { FaApple } from "react-icons/fa";
 export default function CardTravoy() {
@@ -11,7 +11,8 @@ export default function CardTravoy() {
         <div>
             <div className="flex flex-col md:flex-row p-5 rounded-3xl  h-full bg-white border border-gray-200  shadow-xl dark:white dark:border-white">
                 <div className="md:basis-64">
-                    <img className="  rounded-t-3xl mx-auto " src="/image/logo-travoy.png" alt="" />
+                    
+                    <img className="rounded-t-3xl mx-auto " src="/image/logo-travoy.png" alt="" />
                 </div>
                 <div className="md:basis-128 ">
 
@@ -46,7 +47,7 @@ export default function CardTravoy() {
 
                                 <div className="pb-3 ">
 
-                                    <p className=" font-normal text-lg  dark:text-gray-600 leading-loose  font-medium text-gray-500">Travoy adalah aplikasi digital dari Jasa Marga yang dirancang untuk memudahkan pengguna jalan tol di Indonesia. Aplikasi ini berperan sebagai asisten digital yang memberikan informasi dan fitur-fitur terkait perjalanan di jalan tol </p>
+                                    <p className=" text-lg  dark:text-gray-600 leading-loose  font-medium text-gray-500">Travoy adalah aplikasi digital dari Jasa Marga yang dirancang untuk memudahkan pengguna jalan tol di Indonesia. </p>
                                 </div>
 
                                 {/* <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">

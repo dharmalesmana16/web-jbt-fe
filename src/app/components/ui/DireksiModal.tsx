@@ -22,11 +22,11 @@ export default async function DireksiModal({ id }: direksiModal) {
 				href="/tentangkami"
 				scroll={false}
 			/>
-            <div className="relative w-full max-w-5xl  p-20 bg-white rounded-3xl shadow-md">
+            <div className="relative w-full max-w-5xl  p-20 bg-white rounded-xl shadow-md">
 				<div className="flex justify-between items-start">
 					<Link
-						className="absolute top-2.5 right-2.5 h-8 w-8 bg-second rounded-3xl text-2xl font-bold text-white rounded justify-center items-center flex pb-0.5"
-						href="/tentangkami"
+						className="absolute top-2.5 right-2.5 h-6 w-6 bg-black text-white rounded justify-center items-center flex pb-0.5"
+						href="/"
 						scroll={false}
 					>
 						&times;

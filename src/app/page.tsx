@@ -9,7 +9,6 @@ import TarifModal from "./components/ui/TarifModal";
 import TarifCard, { propsTarif } from "./components/ui/TarifCard";
 import Jumbotron from "./components/Jumbotron";
 import EmailModal from "./components/ui/EmaiModal";
-import { FaClock, FaLocationDot, FaPhone } from "react-icons/fa6";
 import { FaCheckCircle } from "react-icons/fa";
 import SliderLayout from "./components/layout/SliderLayout";
 import CardLayanan, { propsLayanan } from "./components/ui/CardLayanan";
@@ -40,7 +39,7 @@ export default async function Home({
 }) {
 	const parameter = await searchParams;
 	const tarifID = parameter?.id;
-	const modal = parameter?.modal === "true";
+	const tarifModal = parameter?.tarifmodal === "true";
 	// const formModal = parameter?.id;
 	const modalLayanan = parameter?.layanan === "true";
 	const idlayanan = parameter?.idlayanan;
@@ -407,10 +406,7 @@ export default async function Home({
 						</a>
 					</div>
 					<div className="grid md:grid-cols-2 gap-4">
-						<div className="">
-
-							<CardTravoy/>
-						</div>
+							<CardTravoy />
 						<div className=" ">
 							<div className="rounded-3xl p-5 bg-main-900 mx-auto w-full h-full shadow-xl">
 								<h1 className="text-white font-black text-md md:text-2xl text-center">Hubungi Kami</h1>
@@ -422,12 +418,27 @@ export default async function Home({
 													{
 														res.link == "-" ? (
 															<Link href={"#"} scroll={false} >
-																<img src={res.icon} className="w-8 h-8 text-center mx-auto" alt="" srcSet="" />
+																<Image 
+																src={res.icon}
+																alt="test"
+																width={0}
+																height={0}
+																sizes="100vw"
+																className="w-8 h-8 text-center mx-auto"
+																/>
+																{/* <img src={res.icon} className="w-8 h-8 text-center mx-auto" alt="" srcSet="" /> */}
 															</Link>
 														) : (
 
 															<Link href={{ pathname: url.toString(), query: { shown: true } }} scroll={false}>
-																<img src={res.icon} className="w-8 h-8 text-center mx-auto" alt="" srcSet="" />
+																<Image 
+																src={res.icon}
+																alt="test"
+																width={0}
+																height={0}
+																sizes="100vw"
+																className="w-8 h-8 text-center mx-auto"
+																/>
 															</Link>
 														)
 													}
@@ -474,10 +485,9 @@ export default async function Home({
 					</div> */}
 				</section>
 			</section>
-			{modal && (
+			{tarifModal && (
 				<Suspense key={tarifID?.toString()} fallback={<TarifLoading />}>
 					<TarifModal id={tarifID?.toString()} />
-
 				</Suspense>
 
 			)}

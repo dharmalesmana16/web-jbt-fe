@@ -56,7 +56,7 @@ export default  function TarifModal({ id }: tarifModalProps) {
                             </div>
 							<div className="flex justify-center gap-6">
 								<div className="bg-second p-5 rounded-full">
-								<img src={response?.gambar} className="rounded-full object-contain  w-72 h-72" alt="" srcSet="" />
+								<img src={response?.gambar} className=" object-contain  w-72 h-72" alt="" srcSet="" />
 								</div>
 								
 							</div>

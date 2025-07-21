@@ -42,7 +42,7 @@
             "nama": "Golongan VI",
             "deskripsi":"Kendaraan bermotor roda dua, seperti : Sepeda motor",
             "harga": 5000,
-            "gambar":"/image/golongan/golonganvi.png"
+            "gambar":"/image/golongan/motor.png"
         }
     ]
 }

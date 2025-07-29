@@ -16,7 +16,6 @@ export default async function CardMisi() {
             {
                 apiMisi["data"].map((res: propsMisi, key: number) => (
                     <div key={key} className="p-4">
-
                         <div className="rounded-3xl p-5 h-[150px] max-w-md bg-white shadow-lg pointer-none hover:translate-y-1 hover:scale-105 hover:transition hover:duration-500 hover:text-main">
                             <ul className="max-w-md text-gray-500 list-outside dark:text-gray-400">
                                 <li className="flex  items-top">

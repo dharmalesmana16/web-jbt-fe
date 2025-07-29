@@ -54,16 +54,16 @@ export default async function page({ searchParams }: any) {
           <div className="text-center">
             <div className="   py-12 lg:py-12 ">
               <h1 className='text-main font-bold md:font-black text-xl tracking-normal py-2'>VISI</h1>
-                     <hr className="w-16 md:w-24 text-second  mx-auto  border-t-8 md:border-t-12 " />
+              <hr className="w-16 md:w-24 text-second  mx-auto  border-t-8 md:border-t-12 " />
               <h1 className='text-main text-2xl md:text-5xl font-bold py-5'>“Menjadi Perusahaan Pengelola jalan tol terkemuka di Indonesia”</h1>
             </div>
             <h1 className='text-main font-bold md:font-black text-xl tracking-normal   py-2'>MISI</h1>
-                   <hr className="w-16 md:w-24 text-second  mx-auto  border-t-8 md:border-t-12 " />
+            <hr className="w-16 md:w-24 text-second  mx-auto  border-t-8 md:border-t-12 " />
           </div>
           <CardMisi />
           <div className="text-center mx-auto py-12">
             <h1 className='text-main font-bold md:font-black text-xl tracking-normal py-2'>TATA NILAI</h1>
-                      <hr className="w-16 md:w-24 text-second  mx-auto  border-t-8 md:border-t-12 " />
+            <hr className="w-16 md:w-24 text-second  mx-auto  border-t-8 md:border-t-12 " />
             <Image
               src="/image/akhlak.png"
               alt="akhlak"
@@ -139,53 +139,56 @@ export default async function page({ searchParams }: any) {
             </div>
           </div>
         </div>
-      
+
       </section>
       {/* End Section Sejarah */}
       {/* Section Dewan Direksi */}
       <div className="bg-[#F4F4F4] rounded-t-[3rem]">
-      <section className='py-12 container mx-auto px-5 md:px-0  '>
-        <h1 className='text-main text-2xl tracking-wide text-center font-bold md:font-black py-2 '>DEWAN KOMISARIS</h1>
-                  <hr className="w-28 md:w-34 text-second  border-t-10 md:border-t-12 py-4 mx-auto" />
+        <section className='py-12 container mx-auto px-5 md:px-0  '>
+          <h1 className='text-main text-2xl tracking-wide text-center font-bold md:font-black py-2 '>DEWAN KOMISARIS</h1>
+          <hr className="w-28 md:w-34 text-second  border-t-10 md:border-t-12 py-4 mx-auto" />
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-[20px]">
-          {
-            apiDireksi["data"].filter(res => res.tipe_direksi === "d_komisaris").map((res: propsDireksi, idx: number) => (
-              <DireksiCard key={idx} {...res} />
-            ))
-          }
-        </div>
+          <div className="grid grid-cols-2 md:flex md:justify-center gap-4 md:gap-4 ">
+            {
+              apiDireksi["data"].filter(res => res.tipe_direksi === "d_komisaris").map((res: propsDireksi, idx: number) => (
+                <DireksiCard key={idx} {...res} />
+              ))
+            }
+          </div>
 
 
-      </section>
-      <section className='py-12 container mx-auto px-5 md:px-0'>
-        <h1 className='text-main text-2xl tracking-wide text-center font-bold md:font-black py-2'>DEWAN DIREKSI</h1>
-                  <hr className="w-28 md:w-34 text-second  border-t-10 md:border-t-12 py-4 mx-auto" />
+        </section>
+        <section className='py-12 container mx-auto px-5 md:px-0'>
+          <h1 className='text-main text-2xl tracking-wide text-center font-bold md:font-black py-2'>DEWAN DIREKSI</h1>
+          <hr className="w-28 md:w-34 text-second  border-t-10 md:border-t-12 py-4 mx-auto" />
+          <div className="mx-auto text-center"> 
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-[20px]">
-          {
-            apiDireksi["data"].filter(res => res.tipe_direksi === "d_direksi").map((res: propsDireksi, idx: number) => (
-              <DireksiCard key={idx} {...res} />
-            ))
-          }
-        </div>
-      </section>
+        
+          <div className="flex justify-center  gap-4 md:gap-4">
+            {
+              apiDireksi["data"].filter(res => res.tipe_direksi === "d_direksi").map((res: propsDireksi, idx: number) => (
+                <DireksiCard key={idx} {...res} />
+              ))
+            }
+          </div>
+            </div>
+        </section>
 
         <section className='container mx-auto py-12'>
-            <h1 className='text-main text-2xl tracking-wide text-center font-bold md:font-black py-2 text-u'>STRUKTUR ORGANISASI</h1>
-                  <hr className="w-28 md:w-34 text-second  border-t-10 md:border-t-12 py-4 mx-auto" />
-        <div className="">
-          <Image
-            src={"/image/sojbt.jpg"}
-            alt='sojbt'
-            width={0}
-            height={0}
-            sizes='100vw'
-            className='w-full mx-auto'
-          />
-        </div>
+          <h1 className='text-main text-2xl tracking-wide text-center font-bold md:font-black py-2 text-u'>STRUKTUR ORGANISASI</h1>
+          <hr className="w-28 md:w-34 text-second  border-t-10 md:border-t-12 py-4 mx-auto" />
+          <div className="">
+            <Image
+              src={"/image/sojbt.jpg"}
+              alt='sojbt'
+              width={0}
+              height={0}
+              sizes='100vw'
+              className='w-full mx-auto'
+            />
+          </div>
         </section>
-        </div>
+      </div>
       {/* End Section Dewan Direksi */}
       <section className='py-12 container mx-auto '>
         <h1 className='text-main text-2xl tracking-wide text-center font-bold md:font-black py-12'>PIAGAM DAN PENGHARGAAN</h1>

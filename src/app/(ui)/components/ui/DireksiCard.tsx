@@ -20,11 +20,11 @@ export default  function DireksiCard(props: propsDireksi) {
     url.searchParams.set("modal", "true");
     url.searchParams.set("id", props.id.toString());
     return (
-             <div className=" max-w-[450px] ">
+             <div className=" max-w-[275px] ">
                 <Link href={url.toString()} scroll={false} className='block group'>
 
 
-                  <div className="mx-auto text-center pt-8 pl-8 pr-8 pb-2 border-1 h-[400px] md:h-[400px] lg:h-[475px] border-gray-200 shadow-lg hover:border-main  hover:scale-105 hover:transition hover:duration-200  bg-white  rounded-3xl overflow-hidden relative">
+                  <div className="mx-auto text-center pt-6 pl-6 pr-6 pb-2 border-1 h-[325px] md:h-[400px] lg:h-[475px] border-gray-200 shadow-lg hover:border-main  hover:scale-105 hover:transition hover:duration-200  bg-white  rounded-3xl overflow-hidden relative">
                     <img src={props.file} className=' mx-auto h-42 md:h-42 lg:h-64' alt="" srcSet="" />
                     <div className="hover:text-main text-left py-4 md:py-8">
                       <h1 className='text-gray-900  text-md md:text-md lg:text-xl font-semibold tracking-normal '>{props.nama}</h1>

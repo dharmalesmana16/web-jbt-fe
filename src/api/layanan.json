@@ -12,36 +12,22 @@
         },
         {
             "id":2,
-            "nama": "Layanan Transaksi",
-            "link":"transaksi",
+            "nama": "Layanan Operasi",
+            "link":"layanan-operasi",
             "icon":"/image/Icon/icon-transaksi.png",
             "deskripsi":"Pembayaran elektronik di setiap gerbang tol untuk perjalanan lebih lancar."
       
         },
+       
         {
             "id":3,
-            "nama": "Layanan Lalu Lintas",
-            "link":"lalulintas",
-            "icon":"/image/Icon/icon-lalin.png",
-            "deskripsi":"Pemantauan real-time untuk perjalanan aman dan nyaman."
-           
-        },
-        {
-            "id":4,
-            "nama": "Layanan Konstruksi",
-            "link":"konstruksi",
+            "nama": "Layanan Pemeliharaan",
+            "link":"layanan-pemeliharaan",
             "icon":"/image/Icon/icon-konstruksi.png",
             "deskripsi":"Pengawasan teknologi canggih untuk jalan tol yang stabil."
            
-        },
-        {
-            "id":5,
-            "nama": "Layanan Keamanan dan Kebersihan",
-            "link":"keamanan-dan-kebersihan",
-            "icon":"/image/Icon/icon-keamanan.png",
-            "deskripsi":"Pemantauan struktur bawah tol dan kebersihan jalan dengan Road Sweeper."
-            
         }
+       
         
     ]
 }

@@ -1,26 +1,26 @@
 import Link from "next/link";
 import React, { Suspense } from "react";
-import apiTarif from './api/tarif.json'
-import apiLayanan from './api/layanan.json'
-import apiBerita from './api/berita.json'
-import CardBerita, { propsBerita } from './components/ui/CardBerita';
-import { TarifLoading } from "./components/ui/TarifLoading";
-import TarifModal from "./components/ui/TarifModal";
-import TarifCard, { propsTarif } from "./components/ui/TarifCard";
-import Jumbotron from "./components/Jumbotron";
-import EmailModal from "./components/ui/EmaiModal";
-import { FaCheckCircle } from "react-icons/fa";
-import SliderLayout from "./components/layout/SliderLayout";
-import CardLayanan, { propsLayanan } from "./components/ui/CardLayanan";
-import ModalLayanan from "./components/ui/Layanan/ModalLayanan";
+import apiTarif from '@/api/tarif.json'
+import apiLayanan from '@/api/layanan.json'
+import apiBerita from '@/api/berita.json'
+import CardBerita, { propsBerita } from '@/components/ui/CardBerita';
+import { TarifLoading } from "@/components/ui/TarifLoading";
+import TarifModal from "@/components/ui/TarifModal";
+import TarifCard, { propsTarif } from "@/components/ui/TarifCard";
+import Jumbotron from "@/components/Jumbotron";
+import EmailModal from "@/components/ui/EmaiModal";
+import SliderLayout from "@/components/layout/SliderLayout";
+import CardLayanan, { propsLayanan } from "@/components/ui/CardLayanan";
+import ModalLayanan from "@/components/ui/Layanan/ModalLayanan";
 import Image from "next/image";
-import apiContact from './api/contact.json'
+import apiContact from '@/api/contact.json'
 import { headers } from "next/headers";
-import { contact } from "./components/Footer";
-import ResponsiveLayout from "./components/layout/ResponsiveLayout";
+import { contact } from "@/components/Footer";
+import ResponsiveLayout from "@/components/layout/ResponsiveLayout";
 import { IoDocumentText } from "react-icons/io5";
-import CardOffice from "./components/ui/CardOffice";
-import CardTravoy from "./components/ui/CardTravoy";
+import CardOffice from "@/components/ui/CardOffice";
+import CardTravoy from "@/components/ui/CardTravoy";
+import InfoTol from "@/components/ui/Home/InfoTol";
 
 export type Props =
 	{
@@ -55,7 +55,7 @@ export default async function Home({
 
 
 				<video
-					src="/video/video11.mp4"
+					src="/video/videojbt.mp4"
 					className=" min-h-full w-full brightness-50"
 					autoPlay={
 						true
@@ -138,75 +138,7 @@ export default async function Home({
 					</div>
 				</div>
 			</section>
-			<section className="py-8 md:py-20 max-w-[75%] mx-auto">
-				<div className="md:flex md:justify-between items-top">
-					<div className="md:px-5 md:max-w-3xl">
-						<h1 className="text-lg md:text-3xl font-semibold text-gray-950">Sebagai bagian dari Jasamarga Group, kami menghadirkan solusi transportasi modern di bali melalui Tol Bali Mandara</h1>
-						<p className="text-gray-400 text-md py-5">Dengan standar keselamatan tinggi dan infrastruktur berkualitas kami berkomitmen memberikan pengalaman berkendara terbaik untuk Anda</p>
-						<div className="bg-gray-100 mb-3 p-4 md:p-8 rounded-3xl border-2 border-transparent hover:border-2 hover:border-main hover:transition-transform hover:scale-102">
-							<p className="text-gray-950 text-md md:text-lg tracking-wide">
-								<FaCheckCircle className="inline-flex text-main text-md md:text-2xl md:mr-5" />
-								Tol diatas laut pertama di Indonesia
-							</p>
-						</div>
-						<div className="bg-gray-100 mb-3 p-4 md:p-8 rounded-3xl border-2 border-transparent hover:border-2 hover:transition-transform hover:border-main  hover:scale-102">
-							<p className="text-gray-950 text-md md:text-lg tracking-wide">
-								<FaCheckCircle className="inline-flex text-main text-md md:text-2xl md:mr-5" />
-
-								Penerapan PLTS di Tol pertama di Indonesia
-							</p>
-						</div>
-						<div className="bg-gray-100 mb-3 p-4 md:p-8 rounded-3xl border-2 border-transparent hover:border-2 hover:border-main hover:transition-transform hover:scale-102">
-							<p className="text-gray-950 text-md md:text-lg tracking-wide">
-								<FaCheckCircle className="inline-flex text-main text-md md:text-2xl md:mr-5" />
-								Orientasi Green Toll Road
-							</p>
-						</div>
-						{/* <div className=" ">
-							<Link href="tentangkami" className="focus:outline-none text-blue-800 bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900">
-								Tentang Kami	
-							</Link>
-						</div> */}
-					</div>
-					<div className="max-w-3xl h-full items-center align-center content-center">
-						<SliderLayout dots={true} center={false} shown={1}>
-							<div className="px-2">
-								<Image
-									src={"/image/konstruksi-2.jpg"}
-									alt="kantor"
-									width={0}
-									height={0}
-									sizes="100vw"
-
-									style={{ width: "100%", height: "100%", borderRadius: "20px" }}
-								/>
-							</div>
-							<div className="px-2">
-								<Image
-									src={"/image/plts.jpg"}
-									alt="kantor2"
-									width={0}
-									height={0}
-									sizes="100vw"
-
-									style={{ width: "100%", height: "100%", borderRadius: "20px" }}
-								/>
-							</div>
-							<div className="px-2">
-								<Image
-									src={"/image/konstruksi-3.jpg"}
-									alt="kantor3"
-									width={0}
-									height={0}
-									sizes="100vw"
-
-									style={{ width: "100%", height: "100%", borderRadius: "20px" }}
-								/>
-							</div>
-						</SliderLayout>
-					</div>
-				</div>
-			</section>
+			<InfoTol/>
 			<section className="bg-center mx-auto  md:max-w-[75%] bg-cover bg-no-repeat bg-[url('/image/sekilas-layanan.jpg')] bg-blue-900 bg-blend-multiply rounded-4xl my-12">
 				<div className="px-4 mx-auto max-w-screen-lg text-center py-12 lg:py-24">
 					<h1 className="mb-4 text-2xl font-bold tracking-tight leading-none text-white md:text-4xl">
@@ -406,7 +338,7 @@ export default async function Home({
 						</a>
 					</div>
 					<div className="grid md:grid-cols-2 gap-4">
-							<CardTravoy />
+						<CardTravoy />
 						<div className=" ">
 							<div className="rounded-3xl p-5 bg-main-900 mx-auto w-full h-full shadow-xl">
 								<h1 className="text-white font-black text-md md:text-2xl text-center">Hubungi Kami</h1>
@@ -418,26 +350,26 @@ export default async function Home({
 													{
 														res.link == "-" ? (
 															<Link href={"#"} scroll={false} >
-																<Image 
-																src={res.icon}
-																alt="test"
-																width={0}
-																height={0}
-																sizes="100vw"
-																className="w-8 h-8 text-center mx-auto"
+																<Image
+																	src={res.icon}
+																	alt="test"
+																	width={0}
+																	height={0}
+																	sizes="100vw"
+																	className="w-8 h-8 text-center mx-auto"
 																/>
 																{/* <img src={res.icon} className="w-8 h-8 text-center mx-auto" alt="" srcSet="" /> */}
 															</Link>
 														) : (
 
 															<Link href={{ pathname: url.toString(), query: { shown: true } }} scroll={false}>
-																<Image 
-																src={res.icon}
-																alt="test"
-																width={0}
-																height={0}
-																sizes="100vw"
-																className="w-8 h-8 text-center mx-auto"
+																<Image
+																	src={res.icon}
+																	alt="test"
+																	width={0}
+																	height={0}
+																	sizes="100vw"
+																	className="w-8 h-8 text-center mx-auto"
 																/>
 															</Link>
 														)

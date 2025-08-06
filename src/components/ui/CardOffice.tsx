@@ -16,9 +16,9 @@ export default function CardOffice() {
         }
     },[])
     return (
-        <div><div className="flex p-2 flex-col max-w-xl rounded-3xl  h-full bg-white border border-gray-200  shadow-xl dark:white dark:border-white">
+        <div><div className="flex p-2 flex-col max-w-xl rounded-3xl  h-[575px] bg-white border border-gray-200  shadow-xl dark:white dark:border-white">
             <div className="relative ">
-                <img className="w-full rounded-t-3xl " src="/image/office.jpg" alt="" />
+                <img className="w-full rounded-t-3xl " src="/image/grhabalitol.jpg" alt="" />
             </div>
             <div className="rounded-t-3xl -top-28   duration-1000  bg-white p-5 h-[225px] hover:-top-20 hover:duration-500 relative z-10">
                 <h5 className=" text-xl text-left font-black tracking-tight text-main ">Grha Bali Tol</h5>
@@ -48,7 +48,7 @@ export default function CardOffice() {
 
                             <div className="pb-3 ">
 
-                                <p className=" font-normal text-lg  dark:text-gray-600 leading-loose  font-medium text-gray-500">Grha Bali Tol merupakan nama kantor dari perusahaan PT. Jasamarga Bali Tol yang diresmikan pada tanggal 28 Agustus 2024</p>
+                                <p className=" font-normal text-lg  dark:text-gray-600 leading-loose  font-medium text-gray-500">Grha Bali Tol adalah nama gedung kantor pusat PT Jasamarga Bali Tol yang menjadi simbol identitas dan komitmen perusahaan dalam memberikan layanan terbaik. Gedung ini diresmikan pada tanggal 23 Agustus 2024, dan menjadi pusat koordinasi seluruh kegiatan pengelolaan Jalan Tol Bali Mandara.</p>
                             </div>
 
                             {/* <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">

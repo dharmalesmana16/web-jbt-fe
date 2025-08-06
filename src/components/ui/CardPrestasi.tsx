@@ -1,6 +1,6 @@
 import React from 'react'
 import SliderLayout from '../layout/SliderLayout'
-import apiPrestasi from '../../api/prestasi.json'
+import apiPrestasi from '@/api/prestasi.json'
 import Link from 'next/link'
 import { headers } from 'next/headers';
 export type propsPrestasi = {

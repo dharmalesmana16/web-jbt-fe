@@ -1,9 +1,9 @@
 'use server'
 import React from 'react'
-import apiLayanan from '../api/layanan.json'
+import apiLayanan from '@/api/layanan.json'
 import Link from 'next/link';
 import { headers } from 'next/headers';
-import InfoLayanan from '../components/ui/Layanan/InfoLayanan';
+import InfoLayanan from '@/components/ui/Layanan/InfoLayanan';
 import Image from 'next/image';
 
 export type propsLayanan = {

@@ -1,0 +1,54 @@
+{
+    "msg":"success",
+    "data":
+    [
+        {
+            "id":1,
+            "nama": "2010",
+            "slug":"sejarah2010",
+            "icon":"/image/Icon/icon-drivethru.png",
+            "deskripsi":"Pemerintah menugaskan PT Jasa Marga, PT Pelindo III, PT Angkasa Pura I, dan PT Pengembangan Pariwisata Bali untuk mencari solusi infrastruktur berbasis jalan tol. \n\n Pada tanggal 18 November 2010, telah ditandatangani Nota Kesepahaman (MoU) sebagai bentuk kesepakatan.Beberapa hari sebelum diterbitkannya penetapan pemenang tender oleh Menteri Pekerjaan Umum, Konsorsium BUMN telah membentuk Badan Usaha Jalan Tol (BUJT) dengan nama PT Jasamarga Bali Tol.",
+            "gambar":"/image/office.jpg"
+           
+        },
+        {
+            "id":2,
+            "nama": "2011",
+            "slug":"sejarah2011",
+            "icon":"/image/Icon/icon-drivethru.png",
+            "deskripsi":"PT Jasamarga Bali Tol resmi mendapatkan pengesahan sebagai badan hukum dari Menteri Hukum dan Hak Asasi Manusia melalui Surat Keputusan Nomor AHU-57740.AH.01.01 tanggal 25 November 2011.\n\n Selanjutnya, Perjanjian Pengusahaan Jalan Tol (PPJT) ditandatangani pada tanggal 16 Desember 2011 antara PT Jasamarga Bali Tol, selaku Badan Usaha Jalan Tol (BUJT), dengan Badan Pengatur Jalan Tol (BPJT) atas nama Pemerintah Republik Indonesia cq. Kementerian Pekerjaan Umum. PPJT tersebut memiliki masa konsesi selama 45 tahun.\n\n Perjanjian ini dinotarialkan melalui Akta Nomor 10 tertanggal 16 Desember 2011 oleh Notaris Rina Utami Djauhari, S.H., di Jakarta. ",
+            "gambar":"/image/office.jpg"
+           
+        },
+        {
+            "id":3,
+            "nama": "2012",
+            "slug":"sejarah2012",
+            "icon":"/image/Icon/icon-drivethru.png",
+            "deskripsi":"Jalan Tol mulai dibangun sejak Maret 2012.\n\n Dengan diterbitkannya Surat Perintah Mulai Kerja (SPMK), maka Perjanjian Pengusahaan Jalan Tol (PPJT) resmi berlaku mulai tanggal 10 September 2012 dan akan berakhir pada tanggal 10 September 2057.",
+            "gambar":"/image/office.jpg"
+           
+        },
+        {
+            "id":4,
+            "nama": "2013",
+            "slug":"sejarah2013",
+            "icon":"/image/Icon/icon-transaksi.png",
+            "deskripsi":"Pembangunan Jalan Tol telah rampung sepenuhnya pada bulan Mei 2013. Jalan tol ini kemudian diresmikan oleh Presiden Republik Indonesia ke-6 pada tanggal 23 September 2013 dengan nama Jalan Tol Bali Mandara, yang mengandung makna `Bali yang agung, aman, tenteram, dan sejahtera.`",
+            "gambar":"/image/office.jpg"
+      
+        },
+        {
+            "id":5,
+            "nama": "2017",
+            "slug":"sejarah2017",
+            "icon":"/image/Icon/icon-lalin.png",
+            "deskripsi":"Pada tanggal 1 Oktober 2017, PT Jasamarga Bali Tol mengambil inisiatif untuk sepenuhnya menerapkan pembayaran non-tunai di seluruh Gardu Tol yang ada di Jalan Tol Bali Mandara. Langkah ini diambil sesuai dengan Keputusan Menteri Pekerjaan Umum dan Perumahan Rakyat No. 16/KPTS/M/2017 tanggal 12 September 2017, yang menginstruksikan penggunaan uang elektronik di seluruh ruas tol di Indonesia mulai 31 Oktober 2017.",
+            "gambar":"/image/office.jpg"
+           
+        }
+        
+       
+        
+    ]
+}

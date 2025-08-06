@@ -1,6 +1,6 @@
 'use server'
 import React from 'react'
-import apiLaporan from '../api/laporan.json'
+import apiLaporan from '@/api/laporan.json'
 import Link from 'next/link';
 import Image from 'next/image';
 import { headers } from 'next/headers';
@@ -106,7 +106,7 @@ export default async function page({ searchParams }: any) {
                         </div>
                         <div className="pb-8">
                             <h1 className='tracking-wide text-2xl text-gray-900 font-medium pb-2'>Ukuran File</h1>
-                            <p className='tracking-wide text-gray-500'>{response?.size}</p>
+                            <p className='tracking-wide text-gray-500'>{response?.size} Mb</p>
                         </div>
                         <div className="pb-8">
                             <h1 className='tracking-wide text-2xl text-gray-900 font-medium pb-2'>Deskripsi</h1>

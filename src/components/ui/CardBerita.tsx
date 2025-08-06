@@ -5,7 +5,7 @@ export type propsBerita = {
 	id: number,
 	nama: string,
 	tanggal: string,
-	deskripsi: string,
+	deskripsi: any,
 	gambar: string,
 	link_published: string,
 	slug: string

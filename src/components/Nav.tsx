@@ -140,7 +140,7 @@ export default function Nav() {
 
 				<div className="hidden md:block">
 					<a
-						href="/"
+						href="/hubungikami"
 						className="text-sm text-blue-800 font-semibold  bg-amber-300 p-3 rounded-xl">
 						Hubungi
 						Kami

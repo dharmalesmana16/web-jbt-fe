@@ -26,7 +26,7 @@ export default function ResponsiveLayout(props: PropsWithChildren) {
                 </SliderLayout>
           )}
             {deviceType == 'browser' && (
-                          <div className="grid grid-cols-5 ">
+                          <div className="grid grid-cols-3 ">
               
               {props.children}
               </div>

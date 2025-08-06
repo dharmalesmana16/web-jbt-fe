@@ -1,18 +1,18 @@
 import React, { Suspense } from 'react'
-import CardMisi from '../components/ui/CardMisi'
-import CardTataNilai from '../components/ui/CardTataNilai'
-import apiDireksi from '../api/direksi.json';
-import apiSejarah from '../api/sejarah.json';
-import DireksiModal from '../components/ui/DireksiModal';
-import DireksiCard, { propsDireksi } from '../components/ui/DireksiCard';
-import { DireksiLoading } from '../components/ui/DireksiLoading';
-import CardPrestasi from '../components/ui/CardPrestasi';
-import PrestasiModal from '../components/ui/PrestasiModal';
+import CardMisi from '@/components/ui/CardMisi'
+import CardTataNilai from '@/components/ui/CardTataNilai'
+import apiDireksi from '@/api/direksi.json';
+import apiSejarah from '@/api/sejarah.json';
+import DireksiModal from '@/components/ui/DireksiModal';
+import DireksiCard, { propsDireksi } from '@/components/ui/DireksiCard';
+import { DireksiLoading } from '@/components/ui/DireksiLoading';
+import CardPrestasi from '@/components/ui/CardPrestasi';
+import PrestasiModal from '@/components/ui/PrestasiModal';
 import Link from 'next/link';
 import { FaCircle } from 'react-icons/fa6';
 import { headers } from 'next/headers';
 import Image from 'next/image';
-import YearSejarah from '../components/layout/Responsive/YearSejarah';
+import YearSejarah from '@/components/layout/Responsive/YearSejarah';
 export default async function page({ searchParams }: any) {
   const parameter = await searchParams;
   const id = parameter?.id;
@@ -125,7 +125,7 @@ export default async function page({ searchParams }: any) {
               </div>
               <div className="">
 
-                <p className='text-main tracking-wide text-lg md:text-2xl'>{response?.deskripsi}</p>
+                <p className='text-main tracking-wide text-lg md:text-2xl whitespace-pre-line'>{response?.deskripsi}</p>
               </div>
 
             </div>

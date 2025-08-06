@@ -1,24 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
-import Jumbotron from './../components/ui/Berita/JumbotronBerita';
-import apiBerita from '../api/berita.json'
-import Image from 'next/image';
+import Jumbotron from '@/components/ui/Berita/JumbotronBerita';
+import apiBerita from '@/api/berita.json'
 
 export default function page() {
   return (
     <div>
       <section className='bg-[#F8FAFF] rounded-br-[3rem]  pt-28 top-full shadow-xl relative z-10 '>
         <div className="mx-auto container">
-          <Image
-            src={"/image/jumbotron-berita.png"}
-            alt="kantor"
-            width={0}
-            height={0}
-            sizes="100vw"
-            loading="lazy"
-            className="w-full h-[25vh] md:h-full rounded-3xl"
-          // style={{ width: "100%", height: "100%", borderRadius: "20px" }}
-          />
           <div className="px-4  py-12 grid md:grid-cols-6">
             <div className="pb-2 max-w-xl  col-span-4">
               <h1 className='text-main tracking-wide font-semibold text-xl md:text-4xl leading-8 md:leading-12'>Kabar & Informasi Terkini Jalan Tol Bali Mandara</h1>
@@ -33,12 +22,12 @@ export default function page() {
 
         <Jumbotron />
       </section>
-      <section className='container mx-auto py-20'>
+      <section className='container mx-auto py-12'>
         <div className='grid grid-cols-2 md:grid-cols-3 gap-4 mx-auto w-sm md:w-full '>
 
           {
             apiBerita["data"].map((res: any, idx: number) => (
-              <div className='flex flex-col md:w-96 w-full block mx-auto' key={idx}>
+              <div className='flex flex-col md:w-96 w-full  mx-auto' key={idx}>
                 <div className="">
                   <img src={res.gambar} className="rounded-3xl w-full h-[200px] md:h-[250px]" alt="" srcSet="" />
                 </div>

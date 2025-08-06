@@ -1,9 +1,9 @@
 import React from 'react'
-import apiTarif from '../../api/tarif.json'
+import apiTarif from '@/api/tarif.json'
 
 import Link from 'next/link';
 import { FaRegCheckCircle } from 'react-icons/fa';
-import { propsTarif } from '@/app/components/ui/TarifCard';
+import { propsTarif } from '@/components/ui/TarifCard';
 export default async function page({
   params }: {
     params:  Promise<{slugLayanan:string}>

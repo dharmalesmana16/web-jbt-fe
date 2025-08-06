@@ -21,7 +21,7 @@ export default async function TarifCard(props: propsTarif) {
             <Link href={url.toString()} scroll={false} >
                 <div className="bg-gray-100 p-3 md:p-12  text-center  rounded-2xl hover:bg-radial-[at_50%_50%] hover:-translate-y-1 hover:scale-100 hover:transition hover:duration-500 from-white via-amber-100 to-second to-90% " >
                     <div className="content">
-                        <h1 className="text-sm md:text-2xl font-normal">
+                        <h1 className="text-sm text-main md:text-2xl font-bold dark:text-gray-900">
                             {props.nama}
                             
                         </h1>

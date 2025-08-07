@@ -12,13 +12,20 @@ export default async function Home({
 }: {
     searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }) {
-    	const parameter = await searchParams;
+    const parameter = await searchParams;
+	const tarifID = parameter?.id;
+	const tarifModal = parameter?.tarifmodal === "true";
+	// const formModal = parameter?.id;
+	const modalLayanan = parameter?.layanan === "true";
+	const idlayanan = parameter?.idlayanan;
+	const contactmodal = parameter?.shown === "true";
+	const formShown = parameter?.shown === "true";
     const headerList = await headers();
     const pathname = headerList.get('x-pathname');
     const url = new URL(pathname ? pathname : "", process.env.FE_URL)
   return (
     <div>
-        <section className="rounded-t-3xl md:py-20 bg-[#F4F4F4]">
+        <section className="rounded-t-3xl pt-28 md:py-20 bg-[#F4F4F4]">
 				<div className="container mx-auto md:grid md:grid-cols-6 gap-4 ">
 					<div className="md:col-span-2">
 						<CardOffice />

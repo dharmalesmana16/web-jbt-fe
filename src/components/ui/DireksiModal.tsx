@@ -39,7 +39,7 @@ export default async function DireksiModal({ id }: direksiModal) {
 							 <img src={response?.file} className='h-full w-full ' alt="" srcSet="" />
 						</div>
 						<div className="text-left mx-auto">
-							<h1 className="font-bold text-2xl ">
+							<h1 className="font-bold text-2xl dark:text-gray-900 ">
 								{response?.nama}
 							</h1>
 							<h1 className="font-medium text-lg text-gray-500  ">
@@ -49,7 +49,7 @@ export default async function DireksiModal({ id }: direksiModal) {
 
                                         <p className="text-main tracking-wide text-sm font-bold text-center">Profil Singkat</p>
                                     </div>
-							<p className="text-md whitespace-pre-line my-4 text-justify">{response?.deskripsi}</p>
+							<p className="text-md whitespace-pre-line my-4 text-justify dark:text-gray-900">{response?.deskripsi}</p>
 							{/* <span className="inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full uppercase font-semibold tracking-wide">
 								{response.category}
 							</span> */}

@@ -22,7 +22,7 @@ export default async function detailBerita({
 
 
 
-          <ul className='text-lg'>
+          <ul className='text-lg dark:text-gray-900'>
             <li className="font-bold">
               DRAFT PRESS RELEASE
             </li >
@@ -50,7 +50,7 @@ export default async function detailBerita({
         <div className='mt-12 '>
           <hr className="w-12 md:w-84 text-gray-900  border-t-2 md:border-t-2 " />
 
-          <ul className='text-lg mt-2'>
+          <ul className='text-lg mt-2 dark:text-gray-900'>
             <li className="font-bold">
               Untuk informasi lebih lanjut, hubungi:
             </li >
@@ -62,7 +62,7 @@ export default async function detailBerita({
 
               Direktur Utama PT Jasamarga Bali Tol
             </li>
-            <li>  
+            <li>
               Grha Bali Tol,
               Jalan Raya Pelabuhan Benoa No. 88,Pedungan 80222, Denpasar - Bali
             </li>

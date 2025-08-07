@@ -108,10 +108,13 @@ export default async function page({ searchParams }: any) {
                             <h1 className='tracking-wide text-2xl text-gray-900 font-medium pb-2'>Ukuran File</h1>
                             <p className='tracking-wide text-gray-500'>{response?.size} Mb</p>
                         </div>
-                        <div className="pb-8">
-                            <h1 className='tracking-wide text-2xl text-gray-900 font-medium pb-2'>Deskripsi</h1>
-                            <p className='tracking-wide text-gray-500'>{response?.deskripsi}</p>
-                        </div>
+                        {/* <div className="">
+                                                <Link
+                                                    href="/berita"
+                                                    className="inline-flex justify-center bg-main hover:text-gray-900 items-center py-2 px-5 sm:ms-4 text-base text-center text-white font-semibold rounded-lg  hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                                                    Unduh
+                                                </Link>
+                                            </div> */}
                     </div>
                 </div>
             </section>

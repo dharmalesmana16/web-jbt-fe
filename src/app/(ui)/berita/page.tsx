@@ -42,7 +42,7 @@ export default function page() {
                   }
 
                 </div>
-                <h1 className='mt-5 font-normal text-md md:text-xl tracking-wide font-semibold'>{res.nama}</h1>
+                <h1 className='mt-5 font-normal text-md md:text-xl tracking-wide font-semibold dark:text-gray-900'>{res.nama}</h1>
                 <div className="py-5">
                   <Link href={`/berita/${res.slug}`}
                     className="inline-flex items-center  text-sm font-medium  text-main  rounded-lg hover:text-blue-900   ">

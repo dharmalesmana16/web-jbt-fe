@@ -20,9 +20,9 @@ export default async function CardPrestasi() {
         <SliderLayout shown={3} center={true} infinite={true} dots={true}>
                 {
                     apiPrestasi["data"].map((res: propsPrestasi, idx: number) => (
-                        <div key={idx} className="hover:translate-tranform hover:scale-102 hover:duration-300 p-2">
-                            <Link href={{ pathname: url.toString(), query: { prestasi:true,id: res.id } }} scroll={false}>
-                            <img src={res.file} alt="" srcSet="" className="h-36 md:h-52" />
+                        <div key={idx} className="hover:translate-tranform hover:scale-102 hover:duration-300 p-2 ">
+                            <Link href={{ pathname: url.toString(), query: { prestasi:true,id: res.id } }} className='p-12' scroll={false}>
+                                <img src={res.file} alt="" srcSet="" className="w-full h-36 md:h-72 p-12" />
                             </Link>
                         </div>
                     ))

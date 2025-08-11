@@ -2,7 +2,7 @@
 import React, { Suspense } from 'react'
 import { redirect, useSearchParams } from "next/navigation";
 
-import { FaRegCheckCircle } from 'react-icons/fa';
+
 import TarifModal from '../TarifModal';
 import { TarifLoading } from '../TarifLoading';
 import Image from 'next/image';
@@ -36,8 +36,7 @@ export default function InfoLayanan({ slug }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            className="w-full h-full rounded-3xl"
-                                        // style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                            className="h-[175px] w-full rounded-3xl shadow-xl"
                                         />
                                     </div>
                                     <div className="">
@@ -47,7 +46,7 @@ export default function InfoLayanan({ slug }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                                className="h-[175px] w-full rounded-3xl shadow-xl"
                                         />
                                     </div>
                                     <div className="">
@@ -57,7 +56,7 @@ export default function InfoLayanan({ slug }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                                className="h-[175px] w-full rounded-3xl shadow-xl"
                                         />
                                     </div>
                                 </div>
@@ -124,7 +123,7 @@ export default function InfoLayanan({ slug }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                            className="h-[175px] w-full rounded-3xl shadow-xl"
                                         />
                                     </div>
                                     <div className="">
@@ -134,7 +133,7 @@ export default function InfoLayanan({ slug }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                            className="h-[175px] w-full rounded-3xl shadow-xl"
                                         />
                                     </div>
                                     <div className="">
@@ -144,7 +143,7 @@ export default function InfoLayanan({ slug }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                            className="h-[175px] w-full rounded-3xl shadow-xl"
                                         />
                                     </div>
                                 </div>
@@ -199,7 +198,8 @@ export default function InfoLayanan({ slug }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='50vh'
-                                            className="h-[275px] w-100 rounded-3xl shadow-xl"
+                                            className="h-[175px] w-full rounded-3xl shadow-xl"
+                                            
                                         />
                                     </div>
                                     <div className="">
@@ -209,7 +209,7 @@ export default function InfoLayanan({ slug }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            className="h-[275px] w-100 rounded-3xl shadow-xl"
+                                            className="h-[175px] w-full rounded-3xl shadow-xl"
                                         />
                                     </div>
                                     <div className="">
@@ -219,7 +219,7 @@ export default function InfoLayanan({ slug }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            className="h-[275px] w-100 rounded-3xl shadow-xl"
+                                            className="h-[175px] w-full rounded-3xl shadow-xl"
                                         />
                                     </div>
 

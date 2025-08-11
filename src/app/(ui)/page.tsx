@@ -139,7 +139,7 @@ export default async function Home({
 				</div>
 			</section>
 			<InfoTol/>
-			<section className="bg-center mx-auto  md:max-w-[75%] bg-cover bg-no-repeat bg-[url('/image/sekilas-layanan.jpg')] bg-blue-900 bg-blend-multiply rounded-4xl my-12">
+			<section className="bg-center mx-auto  container bg-cover bg-no-repeat bg-[url('/image/sekilas-layanan.jpg')] bg-blue-900 bg-blend-multiply rounded-4xl my-12">
 				<div className="px-4 mx-auto max-w-screen-lg text-center py-12 lg:py-24">
 					<h1 className="mb-4 text-2xl font-bold tracking-tight leading-none text-white md:text-4xl">
 						Layanan Terintegrasi untuk Perjalanan yang Lebih Baik
@@ -245,11 +245,11 @@ export default async function Home({
 						</div>
 					</div>
 				</div>
-				<div className="md:max-w-[75%] md:mx-auto items-center justify-center flex  py-8">
+				<div className="md:container md:mx-auto items-center justify-center flex  py-8">
 					<Jumbotron />
 				</div>
 			</section>
-			<section className="bg-center mx-auto w-full  md:max-w-[75%] bg-cover bg-no-repeat bg-[url('/image/sekilas-layanan.jpg')] bg-blue-900 bg-blend-multiply rounded-4xl my-12">
+			<section className="bg-center mx-auto w-full  md:container bg-cover bg-no-repeat bg-[url('/image/sekilas-layanan.jpg')] bg-blue-900 bg-blend-multiply rounded-4xl my-12">
 				<div className="px-4 mx-auto max-w-screen-lg text-center py-12 lg:py-24">
 					<h1 className="mb-4 text-2xl font-bold md:font-black tracking-tight leading-none text-white md:text-4xl">
 						Berita
@@ -294,7 +294,7 @@ export default async function Home({
 				</div>
 
 			</section>
-			<section className="bg-center mx-auto w-full  md:max-w-[75%] bg-cover bg-no-repeat bg-[url('/image/sekilas-layanan.jpg')] bg-blue-900 bg-blend-multiply rounded-4xl my-12">
+			<section className="bg-center mx-auto w-full  md:container bg-cover bg-no-repeat bg-[url('/image/sekilas-layanan.jpg')] bg-blue-900 bg-blend-multiply rounded-4xl my-12">
 				<div className="px-4 mx-auto max-w-screen-lg text-center py-12 lg:py-24">
 					<h1 className="mb-4 text-2xl font-bold md:font-black tracking-tight leading-none text-white md:text-4xl">
 						Pengumuman Tender

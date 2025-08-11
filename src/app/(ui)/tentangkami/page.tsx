@@ -143,7 +143,7 @@ export default async function page({ searchParams }: any) {
       </section>
       {/* End Section Sejarah */}
       {/* Section Dewan Direksi */}
-      <div className="bg-[#F4F4F4] rounded-t-[3rem]">
+      <div className="bg-[url('/image/bg-tentangkami.png')] bg-scroll bg-position-[center_top_-15rem] bg-cover  bg-no-repeat rounded-t-[3rem]">
         <section className='py-12 container mx-auto px-5 md:px-0  '>
           <h1 className='text-main text-2xl tracking-wide text-center font-bold md:font-black py-2 '>DEWAN KOMISARIS</h1>
           <hr className="w-28 md:w-34 text-second  border-t-10 md:border-t-12 py-4 mx-auto" />
@@ -191,8 +191,8 @@ export default async function page({ searchParams }: any) {
       </div>
       {/* End Section Dewan Direksi */}
       <section className='py-12 container mx-auto '>
-        <h1 className='text-main text-2xl tracking-wide text-center font-bold md:font-black py-12'>PIAGAM DAN PENGHARGAAN</h1>
-        <div className="p-5 border-2 border-[#F4F4F4] rounded-3xl">
+        <h1 className='text-main text-2xl tracking-wide text-center font-bold md:font-black py-8'>PIAGAM DAN PENGHARGAAN</h1>
+        <div className="p-5 border-4 border-second rounded-3xl">
           <CardPrestasi />
         </div>
       </section>

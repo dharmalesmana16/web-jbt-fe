@@ -44,7 +44,7 @@ export default function page() {
                 </div>
                 <h1 className='mt-5 font-normal text-md md:text-xl tracking-wide font-semibold dark:text-gray-900'>{res.nama}</h1>
                 <div className="py-5">
-                  <Link href={`/berita/${res.slug}`}
+                  <a href={`/berita/${res.slug}`}
                     className="inline-flex items-center  text-sm font-medium  text-main  rounded-lg hover:text-blue-900   ">
 
                     Selengkapnya
@@ -62,7 +62,7 @@ export default function page() {
                         d="M1 5h12m0 0L9 1m4 4L9 9"
                       />
                     </svg>
-                  </Link>
+                  </a>
                 </div>
               </div>
             ))

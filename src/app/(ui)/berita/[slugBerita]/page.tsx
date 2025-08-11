@@ -10,7 +10,7 @@ export default async function detailBerita({
   const response = apiBerita["data"].find((item) => item.slug === slugBerita);
   searchParams:
   return (
-    <div className="container mx-auto w-full min-h-screen py-28 ">
+    <div className="max-w-5xl mx-auto  min-h-screen py-28 ">
 
 
       <div className=" px-2">

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { FaCheckCircle } from 'react-icons/fa'
 
-export default function InfoTol() {
+export default function AchievementInformation() {
     const [gambar,setGambar] = useState("gambar_satu");
   return (
     <div>

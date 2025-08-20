@@ -20,7 +20,9 @@ import ResponsiveLayout from "@/components/layout/ResponsiveLayout";
 import { IoDocumentText } from "react-icons/io5";
 import CardOffice from "@/components/ui/CardOffice";
 import CardTravoy from "@/components/ui/CardTravoy";
-import InfoTol from "@/components/ui/Home/InfoTol";
+import BarInformation from "@/components/ui/Home/BarInformation";
+import VideoInformation from "@/components/ui/Home/VideoInformation";
+import AchievementInformation from "@/components/ui/Home/AchievementInformation";
 
 export type Props =
 	{
@@ -52,93 +54,10 @@ export default async function Home({
 	return (
 		<div>
 			<section className="pt-18 md:pt-0">
-
-
-				<video
-					src="/video/videojbt.mp4"
-					className=" min-h-full w-full brightness-50"
-					autoPlay={
-						true
-					}
-					loop
-					muted></video>
-				<div className="hidden md:block container  absolute top-20  mx-auto left-0 right-0  text-left  mt-10">
-					<div className="max-w-3xl">
-
-						<h2 className="text-4xl font-bold  text-white ">
-							Solusi Mobilitas Andal untuk Perjalanan Tanpa Kendala
-						</h2>
-						<p className="text-gray-200 leading-normal text-lg py-2">Tol Bali Mandara hadir untuk mendukung pertumbuhan ekonomi dan pariwisata dengan jalur transportasi yang efisien, aman, dan berstandar internasional.</p>
-					</div>
-					<div className="py-20">
-
-						<Link href={"/tentangkami"} className="inline-flex items-center border-2 border-white py-2 px-2.5 text-white hover:bg-second hover:border-second hover:text-main duration-200 font-bold rounded-lg">
-							Tentang Kami
-							<svg
-								className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-								aria-hidden="true"
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 14 10">
-								<path
-									stroke="currentColor"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									d="M1 5h12m0 0L9 1m4 4L9 9"
-								/>
-							</svg>
-						</Link>
-					</div>
-				</div>
-				<div className="  container relative bottom-1 md:bottom-25  left-0 right-0 ml-auto mr-auto  ">
-					<div className="bg-main p-4 rounded-b-3xl md:rounded-4xl container mx-auto">
-						<div className="pb-5">
-
-							<p className="text-sm md:text-md text-gray-200 font-light tracking-wide text-center">Sekilas mengenai informasi dan fasilitas Tol Bali Mandara</p>
-						</div>
-						<div className="md:flex md:flex-row grid grid-cols-2 items-center justify-center gap-[20px] md:divide-x-4 border-white py-4">
-							<div className="flex justify-between gap-[20px] px-4 border-white">
-								<div className="">
-									<img src="/image/Icon/motorway.png" className="h-12 md:h-16" alt="" srcSet="" />
-								</div>
-								<div>
-									<h1 className="text-white font-bold text-xl md:text-4xl pb-4">12,8 KM</h1>
-									<p className="text-white font-light text-md w-full tracking-wide">Panjang Jalan</p>
-								</div>
-							</div>
-							<div className="flex justify-between gap-[20px] px-4  border-white">
-								<div className="">
-									<img src="/image/Icon/toll-road.png" className="h-12 md:h-16" alt="" srcSet="" />
-								</div>
-								<div>
-									<h1 className="text-white font-bold text-xl md:text-4xl pb-4">3</h1>
-									<p className="text-white font-light text-md w-full tracking-wide">Gerbang Tol</p>
-								</div>
-							</div>
-							<div className="flex justify-between gap-[20px] px-4 border-white">
-								<div className="">
-									<img src="/image/Icon/cctv-camera.png" className="h-12 md:h-16" alt="" srcSet="" />
-								</div>
-								<div>
-									<h1 className="text-white font-bold text-xl md:text-4xl pb-4">90</h1>
-									<p className="text-white font-light text-md w-full tracking-wide">Kamera CCTV</p>
-								</div>
-							</div>
-							<div className="flex justify-between gap-[20px] px-4 border-white">
-								<div className="">
-									<img src="/image/Icon/screen.png" className="h-12 md:h-16" alt="" srcSet="" />
-								</div>
-								<div>
-									<h1 className="text-white font-bold text-xl md:text-4xl pb-4">10</h1>
-									<p className="text-white font-light text-md w-full tracking-wide">DMS / VMS</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			<VideoInformation/>
+			<BarInformation/>
 			</section>
-			<InfoTol/>
+			<AchievementInformation/>
 			<section className="bg-center mx-auto  container bg-cover bg-no-repeat bg-[url('/image/sekilas-layanan.jpg')] bg-blue-900 bg-blend-multiply rounded-4xl my-12">
 				<div className="px-4 mx-auto max-w-screen-lg text-center py-12 lg:py-24">
 					<h1 className="mb-4 text-2xl font-bold tracking-tight leading-none text-white md:text-4xl">
@@ -175,8 +94,11 @@ export default async function Home({
 					<div className="md:flex md:justify-between gap-4 ">
 						<div className="bg-main p-5 md:p-8 md:w-[60%] lg:w-[30%] text-left   rounded-2xl flex flex-col  ">
 							<div className="py-2">
-								<img
+								<Image
 									src="/image/Icon/tarif.png"
+									width={0}
+									height={0}
+									sizes="100vw"
 									className="h-8 w-8 md:h-24 md:w-24"
 									alt=""
 								/>

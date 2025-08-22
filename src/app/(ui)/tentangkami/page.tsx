@@ -179,7 +179,7 @@ export default async function page({ searchParams }: any) {
           <hr className="w-28 md:w-34 text-second  border-t-10 md:border-t-12 py-4 mx-auto" />
           <div className="">
             <Image
-              src={"/image/sojbt.jpg"}
+              src={"/image/sojbtnew.jpg"}
               alt='sojbt'
               width={0}
               height={0}

@@ -141,7 +141,7 @@ export default function InfoLayanan({ slug }: formLayanan) {
                                     </div>
                                     <div className="">
                                         <Image
-                                            src={"/image/layanan/operasi/layanan-operasi-tiga.JPG"}
+                                            src={"/image/layanan/operasi/layanan-operasi-tiga.jpg"}
                                             alt="derek"
                                             width={0}
                                             height={0}

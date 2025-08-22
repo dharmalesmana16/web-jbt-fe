@@ -53,8 +53,8 @@ export default async function page({ searchParams }: any) {
             </section>
             <div className="bg-[url('/image/walpapperlayanan.png')] bg-cover bg-no-repeat min-h-[100vh] bg-center ">
                 <section className='container mx-auto py-20'>
-                    <div className="flex flex-col md:flex-row gap-[20px]">
-                        <div className=" max-w-sm w-full mx-auto  ">
+                    <div className="flex flex-col md:grid md:grid-cols-6 ">
+                        <div className="col-span-2 mx-auto  ">
                             {
                                 apiLayanan["data"].map((res: any, idx: number) => (
                                     <div key={idx} className="py-2">
@@ -78,7 +78,7 @@ export default async function page({ searchParams }: any) {
                             }
 
                         </div>
-                        <div className="w-full ">
+                        <div className="w-full col-span-4 ">
                             <InfoLayanan slug={query?.toString()} />
 
                         </div>

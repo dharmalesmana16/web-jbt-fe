@@ -6,6 +6,7 @@ import { redirect, useSearchParams } from "next/navigation";
 import TarifModal from '../TarifModal';
 import { TarifLoading } from '../TarifLoading';
 import Image from 'next/image';
+import SliderLayout from '@/components/layout/SliderLayout';
 interface formLayanan {
     slug?: string;
 }
@@ -25,7 +26,7 @@ export default function InfoLayanan({ slug }: formLayanan) {
                     slug == "drivethru" && (
 
                         <div>
-                            <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Isi Ulang Kartu E-Toll</h1>
+                            <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Layanan Drive Thru</h1>
                             <hr className="w-28 md:w-34 text-second  border-t-8 md:border-t-12 " />
                             <div className='py-5'>
                                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -115,7 +116,9 @@ export default function InfoLayanan({ slug }: formLayanan) {
                             <hr className="w-28 md:w-34 text-second  border-t-8 md:border-t-12 " />
                             <div className='py-5 '>
 
-                                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                    <SliderLayout center={false} shown={3} infinite={true} dots={true} >
+
+                                
                                     <div className="">
                                         <Image
                                             src={"/image/layanan/operasi/lalin-derek-3.jpg"}
@@ -123,30 +126,41 @@ export default function InfoLayanan({ slug }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            className="h-[175px] w-full rounded-3xl shadow-xl"
+                                            className="h-[175px] w-[300px] rounded-3xl shadow-xl"
                                         />
                                     </div>
                                     <div className="">
                                         <Image
-                                            src={"/image/layanan/transaksi/transaksi-2.jpg"}
+                                            src={"/image/layanan/operasi/layanan-operasi-dua.jpeg"}
                                             alt="derek"
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            className="h-[175px] w-full rounded-3xl shadow-xl"
+                                            className="h-[175px] w-[300px] rounded-3xl shadow-xl"
                                         />
                                     </div>
                                     <div className="">
                                         <Image
-                                            src={"/image/layanan/transaksi/transaksi-3.jpg"}
+                                            src={"/image/layanan/operasi/layanan-operasi-tiga.JPG"}
                                             alt="derek"
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            className="h-[175px] w-full rounded-3xl shadow-xl"
+                                            className="h-[175px] w-[300px] rounded-3xl shadow-xl"
                                         />
                                     </div>
-                                </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/operasi/layanan-operasi-empat.JPG"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            className="h-[175px] w-[300px] rounded-3xl shadow-xl"
+                                        />
+                                    </div>
+                                  
+                                        </SliderLayout>
                                 <div className="py-5">
                                     <div className="bg-blue-100 p-1 rounded-3xl w-24">
 
@@ -189,8 +203,9 @@ export default function InfoLayanan({ slug }: formLayanan) {
                             <div>
                                 <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Layanan Pemeliharaan</h1>
                                 <hr className="w-34 text-second  border-t-12 " />
+ <div className='py-5 '>
+                                                               <SliderLayout center={false} shown={3} infinite={true} dots={true} >
 
-                                <div className="grid grid-cols-2 md:grid-cols-3 gap-2 py-8">
                                     <div className="">
                                         <Image
                                             src={"/image/layanan/pemeliharaan/pemeliharaan-satu.jpeg"}
@@ -198,7 +213,7 @@ export default function InfoLayanan({ slug }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='50vh'
-                                            className="h-[175px] w-full rounded-3xl shadow-xl"
+                                            className="h-[175px] w-[300px] rounded-3xl shadow-xl"
                                             
                                         />
                                     </div>
@@ -209,7 +224,7 @@ export default function InfoLayanan({ slug }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            className="h-[175px] w-full rounded-3xl shadow-xl"
+                                            className="h-[175px] w-[300px] rounded-3xl shadow-xl"
                                         />
                                     </div>
                                     <div className="">
@@ -219,11 +234,10 @@ export default function InfoLayanan({ slug }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            className="h-[175px] w-full rounded-3xl shadow-xl"
+                                            className="h-[175px] w-[300px] rounded-3xl shadow-xl"
                                         />
                                     </div>
-
-                                </div>
+                                </SliderLayout>
                                 <div className='py-2'>
                                     <div className="bg-blue-100 p-1 rounded-3xl w-24">
 
@@ -254,6 +268,7 @@ export default function InfoLayanan({ slug }: formLayanan) {
 
                                     </ol>
                                 </div>
+                            </div>
                             </div>
                             
 

@@ -59,58 +59,8 @@
             "link_published":"",
             "slug":"berita-empat"
             
-        },
-         {
-            "id":5,
-            "nama": "JBT Lakukan SFO di Ruas Tol Nusa Dua-Ngurah Rai-Benoa, Arus Lalin Disesuaikan",
-            "tanggal":"23 April 2025",
-            "deskripsi":"Nam convallis sit amet nunc id euismod. Nunc id dapibus enim. Sed non pharetra ante. Morbi accumsan arcu eget tellus tristique, ac faucibus purus accumsan. Curabitur quis diam non ipsum volutpat feugiat nec et diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent sollicitudin neque iaculis, gravida eros id, laoreet dui. Ut eu tincidunt dui, non tincidunt ex.",
-            "gambar":"/image/plts.jpg",
-            "link_published":"bali.tribunnews.com",
-            "slug":"berita-lima"
-            
-        },
-         {
-            "id":6,
-            "nama": "Komitmen Tertib Berlalu Lintas, PT JBT Gelar Sosialisasi untuk Mewujudkan Budaya Berkendara Aman di Tol Bali Mandara",
-            "tanggal":"24 Mei 2025",
-            "deskripsi":"",
-            "gambar":"/image/berita/berita-1.jpeg",
-            "link_published":"bali.tribunnews.com",
-            "slug":"berita-enam"
-            
-        },
-         {
-            "id":7,
-            "nama": "Tekan Angka Kecelakaan, PT JBT Sosialisasikan Berkendara Aman di Tol Bali Mandara",
-            "tanggal":"24 Mei 2025",
-            "deskripsi":"Duis posuere fringilla ultricies. Proin tempor lorem in est viverra sollicitudin ac non eros. Integer nec ipsum a turpis viverra ultrices ultrices vel augue. Quisque egestas lectus urna, nec gravida massa bibendum in. In non ultricies velit, id congue velit. Cras tincidunt dolor at augue blandit convallis id ac nulla. Sed porta massa vitae nisi lacinia, ut elementum leo vulputate. Praesent sollicitudin metus in lorem pulvinar, eget bibendum metus pretium. Ut ut libero elementum, eleifend tortor sit amet, finibus tortor. Cras risus lectus, consectetur sit amet erat eleifend, sodales lacinia elit.",
-            "gambar":"/image/plts.jpg",
-            "link_published":"",
-            "slug":"berita-tujuh"
-            
-        },
-         {
-            "id":8,
-            "nama": "Tekan Angka Kecelakaan, PT JBT Sosialisasikan Berkendara Aman di Tol Bali Mandara",
-            "tanggal":"24 Mei 2025",
-            "deskripsi":"",
-            "gambar":"/image/berita/berita-1.jpeg",
-                        "link_published":"",
-                        "slug":"berita-delapan"
-
-        },
-         {
-            "id":9,
-            "nama": "Tingkatkan Kepatuhan di Jalan Tol, PT Jasamarga Bali Temu Pelanggan",
-            "tanggal":"24 Mei 2025",
-            "deskripsi":"Mauris luctus mi lacinia tempor sollicitudin. Morbi suscipit, turpis ac condimentum venenatis, neque purus blandit mi, eu ullamcorper enim nibh eget ante. Praesent posuere libero sit amet dapibus hendrerit. Phasellus eu lacinia dui, at iaculis magna. Sed commodo condimentum mauris, rhoncus vestibulum quam molestie et. Vestibulum mattis facilisis erat, et malesuada turpis bibendum nec. Mauris bibendum sapien nec rutrum dignissim. Nullam sit amet metus imperdiet, pellentesque eros vitae, aliquet velit. Aenean at tincidunt diam. Ut ut viverra sapien. Nam aliquet enim mauris. Vivamus id magna eu ex scelerisque viverra. Nulla blandit pellentesque porttitor. In elit tortor, facilisis ac eros eget, faucibus sodales neque. Donec at tincidunt nisl.",
-            "gambar":"/image/plts.jpg",
-                "link_published":"",
-                    "slug":"berita-sembilan"
-
-
         }
+         
         
     ]
 }

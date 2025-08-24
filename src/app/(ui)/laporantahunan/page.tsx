@@ -13,6 +13,7 @@ export type propsLaporan = {
     tahun: string;
     size: number;
     ext: string;
+    file: string;
     cover: string;
 }
 
@@ -21,13 +22,11 @@ export default async function page({ searchParams }: any) {
 
     const headersList = await headers()
     const pathname = await headersList.get("x-pathname")
-    console.log(pathname)
-    const parameter = await searchParams
+       const parameter = await searchParams
     const query =  parameter.id ? parameter.id : "1";
     const url = new URL(pathname ? pathname : "", process.env.FE_URL);
-    console.log(query)
+ 
     const response = await apiLaporan["data"].find((item: propsLaporan) => item.id == query);
-    // url.searchParams.set("id", response?.id);
 
 
     return (
@@ -88,10 +87,10 @@ export default async function page({ searchParams }: any) {
                         }
 
                     </div>
-                    <div className="max-w-xl w-full">
-                        <img src={response?.cover} className="w-full h-full" alt="" srcSet="" />
+                    <div className="w-full">
+                        <Image src={response.cover} alt={response.nama} sizes='100vw' height={0} width={0} className="w-full h-full" alt="" srcSet="" />
                     </div>
-                    <div className="max-w-lg w-full px-5">
+                    <div className=" w-full px-5">
                         <div className="pb-8">
                             <h1 className='tracking-wide text-2xl text-gray-900 font-medium pb-2'>Nama File</h1>
                             <p className='tracking-wide text-gray-500'>{response?.nama}</p>
@@ -106,15 +105,11 @@ export default async function page({ searchParams }: any) {
                         </div>
                         <div className="pb-8">
                             <h1 className='tracking-wide text-2xl text-gray-900 font-medium pb-2'>Ukuran File</h1>
-                            <p className='tracking-wide text-gray-500'>{response?.size} Mb</p>
+                            <p className='tracking-wide text-gray-500'>{response?.size} MB</p>
                         </div>
-                        {/* <div className="">
-                                                <Link
-                                                    href="/berita"
-                                                    className="inline-flex justify-center bg-main hover:text-gray-900 items-center py-2 px-5 sm:ms-4 text-base text-center text-white font-semibold rounded-lg  hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
-                                                    Unduh
-                                                </Link>
-                                            </div> */}
+                        <div className="">
+                           <a href={response.file} target="_blank" className="text-white bg-main hover:bg-main-800 focus:outline-none focus:ring-4 focus:ring-main-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-main-600 dark:hover:bg-main-700 dark:focus:ring-main-800">Download File </a>
+                        </div>
                     </div>
                 </div>
             </section>

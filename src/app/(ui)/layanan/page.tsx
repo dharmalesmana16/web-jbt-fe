@@ -1,4 +1,4 @@
-'use server'
+
 import React from 'react'
 import apiLayanan from '@/api/layanan.json'
 import Link from 'next/link';
@@ -23,7 +23,7 @@ export default async function page({ searchParams }: any) {
     const query = router.slug ? router.slug : "drivethru";
     const url = new URL(pathname ? pathname : "", process.env.FE_URL);
     // const formShown = parameter?.shown === "true";
-    console.log(query)
+    // console.log(query)
     // const response = await apiLayanan["data"].find((item: propsLayanan) => item.id == query);
     // url.searchParams.set("id", response?.id);
 
@@ -63,7 +63,7 @@ export default async function page({ searchParams }: any) {
                                                 <li className="flex items-center ">
                                                     <div className={"p-4  rounded-xl inline-flex " + (query == res.link ? "bg-[#FFE167]" : "bg-[#B8C5EF]")}>
                                                         {/* <IoDocumentText className="inline-block w-7 h-7 text-main" /> */}
-                                                        <img src={res.icon} className=' w-7 h-7 ' alt="" srcSet="" />
+                                                        <Image src={res.icon} alt={res.nama} sizes='100vw' height={0} width={0} className=' w-7 h-7 '  />
                                                     </div>
                                                     <h1 className="text-main text-xl md:text-2xl font-semibold px-2">
                                                         {res.nama}

@@ -19,15 +19,11 @@ export default async function detailBerita({
           <img src={response?.gambar} className="w-full h-[250px] md:h-[500px] rounded-3xl " alt="" srcSet="" />
         </div>
         <div className="my-5">
-
-
-
           <ul className='text-lg dark:text-gray-900'>
             <li className="font-bold">
               DRAFT PRESS RELEASE
             </li >
             <li >
-
               PT Jasamarga Bali Tol
             </li>
             <li>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaFacebook, FaInstagram, FaLocationDot, FaSquarePhone, FaTiktok, FaYoutube } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import Logo from "./Logo";
 export type contact = {
 	id: number;
 	nama: string;
@@ -20,16 +21,7 @@ export default function Footer() {
 				<div className="md:flex md:justify-between container mx-auto py-20 ">
 					<div className="mb-6 md:mb-0">
 						<div className="pb-12 md:pb-20">
-						<Image
-													src={"/image/logojbt.png"}
-													alt="kantor"
-													width={0}
-													height={0}
-													sizes="100vw"
-													loading="lazy"
-													className="w-72 text-end md:h-full md:w-full "
-													// style={{ width: "100%", height: "100%", borderRadius: "20px" }}
-												/>
+						<Logo className="w-72 text-end md:h-full md:w-full"/>
 						</div>
 
 						<div className="flex w-full justify-start md:justify-end">

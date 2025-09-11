@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Logo({className}:any) {
   return (
       <Image
-      src={"/image/logo-jbt.JPG"}
+      src={"/image/logo-jbt.png"}
       alt='logo-jbt'
       width={0}
       height={0}

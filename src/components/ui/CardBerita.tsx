@@ -19,7 +19,7 @@ export default function CardBerita(props: propsBerita) {
 				<div className="h-full">
 
 				<h5 className="mb-2 text-sm md:text-xl font-bold tracking-tight text-white">
-					{props.nama}
+					{props.nama.length > 100 ? `${props.nama.substring(0,95) + "..."}` : props.nama }
 				</h5>
 				</div>
 				

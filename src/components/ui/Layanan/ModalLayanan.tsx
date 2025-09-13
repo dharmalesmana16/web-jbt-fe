@@ -71,14 +71,15 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                                         />
                                     </div>
                                 </div>
-                                <div className="py-5">
+                                <div className="py-5  ">
 
 
-                                    <div className="bg-main-100 p-1 rounded-3xl w-24">
+                                    <div className="bg-main-100 p-1 rounded-3xl w-24 mb-5">
 
                                         <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
                                     </div>
-                                    <div className="py-5 ">
+                                    <div className="overflow-y-scroll  bg-white   scrollbar w-full max-h-[150px] md:max-h-[400px] md:no-scrollbar">
+                                    <div className="py-5  ">
 
                                         <p className='text-gray-700 list-outside dark:text-gray-400'>Untuk memberikan kemudahan bagi pengguna jalan, sejak tanggal 1 Maret 2018, PT Jasamarga Bali Tol menghadirkan inovasi berupa layanan Drive Thru untuk pengisian ulang uang elektronik, yang dikenal dengan nama Drive Thru UNIK (Uang Elektronik)
                                             Layanan ini berlokasi di Pool Ruas PT Jasamarga Bali Tol, Jalan Pelabuhan Benoa, tepatnya di bawah Simpang Susun Benoa, dan beroperasi setiap hari mulai pukul 06.00 hingga 21.00 WITA.
@@ -114,6 +115,7 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
 
                                     </ol>
                                 </div>
+                                </div>
                             </div>
 
                         </div>
@@ -126,7 +128,7 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                             <hr className="w-28 md:w-34 text-second  border-t-8 md:border-t-12 " />
                             <div className='py-5 '>
 
-                                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                    <SliderLayout center={false} shown={3} infinite={true} dots={true} >
                                     <div className="">
                                         <Image
                                             src={"/image/layanan/operasi/lalin-derek-3.jpg"}
@@ -157,12 +159,14 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                                             style={{ width: "100%", height: "100%", borderRadius: "20px" }}
                                         />
                                     </div>
-                                </div>
+                                    </SliderLayout>
                                 <div className="py-5">
                                     <div className="bg-blue-100 p-1 rounded-3xl w-24">
 
                                         <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
                                     </div>
+                                <div className="overflow-y-scroll  bg-white   scrollbar w-full max-h-[150px] md:max-h-[400px] md:no-scrollbar">
+
                                     <div className="py-5 ">
 
                                         <p className='text-gray-700 dark:text-gray-400'>Untuk memastikan pelayanan yang optimal bagi pengguna jalan, operasional Jalan Tol Bali Mandara mencakup tiga layanan utama:
@@ -187,6 +191,7 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                                         </li>
 
                                     </ol>
+                                    </div>
                                 </div>
                             </div>
 
@@ -200,8 +205,8 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                             <div>
                                 <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Layanan Pemeliharaan</h1>
                                 <hr className="w-34 text-second  border-t-12 " />
+                                    <SliderLayout center={false} shown={3} infinite={true} dots={true} >
 
-                                <div className="grid grid-cols-2 md:grid-cols-3 gap-2 py-8">
                                     <div className="">
                                         <Image
                                             src={"/image/layanan/pemeliharaan/pemeliharaan-satu.jpeg"}
@@ -232,13 +237,14 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                                             className="h-[275px] w-100 rounded-3xl shadow-xl"
                                         />
                                     </div>
-
-                                </div>
+</SliderLayout>
                                 <div className='py-2'>
                                     <div className="bg-blue-100 p-1 rounded-3xl w-24">
 
                                         <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
                                     </div>
+                                                                    <div className="overflow-y-scroll  bg-white   scrollbar w-full max-h-[150px] md:max-h-[400px] md:no-scrollbar">
+
                                     <div className="py-5 ">
 
                                         <p className='text-gray-700 dark:text-gray-400'>Pemeliharaan Jalan Tol Bali Mandara dilaksanakan secara rutin dan menyeluruh untuk memastikan infrastruktur tetap dalam kondisi optimal, aman, dan nyaman bagi pengguna jalan. Kegiatan ini mencakup tiga lingkup utama, yaitu:
@@ -263,6 +269,7 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                                         </li>
 
                                     </ol>
+                                </div>
                                 </div>
                             </div>
 

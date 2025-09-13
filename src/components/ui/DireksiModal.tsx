@@ -43,7 +43,7 @@ export default async function DireksiModal({ id }: direksiModal) {
 								{response?.nama}
 							</h1>
 							<h1 className="font-medium text-md md:text-xl text-gray-500  ">
-								{response?.jabatan}
+								{response?.tipe_direksi == "d_komisaris" ? "" : response?.jabatan}
 							</h1>
 							<div className="bg-blue-100 p-1 rounded-3xl w-28 my-2">
 

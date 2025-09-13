@@ -1,7 +1,6 @@
 'use client'
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { FaFacebook, FaInstagram, FaLocationDot, FaSquarePhone, FaTiktok, FaYoutube } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Logo from "./Logo";

@@ -79,42 +79,42 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                                         <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
                                     </div>
                                     <div className="overflow-y-scroll  bg-white   scrollbar w-full max-h-[150px] md:max-h-[400px] md:no-scrollbar">
-                                    <div className="py-5  ">
+                                        <div className="py-5  ">
 
-                                        <p className='text-gray-700 list-outside dark:text-gray-400'>Untuk memberikan kemudahan bagi pengguna jalan, sejak tanggal 1 Maret 2018, PT Jasamarga Bali Tol menghadirkan inovasi berupa layanan Drive Thru untuk pengisian ulang uang elektronik, yang dikenal dengan nama Drive Thru UNIK (Uang Elektronik)
-                                            Layanan ini berlokasi di Pool Ruas PT Jasamarga Bali Tol, Jalan Pelabuhan Benoa, tepatnya di bawah Simpang Susun Benoa, dan beroperasi setiap hari mulai pukul 06.00 hingga 21.00 WITA.
-                                        </p>
+                                            <p className='text-gray-700 list-outside dark:text-gray-400'>Untuk memberikan kemudahan bagi pengguna jalan, sejak tanggal 1 Maret 2018, PT Jasamarga Bali Tol menghadirkan inovasi berupa layanan Drive Thru untuk pengisian ulang uang elektronik, yang dikenal dengan nama Drive Thru UNIK (Uang Elektronik)
+                                                Layanan ini berlokasi di Pool Ruas PT Jasamarga Bali Tol, Jalan Pelabuhan Benoa, tepatnya di bawah Simpang Susun Benoa, dan beroperasi setiap hari mulai pukul 06.00 hingga 21.00 WITA.
+                                            </p>
+                                        </div>
+                                        <div className="bg-main-100 p-1 rounded-3xl w-48 mb-3 ">
+
+                                            <p className="text-main tracking-wide text-sm font-bold text-center">Layanan yang tersedia</p>
+                                        </div>
+                                        <ol className=" text-gray-900 list-decimal list-inside  dark:text-gray-400">
+                                            <li className="font-bold">
+                                                {/* <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" /> */}
+                                                Isi Ulang Tunai
+                                                <ul className="ps-5 mt-2 space-y-1 list-disc list-inside font-normal">
+                                                    <li>Mandiri (e-money dan produk co-branding-nya)</li>
+                                                    <li>BNI (TapCash)</li>
+                                                    <li>BCA (Flazz)</li>
+                                                </ul>
+                                            </li>
+                                            <li className="font-bold">
+                                                {/* <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" /> */}
+                                                Isi Ulang Non Tunai (Debit / Transfer)
+                                                <ul className="ps-5 mt-2 space-y-1 list-disc list-inside font-normal">
+                                                    <li>Mandiri (e-money dan produk co-branding-nya)</li>
+                                                    <li>BNI (TapCash)</li>
+                                                    <li>BCA (Flazz)</li>
+                                                </ul>
+                                            </li>
+
+
+
+
+
+                                        </ol>
                                     </div>
-                                    <div className="bg-main-100 p-1 rounded-3xl w-48 mb-3 ">
-
-                                        <p className="text-main tracking-wide text-sm font-bold text-center">Layanan yang tersedia</p>
-                                    </div>
-                                    <ol className=" text-gray-900 list-decimal list-inside  dark:text-gray-400">
-                                        <li className="font-bold">
-                                            {/* <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" /> */}
-                                            Isi Ulang Tunai
-                                            <ul className="ps-5 mt-2 space-y-1 list-disc list-inside font-normal">
-                                                <li>Mandiri (e-money dan produk co-branding-nya)</li>
-                                                <li>BNI (TapCash)</li>
-                                                <li>BCA (Flazz)</li>
-                                            </ul>
-                                        </li>
-                                        <li className="font-bold">
-                                            {/* <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" /> */}
-                                            Isi Ulang Non Tunai (Debit / Transfer)
-                                            <ul className="ps-5 mt-2 space-y-1 list-disc list-inside font-normal">
-                                                <li>Mandiri (e-money dan produk co-branding-nya)</li>
-                                                <li>BNI (TapCash)</li>
-                                                <li>BCA (Flazz)</li>
-                                            </ul>
-                                        </li>
-
-
-
-
-
-                                    </ol>
-                                </div>
                                 </div>
                             </div>
 
@@ -128,7 +128,7 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                             <hr className="w-28 md:w-34 text-second  border-t-8 md:border-t-12 " />
                             <div className='py-5 '>
 
-                                    <SliderLayout center={false} shown={3} infinite={true} dots={true} >
+                                <SliderLayout center={false} shown={3} infinite={true} dots={true} >
                                     <div className="">
                                         <Image
                                             src={"/image/layanan/operasi/lalin-derek-3.jpg"}
@@ -141,56 +141,66 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                                     </div>
                                     <div className="">
                                         <Image
-                                            src={"/image/layanan/transaksi/transaksi-2.jpg"}
+                                            src={"/image/layanan/operasi/layanan-operasi-dua.jpeg"}
                                             alt="derek"
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                            className="h-[175px] w-[300px] rounded-3xl shadow-xl"
                                         />
                                     </div>
                                     <div className="">
                                         <Image
-                                            src={"/image/layanan/transaksi/transaksi-3.jpg"}
+                                            src={"/image/layanan/operasi/layanan-operasi-tiga.jpg"}
                                             alt="derek"
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                            className="h-[175px] w-[300px] rounded-3xl shadow-xl"
                                         />
                                     </div>
-                                    </SliderLayout>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/operasi/layanan-operasi-empat.JPG"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            className="h-[175px] w-[300px] rounded-3xl shadow-xl"
+                                        />
+                                    </div>
+                                </SliderLayout>
                                 <div className="py-5">
                                     <div className="bg-blue-100 p-1 rounded-3xl w-24">
 
                                         <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
                                     </div>
-                                <div className="overflow-y-scroll  bg-white   scrollbar w-full max-h-[150px] md:max-h-[400px] md:no-scrollbar">
+                                    <div className="overflow-y-scroll  bg-white   scrollbar w-full max-h-[150px] md:max-h-[400px] md:no-scrollbar">
 
-                                    <div className="py-5 ">
+                                        <div className="py-5 ">
 
-                                        <p className='text-gray-700 dark:text-gray-400'>Untuk memastikan pelayanan yang optimal bagi pengguna jalan, operasional Jalan Tol Bali Mandara mencakup tiga layanan utama:
-                                        </p>
-                                    </div>
-                                    <div className="bg-main-100 p-1 rounded-3xl w-48 mb-3 ">
+                                            <p className='text-gray-700 dark:text-gray-400'>Untuk memastikan pelayanan yang optimal bagi pengguna jalan, operasional Jalan Tol Bali Mandara mencakup tiga layanan utama:
+                                            </p>
+                                        </div>
+                                        <div className="bg-main-100 p-1 rounded-3xl w-48 mb-3 ">
 
-                                        <p className="text-main tracking-wide text-sm font-bold text-center">Layanan yang tersedia</p>
-                                    </div>
-                                    <ol className=" text-gray-700 list-decimal list-inside dark:text-gray-400">
-                                        <li className="font-bold  items-top py-2 tracking-wide">
-                                            Pelayanan Transaksi
-                                            <p className='tracking-wide font-normal'>Meliputi pelayanan transaksi tol 24 jam, penyediaan perlengkapan transaksi, kendaraan operasional, pengamanan dan kebersihan gerbang tol, serta pemeliharaan fasilitas pendukung seperti AC dan genset.</p>
-                                        </li>
-                                        <li className="font-bold  items-top py-2 tracking-wide">
-                                            Pelayanan Lalu Lintas
-                                            <p className='tracking-wide font-normal'>Fokus pada pengaturan lalu lintas 24 jam, penyediaan kendaraan layanan (seperti patroli dan ambulans), serta dukungan satuan pengamanan.</p>
-                                        </li>
-                                        <li className="font-bold  items-top py-2 tracking-wide">
-                                            Pelayanan Sisinfokom
-                                            <p className='tracking-wide font-normal'>Menyediakan sistem teknologi operasional seperti CCTV, VMS (Variable Message Sign), sensor angin, dan pusat kontrol (Senkon) untuk mendukung pengawasan dan komunikasi jalan tol secara real-time.</p>
-                                        </li>
+                                            <p className="text-main tracking-wide text-sm font-bold text-center">Layanan yang tersedia</p>
+                                        </div>
+                                        <ol className=" text-gray-700 list-decimal list-inside dark:text-gray-400">
+                                            <li className="font-bold  items-top py-2 tracking-wide">
+                                                Pelayanan Transaksi
+                                                <p className='tracking-wide font-normal'>Meliputi pelayanan transaksi tol 24 jam, penyediaan perlengkapan transaksi, kendaraan operasional, pengamanan dan kebersihan gerbang tol, serta pemeliharaan fasilitas pendukung seperti AC dan genset.</p>
+                                            </li>
+                                            <li className="font-bold  items-top py-2 tracking-wide">
+                                                Pelayanan Lalu Lintas
+                                                <p className='tracking-wide font-normal'>Fokus pada pengaturan lalu lintas 24 jam, penyediaan kendaraan layanan (seperti patroli dan ambulans), serta dukungan satuan pengamanan.</p>
+                                            </li>
+                                            <li className="font-bold  items-top py-2 tracking-wide">
+                                                Pelayanan Sisinfokom
+                                                <p className='tracking-wide font-normal'>Menyediakan sistem teknologi operasional seperti CCTV, VMS (Variable Message Sign), sensor angin, dan pusat kontrol (Senkon) untuk mendukung pengawasan dan komunikasi jalan tol secara real-time.</p>
+                                            </li>
 
-                                    </ol>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
@@ -205,7 +215,7 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                             <div>
                                 <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Layanan Pemeliharaan</h1>
                                 <hr className="w-34 text-second  border-t-12 " />
-                                    <SliderLayout center={false} shown={3} infinite={true} dots={true} >
+                                <SliderLayout center={false} shown={3} infinite={true} dots={true} >
 
                                     <div className="">
                                         <Image
@@ -237,39 +247,39 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                                             className="h-[275px] w-100 rounded-3xl shadow-xl"
                                         />
                                     </div>
-</SliderLayout>
+                                </SliderLayout>
                                 <div className='py-2'>
                                     <div className="bg-blue-100 p-1 rounded-3xl w-24">
 
                                         <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
                                     </div>
-                                                                    <div className="overflow-y-scroll  bg-white   scrollbar w-full max-h-[150px] md:max-h-[400px] md:no-scrollbar">
+                                    <div className="overflow-y-scroll  bg-white   scrollbar w-full max-h-[150px] md:max-h-[400px] md:no-scrollbar">
 
-                                    <div className="py-5 ">
+                                        <div className="py-5 ">
 
-                                        <p className='text-gray-700 dark:text-gray-400'>Pemeliharaan Jalan Tol Bali Mandara dilaksanakan secara rutin dan menyeluruh untuk memastikan infrastruktur tetap dalam kondisi optimal, aman, dan nyaman bagi pengguna jalan. Kegiatan ini mencakup tiga lingkup utama, yaitu:
-                                        </p>
+                                            <p className='text-gray-700 dark:text-gray-400'>Pemeliharaan Jalan Tol Bali Mandara dilaksanakan secara rutin dan menyeluruh untuk memastikan infrastruktur tetap dalam kondisi optimal, aman, dan nyaman bagi pengguna jalan. Kegiatan ini mencakup tiga lingkup utama, yaitu:
+                                            </p>
+                                        </div>
+                                        <div className="bg-main-100 p-1 rounded-3xl w-48 mb-3 ">
+
+                                            <p className="text-main tracking-wide text-sm font-bold text-center">Layanan yang tersedia</p>
+                                        </div>
+                                        <ol className=" text-gray-700 list-decimal list-inside dark:text-gray-400">
+                                            <li className="font-bold  items-top py-2 tracking-wide">
+                                                Pemeliharaan Konstruksi
+                                                <p className='tracking-wide font-normal'>Fokus terhadap perawatan fisik jalan dan elemen struktural pendukungnya. Lingkup ini mencakup pemeliharaan ruas jalan, gerbang tol, rambu lalu lintas, guide post, expansion joint, serta berbagai struktur pengaman. Tujuannya adalah untuk menjaga kekuatan dan keselamatan struktur jalan agar tetap layak digunakan.</p>
+                                            </li>
+                                            <li className="font-bold  items-top py-2 tracking-wide">
+                                                Pemeliharaan Mekanikal Dan Elektrikal
+                                                <p className='tracking-wide font-normal'>Fokus terhadap perawatan sistem penerangan dan instalasi kelistrikan di sepanjang jalan tol. Ini mencakup lampu Penerangan Jalan Umum (PJU) dan instalasinya, lampu di area gerbang tol, serta lampu tulisan “Jalan Tol Bali Mandara” yang berfungsi sebagai identitas jalan tol dan penunjang visual di malam hari.</p>
+                                            </li>
+                                            <li className="font-bold  items-top py-2 tracking-wide">
+                                                Pemeliharaan Kebersihan Jalur Dan Lingkungan
+                                                <p className='tracking-wide font-normal'>Fokus terhadap inspeksi dan pembersihan rutin terhadap seluruh area jalan tol. Kegiatan ini meliputi pembersihan jalur utama, saluran air (inlet dan outlet), rambu, gerbang tol, serta perawatan tanaman dan area hijau yang berada di sekitar ruas jalan tol. </p>
+                                            </li>
+
+                                        </ol>
                                     </div>
-                                    <div className="bg-main-100 p-1 rounded-3xl w-48 mb-3 ">
-
-                                        <p className="text-main tracking-wide text-sm font-bold text-center">Layanan yang tersedia</p>
-                                    </div>
-                                    <ol className=" text-gray-700 list-decimal list-inside dark:text-gray-400">
-                                        <li className="font-bold  items-top py-2 tracking-wide">
-                                            Pemeliharaan Konstruksi
-                                            <p className='tracking-wide font-normal'>Fokus terhadap perawatan fisik jalan dan elemen struktural pendukungnya. Lingkup ini mencakup pemeliharaan ruas jalan, gerbang tol, rambu lalu lintas, guide post, expansion joint, serta berbagai struktur pengaman. Tujuannya adalah untuk menjaga kekuatan dan keselamatan struktur jalan agar tetap layak digunakan.</p>
-                                        </li>
-                                        <li className="font-bold  items-top py-2 tracking-wide">
-                                            Pemeliharaan Mekanikal Dan Elektrikal
-                                            <p className='tracking-wide font-normal'>Fokus terhadap perawatan sistem penerangan dan instalasi kelistrikan di sepanjang jalan tol. Ini mencakup lampu Penerangan Jalan Umum (PJU) dan instalasinya, lampu di area gerbang tol, serta lampu tulisan “Jalan Tol Bali Mandara” yang berfungsi sebagai identitas jalan tol dan penunjang visual di malam hari.</p>
-                                        </li>
-                                        <li className="font-bold  items-top py-2 tracking-wide">
-                                            Pemeliharaan Kebersihan Jalur Dan Lingkungan
-                                            <p className='tracking-wide font-normal'>Fokus terhadap inspeksi dan pembersihan rutin terhadap seluruh area jalan tol. Kegiatan ini meliputi pembersihan jalur utama, saluran air (inlet dan outlet), rambu, gerbang tol, serta perawatan tanaman dan area hijau yang berada di sekitar ruas jalan tol. </p>
-                                        </li>
-
-                                    </ol>
-                                </div>
                                 </div>
                             </div>
 

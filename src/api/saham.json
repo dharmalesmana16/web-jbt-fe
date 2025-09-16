@@ -1,0 +1,88 @@
+{
+    "msg":"success",
+    "data":
+    [
+        {
+            "id":1,
+            "warna":"#225d8e",
+            "nama": "PT Jasa Marga (Persero) Tbk",
+            "jumlah_saham":"609.192",
+            "jumlah":"609.192.930.000",
+            "kepemilikan":"64.44"
+        
+        },
+         {
+            "id":2,
+            "warna":"#f87f00",
+            "nama": "PT Pelabuhan Indonesia (Persero) Tbk",
+            "jumlah_saham":"131.048",
+            "jumlah":"131.048.930.000",
+            "kepemilikan":"13.86"
+        
+        },
+          {
+            "id":3,
+            "warna":"#a65c46",
+            "nama": "Pemerintah Provinsi Bali",
+            "jumlah_saham":"59.707",
+            "jumlah":"59.707.000.000",
+            "kepemilikan":"6.32"
+        
+        },
+          {
+            "id":4,
+            "warna":"#fdb80e",
+            "nama": "Pemerintah Kabupaten Badung",
+            "jumlah_saham":"59.707",
+            "jumlah":"59.707.000.000",
+            "kepemilikan":"6.32"
+        
+        },
+          {
+            "id":5,
+            "warna":"#6fa84e",
+            "nama": "PT Angkasa Pura I",
+            "jumlah_saham":"59.635",
+            "jumlah":"59.635.000.000",
+            "kepemilikan":"6.31"
+        
+        },
+          {
+            "id":6,
+            "warna":"#b33f85",
+            "nama": "PT Adhi Karya (Persero) Tbk.",
+            "jumlah_saham":"7.454",
+            "jumlah":"7.454.000.000",
+            "kepemilikan":"0.79"
+        
+        },
+          {
+            "id":7,
+            "warna":"#5595da",
+            "nama": "PT Hutama Karya (Persero)",
+            "jumlah_saham":"7.454",
+            "jumlah":"7.454.000.000",
+            "kepemilikan":"0.79"
+        
+        },
+          {
+            "id":8,
+            "warna":"#87888a",
+            "nama": "PT Pengembangan Pariwisata Indonesia (Persero)",
+            "jumlah_saham":"7.454",
+            "jumlah":"7.454.000.000",
+            "kepemilikan":"0.79"
+        
+        },
+          {
+            "id":9,
+            "warna":"#d0cce7",
+            "nama": "PT Pengembangan Pariwisata Indonesia (Persero)",
+            "jumlah_saham":"3.782",
+            "jumlah":"3.782.070.000",
+            "kepemilikan":"0.40"
+        
+        }
+    
+    ]
+}

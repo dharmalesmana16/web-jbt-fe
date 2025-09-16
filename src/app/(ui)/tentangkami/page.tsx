@@ -13,6 +13,7 @@ import { FaCircle } from 'react-icons/fa6';
 import { headers } from 'next/headers';
 import Image from 'next/image';
 import YearSejarah from '@/components/layout/Responsive/YearSejarah';
+import TableSaham from './../../../components/ui/TableSaham';
 export default async function page({ searchParams }: any) {
   const parameter = await searchParams;
   const id = parameter?.id;
@@ -141,11 +142,26 @@ export default async function page({ searchParams }: any) {
         </div>
 
       </section>
+      <section className="bg-center mx-auto w-full p-12 md:p-24 min-h-[100vh] bg-cover bg-no-repeat  bg-white shadow-t-xl  rounded-t-4xl">
+
+
+        <div className="container mx-auto  ">
+
+          <h1 className='font-black text-3xl text-main leading-9 text-center'>Susunan Pemegang Saham</h1>
+          <p className="text-gray-500 py-5 text-base tracking-wide text-center">Ikhtisiar Pemegang Saham PT Jasamarga Bali Tol</p>
+          <hr className="w-28 md:w-34 text-second  mx-auto  border-t-8 md:border-t-12 " />
+
+        </div>
+        <div className="container mx-auto py-5">
+         <TableSaham/>
+        </div>
+
+      </section>
       {/* End Section Sejarah */}
       {/* Section Dewan Direksi */}
       <div className="bg-[url('/image/bg-tentangkami.png')] bg-scroll bg-position-[center_top_-15rem] bg-cover  bg-no-repeat rounded-t-[3rem]">
         <section className='py-12 container mx-auto px-5 md:px-0  '>
-          <h1 className='text-main text-2xl tracking-wide text-center font-bold md:font-black py-2 '>DEWAN KOMISARIS</h1>
+          <h1 className='text-main text-2xl tracking-wide text-center font-bold md:font-black py-2 '>Dewan Komisaris</h1>
           <hr className="w-28 md:w-34 text-second  border-t-10 md:border-t-12 py-4 mx-auto" />
 
           <div className="grid grid-cols-2 md:flex md:justify-center gap-4 md:gap-4 ">
@@ -159,19 +175,19 @@ export default async function page({ searchParams }: any) {
 
         </section>
         <section className='py-12 container mx-auto px-5 md:px-0'>
-          <h1 className='text-main text-2xl tracking-wide text-center font-bold md:font-black py-2'>DEWAN DIREKSI</h1>
+          <h1 className='text-main text-2xl tracking-wide text-center font-bold md:font-black py-2'>Dewan Direksi</h1>
           <hr className="w-28 md:w-34 text-second  border-t-10 md:border-t-12 py-4 mx-auto" />
-          <div className="mx-auto text-center"> 
+          <div className="mx-auto text-center">
 
-        
-          <div className="flex justify-center  gap-4 md:gap-4">
-            {
-              apiDireksi["data"].filter(res => res.tipe_direksi === "d_direksi").map((res: propsDireksi, idx: number) => (
-                <DireksiCard key={idx} {...res} />
-              ))
-            }
-          </div>
+
+            <div className="flex justify-center  gap-4 md:gap-4">
+              {
+                apiDireksi["data"].filter(res => res.tipe_direksi === "d_direksi").map((res: propsDireksi, idx: number) => (
+                  <DireksiCard key={idx} {...res} />
+                ))
+              }
             </div>
+          </div>
         </section>
 
         <section className='container mx-auto py-12'>

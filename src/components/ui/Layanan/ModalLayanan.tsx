@@ -136,7 +136,9 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            style={{ width: "100%", height: "100%", borderRadius: "20px" }}
+                                                                                        className="h-[175px] w-[300px] rounded-3xl shadow-xl"
+
+                                            // style={{ width: "100%", height: "100%", borderRadius: "20px" }}
                                         />
                                     </div>
                                     <div className="">
@@ -215,8 +217,8 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                             <div>
                                 <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Layanan Pemeliharaan</h1>
                                 <hr className="w-34 text-second  border-t-12 " />
+    <div className='py-5 '>
                                 <SliderLayout center={false} shown={3} infinite={true} dots={true} >
-
                                     <div className="">
                                         <Image
                                             src={"/image/layanan/pemeliharaan/pemeliharaan-satu.jpeg"}
@@ -224,7 +226,7 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='50vh'
-                                            className="h-[275px] w-100 rounded-3xl shadow-xl"
+                                            className="h-[175px] w-[300px] rounded-3xl shadow-xl"
                                         />
                                     </div>
                                     <div className="">
@@ -234,7 +236,7 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            className="h-[275px] w-100 rounded-3xl shadow-xl"
+                                            className="h-[175px] w-[300px] rounded-3xl shadow-xl"
                                         />
                                     </div>
                                     <div className="">
@@ -244,10 +246,11 @@ export default function ModalLayanan({ idLayanan }: formLayanan) {
                                             width={0}
                                             height={0}
                                             sizes='100vw'
-                                            className="h-[275px] w-100 rounded-3xl shadow-xl"
+                                            className="h-[175px] w-[300px] rounded-3xl shadow-xl"
                                         />
                                     </div>
                                 </SliderLayout>
+                                </div>
                                 <div className='py-2'>
                                     <div className="bg-blue-100 p-1 rounded-3xl w-24">
 

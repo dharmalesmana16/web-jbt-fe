@@ -242,7 +242,8 @@ export default async function Home({
 						<CardOffice />
 					</div>
 					<div className="md:col-span-4 py-2 ">
-						<iframe className="rounded-3xl w-full h-[50vh] md:h-full" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jl.%20Raya%20Pelabuhan%20Benoa%20No.88,%20Pedungan,%20Denpasar%20Selatan,%20Kota%20Denpasar,%20Bali+(Grha%20Bali%20Tol)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+					<iframe className="rounded-3xl w-full h-[50vh] md:h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4903.907645962206!2d115.21005688517425!3d-8.723215866571671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd241005d58f68d%3A0xea87f4aafb4dadfd!2sGrha%20Bali%20Tol!5e1!3m2!1sen!2sus!4v1758038378798!5m2!1sen!2sus"
+					  ></iframe>
 					</div>
 				</div>
 				<section className="py-2  container mx-auto">

@@ -7,7 +7,7 @@
             "nama": "Laporan Tahun 2024",
             "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
             "tahun":"2024",
-            "size":30,
+            "size":234,
             "ext":".pdf",
             "file":"/doc/laporan-2024.pdf",
             "cover":"/image/report/2024.png"
@@ -22,7 +22,7 @@
             "size":275,
             "ext":".pdf",
             "file":"/doc/laporan-2023.pdf",
-            "cover":"/image/report/2024.png"
+            "cover":"/image/report/2023.png"
 
         
         },

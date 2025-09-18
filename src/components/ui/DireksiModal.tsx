@@ -36,7 +36,7 @@ export default async function DireksiModal({ id }: direksiModal) {
 				<div className="bg-white     overflow-auto z-20">
 					<div className="grid  md:grid-cols-2 ">
 						<div className="mx-auto p-2 md:p-12">
-							<img src={response?.file} className='h-[250px] w-[200px] md:w-[300px] md:h-[475px]' alt="" srcSet="" />
+							<img src={response?.file} className='h-[250px] w-[200px] md:w-full md:h-full' alt="" srcSet="" />
 						</div>
 						<div className="text-left mx-auto">
 							<h1 className="font-bold text-lg md:text-2xl dark:text-gray-900 ">

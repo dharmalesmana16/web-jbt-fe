@@ -43,7 +43,7 @@ export default async function detailBerita({
         <div className="grid grid-cols-1 gap-8 ">
           <p className='whitespace-pre-line text-justify text-gray-900 tracking-wide leading-loose text-md md:text-xl'>{response?.deskripsi}</p>
         </div>
-        <div className='mt-12 '>
+        {/* <div className='mt-12 '>
           <hr className="w-12 md:w-84 text-gray-900  border-t-2 md:border-t-2 " />
 
           <ul className='text-lg mt-2 dark:text-gray-900'>
@@ -66,7 +66,7 @@ export default async function detailBerita({
               Telp. (0361) 725326, Faks. (0361) 725327
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
       <section className=" py-20">
         <div className="py-8">

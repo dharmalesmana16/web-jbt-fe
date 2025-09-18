@@ -16,7 +16,6 @@ export default  function DireksiCard(props: propsDireksi) {
 
     const path = usePathname()
     const url = new URL(path ? path : "", process.env.NEXT_PUBLIC_FE_URL);
-
     url.searchParams.set("modal", "true");
     url.searchParams.set("id", props.id.toString());
     return (

@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React, { Suspense } from "react";
-import apiTarif from '@/api/tarif.json'
-import apiLayanan from '@/api/layanan.json'
-import apiBerita from '@/api/berita.json'
-import CardBerita, { propsBerita } from '@/components/ui/CardBerita';
+import apiTarif from "@/api/tarif.json";
+import apiLayanan from "@/api/layanan.json";
+import apiBerita from "@/api/berita.json";
+import CardBerita, { propsBerita } from "@/components/ui/CardBerita";
 import { TarifLoading } from "@/components/ui/TarifLoading";
 import TarifModal from "@/components/ui/TarifModal";
 import TarifCard, { propsTarif } from "@/components/ui/TarifCard";
@@ -13,7 +13,7 @@ import SliderLayout from "@/components/layout/SliderLayout";
 import CardLayanan, { propsLayanan } from "@/components/ui/CardLayanan";
 import ModalLayanan from "@/components/ui/Layanan/ModalLayanan";
 import Image from "next/image";
-import apiContact from '@/api/contact.json'
+import apiContact from "@/api/contact.json";
 import { headers } from "next/headers";
 import { contact } from "@/components/Footer";
 import ResponsiveLayout from "@/components/layout/ResponsiveLayout";
@@ -24,20 +24,13 @@ import BarInformation from "@/components/ui/Home/BarInformation";
 import VideoInformation from "@/components/ui/Home/VideoInformation";
 import AchievementInformation from "@/components/ui/Home/AchievementInformation";
 
-export type Props =
-	{
-		searchParams:
-		| Record<
-			string,
-			string
-		>
-		| null
-		| undefined;
-	};
+export type Props = {
+	searchParams: Record<string, string> | null | undefined;
+};
 export default async function Home({
-	searchParams
+	searchParams,
 }: {
-	searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+	searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
 	const parameter = await searchParams;
 	const tarifID = parameter?.id;
@@ -48,46 +41,44 @@ export default async function Home({
 	const contactmodal = parameter?.shown === "true";
 	const formShown = parameter?.shown === "true";
 	const headerList = await headers();
-	const pathname = headerList.get('x-pathname');
-	const url = new URL(pathname ? pathname : "", process.env.FE_URL)
+	const pathname = headerList.get("x-pathname");
+	const url = new URL(pathname ? pathname : "", process.env.FE_URL);
 
 	return (
 		<div>
 			<section className="pt-18 md:pt-0">
-			<VideoInformation/>
-			<BarInformation/>
+				<VideoInformation />
+				<BarInformation />
 			</section>
-			<AchievementInformation/>
+			<AchievementInformation />
 			<section className="bg-center mx-auto  container bg-cover bg-no-repeat bg-[url('/image/sekilas-layanan.jpg')] bg-blue-900 bg-blend-multiply rounded-4xl my-12">
 				<div className="px-4 mx-auto max-w-screen-lg text-center py-12 lg:py-24">
 					<h1 className="mb-4 text-2xl font-bold tracking-tight leading-none text-white md:text-4xl">
 						Layanan Terintegrasi untuk Perjalanan yang Lebih Baik
 					</h1>
 					<p className="mb-4 text-md font-normal text-gray-300 md:text-lg sm:px-16 lg:px-48">
-						Kami menghadirkan layanan terpadu yang mendukung perjalanan lebih cepat, nyaman, dan aman di Tol Bali Mandara.
+						Kami menghadirkan layanan terpadu yang mendukung
+						perjalanan lebih cepat, nyaman, dan aman di Tol Bali
+						Mandara.
 					</p>
 					<div className="">
 						<Link
 							href="/layanan"
-							className="inline-flex justify-center bg-second duration-200 hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base text-center text-main font-semibold rounded-lg  hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+							className="inline-flex justify-center bg-second duration-200 hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base text-center text-main font-semibold rounded-lg  hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
+						>
 							Selengkapnya
 						</Link>
 					</div>
 				</div>
 				<div className="pb-5 px-5 md:pb-12 md:px-12 ">
-
 					<ResponsiveLayout>
-
-						{
-							apiLayanan["data"].map((res: propsLayanan, idx: number) => (
+						{apiLayanan["data"].map(
+							(res: propsLayanan, idx: number) => (
 								<CardLayanan key={idx} {...res} />
-							))
-						}
-
+							),
+						)}
 					</ResponsiveLayout>
-
 				</div>
-
 			</section>
 			<section className="py-24 bg-top w-full md:bg-cover min-h-screen  bg-no-repeat   bg-[url('/image/frameTarif.jpg')]">
 				<div className=" mx-auto  text-center py-12 lg:py-24 container md:container px-5">
@@ -103,33 +94,44 @@ export default async function Home({
 									alt=""
 								/>
 								<h1 className="text-md md:text-4xl font-bold text-white ">
-									Tarif
-									Tol
-									Bali
-									Mandara
+									Tarif Tol Bali Mandara
 								</h1>
 							</div>
 							<div className="h-full">
 								<div className="border-2 border-white rounded-3xl p-5">
-
 									<p className="text-sm md:text-base text-justify text-gray-200 tracking-wide font-light align-top md:pb-4 ">
-										Berdasarkan Keputusan Menteri Pekerjaan Umum dan Perumahan Rakyat Nomor: 769/KPTS/M/2024,  tentang Penyesuaian Tarif Tol pada Jalan Tol Bali Mandara (Nusa Dua – Ngurah Rai – Benoa), maka terhitung mulai Sabtu, 27 April 2024, pukul 00:00 Wita, Jalan Tol Bali Mandara memberlakukan tarif baru sebagai berikut:
+										Berdasarkan Keputusan Menteri Pekerjaan
+										Umum dan Perumahan Rakyat Nomor:
+										769/KPTS/M/2024, tentang Penyesuaian
+										Tarif Tol pada Jalan Tol Bali Mandara
+										(Nusa Dua – Ngurah Rai – Benoa), maka
+										terhitung mulai Sabtu, 27 April 2024,
+										pukul 00:00 Wita, Jalan Tol Bali Mandara
+										memberlakukan tarif baru sebagai
+										berikut:
 									</p>
 									<div className="flex md:flex-row items-center content-center">
-
-										<div className={"p-2  rounded-xl bg-[#B8C5EF]"}>
+										<div
+											className={
+												"p-2  rounded-xl bg-[#B8C5EF]"
+											}
+										>
 											<IoDocumentText className="inline-block w-7 h-7 text-main" />
 										</div>
 										<div className="md:px-3">
-
-											<a className=" border-b-2 border-transparent hover:border-b-2 hover:border-white text-base md:text-base inline-flex items-center text-gray-100 tracking-wide font-bold " target="_blank" href={"/doc/setariftol.pdf"}>
+											<a
+												className=" border-b-2 border-transparent hover:border-b-2 hover:border-white text-base md:text-base inline-flex items-center text-gray-100 tracking-wide font-bold "
+												target="_blank"
+												href={"/doc/setariftol.pdf"}
+											>
 												769/KPTS/M/2024
 												<svg
 													className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
 													aria-hidden="true"
 													xmlns="http://www.w3.org/2000/svg"
 													fill="none"
-													viewBox="0 0 14 10">
+													viewBox="0 0 14 10"
+												>
 													<path
 														stroke="currentColor"
 														strokeLinecap="round"
@@ -144,26 +146,18 @@ export default async function Home({
 								</div>
 							</div>
 							<div className="content">
-
 								<p className="text-xs md:text-lg text-gray-300 font-light py-2">
-									Ketahui
-									tarif
-									tol
-									sesuai
-									golongan
-									kendaraan
+									Ketahui tarif tol sesuai golongan kendaraan
 									anda
 								</p>
 							</div>
 						</div>
 						<div className="grid grid-cols-3 gap-2 gap-y-6 md:gap-6 py-2">
-							{
-								apiTarif["data"].map((res: propsTarif, key: number) => (
+							{apiTarif["data"].map(
+								(res: propsTarif, key: number) => (
 									<TarifCard key={key} {...res} />
-								))
-							}
-
-
+								),
+							)}
 						</div>
 					</div>
 				</div>
@@ -174,47 +168,31 @@ export default async function Home({
 			<section className="bg-center mx-auto w-full  md:container bg-cover bg-no-repeat bg-[url('/image/sekilas-layanan.jpg')] bg-blue-900 bg-blend-multiply rounded-4xl my-12">
 				<div className="px-4 mx-auto max-w-screen-lg text-center py-12 lg:py-24">
 					<h1 className="mb-4 text-2xl font-bold md:font-black tracking-tight leading-none text-white md:text-4xl">
-						Berita
-						Terkini
+						Berita Terkini
 					</h1>
 					<p className="mb-4 text-md font-normal text-gray-300 md:text-lg sm:px-16 lg:px-48">
-						Kami
-						menghadirkan
-						layanan
-						terpadu
-						yang
-						mendukung
-						perjalanan
-						lebih
-						cepat,
-						nyaman,
-						dan aman
-						di Tol
-						Bali
+						Kami menghadirkan layanan terpadu yang mendukung
+						perjalanan lebih cepat, nyaman, dan aman di Tol Bali
 						Mandara.
 					</p>
 					<div className="">
 						<Link
 							href="/berita"
-							className="inline-flex justify-center bg-second hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base text-center text-main font-semibold rounded-lg  hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
-							Telusuri
-							Berita
-							Lainnya!
+							className="inline-flex justify-center bg-second hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base text-center text-main font-semibold rounded-lg  hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
+						>
+							Telusuri Berita Lainnya!
 						</Link>
 					</div>
 				</div>
 				<div className="p-4 md:p-12 ">
 					<SliderLayout shown={4} infinite={true}>
-						{
-							apiBerita["data"].map((res: propsBerita, idx: number) => (
-
+						{apiBerita["data"].map(
+							(res: propsBerita, idx: number) => (
 								<CardBerita key={idx} {...res} />
-							))
-						}
+							),
+						)}
 					</SliderLayout>
-
 				</div>
-
 			</section>
 			<section className="bg-center mx-auto w-full  md:container bg-cover bg-no-repeat bg-[url('/image/sekilas-layanan.jpg')] bg-blue-900 bg-blend-multiply rounded-4xl my-12">
 				<div className="px-4 mx-auto max-w-screen-lg text-center py-12 lg:py-24">
@@ -222,19 +200,19 @@ export default async function Home({
 						Pengumuman Tender
 					</h1>
 					<p className="mb-4 text-md font-normal text-gray-300 md:text-lg sm:px-16 lg:px-48">
-						Pengumuman Tender Jasamarga Bali Tol dapat mengunjungi situs berikut:
+						Pengumuman Tender Jasamarga Bali Tol dapat mengunjungi
+						situs berikut:
 					</p>
 					<div className="">
 						<a
 							href="https://drp.jasamargabalitol.co.id/pengumuman"
 							target="_blank"
-							className="inline-flex justify-center bg-second hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base text-center text-main font-semibold rounded-lg  hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+							className="inline-flex justify-center bg-second hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base text-center text-main font-semibold rounded-lg  hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
+						>
 							DRP Jasamarga Bali Tol
 						</a>
 					</div>
 				</div>
-
-
 			</section>
 			<section className="rounded-t-3xl md:py-20 bg-[#F4F4F4]">
 				<div className="container mx-auto md:grid md:grid-cols-6 gap-4 ">
@@ -242,14 +220,15 @@ export default async function Home({
 						<CardOffice />
 					</div>
 					<div className="md:col-span-4 py-2 ">
-					<iframe className="rounded-3xl w-full h-[50vh] md:h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4903.907645962206!2d115.21005688517425!3d-8.723215866571671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd241005d58f68d%3A0xea87f4aafb4dadfd!2sGrha%20Bali%20Tol!5e1!3m2!1sen!2sus!4v1758038378798!5m2!1sen!2sus"
-					  ></iframe>
+						<iframe
+							className="rounded-3xl w-full h-[50vh] md:h-full"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d489.55323828973826!2d115.21475636690602!3d-8.72308032786362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2418bc2e15e67%3A0xe1c2c11db12e30ad!2sKantor%20PT%20Jasamarga%20Bali%20Tol!5e0!3m2!1sen!2sid!4v1758590322340!5m2!1sen!2sid"
+						></iframe>
 					</div>
 				</div>
 				<section className="py-2  container mx-auto">
 					<div className="py-18">
 						<a className="" href={""} target="_blank">
-
 							<Image
 								src={"/image/Travoy.png"}
 								alt="travoy"
@@ -264,47 +243,65 @@ export default async function Home({
 						<CardTravoy />
 						<div className=" ">
 							<div className="rounded-3xl p-5 bg-main-900 mx-auto w-full h-full shadow-xl">
-								<h1 className="text-white font-black text-md md:text-2xl text-center">Hubungi Kami</h1>
+								<h1 className="text-white font-black text-md md:text-2xl text-center">
+									Hubungi Kami
+								</h1>
 								<div className=" py-2">
-									{
-										apiContact["data"].map((res: contact, idx: number) => (
-											<div key={idx} className=" flex flex-row gap-4 py-4">
-												<div className="p-2 md:p-3 bg-second rounded-2xl w-14 h-14 container  hover:bg-white hover:duration-500" >
-													{
-														res.link == "-" ? (
-															<Link href={"#"} scroll={false} >
-																<Image
-																	src={res.icon}
-																	alt="test"
-																	width={0}
-																	height={0}
-																	sizes="100vw"
-																	className="w-8 h-8 text-center mx-auto"
-																/>
-																{/* <img src={res.icon} className="w-8 h-8 text-center mx-auto" alt="" srcSet="" /> */}
-															</Link>
-														) : (
-
-															<Link href={{ pathname: url.toString(), query: { shown: true } }} scroll={false}>
-																<Image
-																	src={res.icon}
-																	alt="test"
-																	width={0}
-																	height={0}
-																	sizes="100vw"
-																	className="w-8 h-8 text-center mx-auto"
-																/>
-															</Link>
-														)
-													}
+									{apiContact["data"].map(
+										(res: contact, idx: number) => (
+											<div
+												key={idx}
+												className=" flex flex-row gap-4 py-4"
+											>
+												<div className="p-2 md:p-3 bg-second rounded-2xl w-14 h-14 container  hover:bg-white hover:duration-500">
+													{res.link == "-" ? (
+														<Link
+															href={"#"}
+															scroll={false}
+														>
+															<Image
+																src={res.icon}
+																alt="test"
+																width={0}
+																height={0}
+																sizes="100vw"
+																className="w-8 h-8 text-center mx-auto"
+															/>
+															{/* <img src={res.icon} className="w-8 h-8 text-center mx-auto" alt="" srcSet="" /> */}
+														</Link>
+													) : (
+														<Link
+															href={{
+																pathname:
+																	url.toString(),
+																query: {
+																	shown: true,
+																},
+															}}
+															scroll={false}
+														>
+															<Image
+																src={res.icon}
+																alt="test"
+																width={0}
+																height={0}
+																sizes="100vw"
+																className="w-8 h-8 text-center mx-auto"
+															/>
+														</Link>
+													)}
 												</div>
 												<div className="div-hubungi-kami  ">
-													<h1 className="text-second text-sm md:text-2xl font-bold tracking-wide">{res.nama}</h1>
-													<p className=" text-md font-normal tracking-wide leading-none text-second  md:text-2xl">{res.deskripsi}</p>
+													<h1 className="text-second text-sm md:text-2xl font-bold tracking-wide">
+														{res.nama}
+													</h1>
+													<p className=" text-md font-normal tracking-wide leading-none text-second  md:text-2xl">
+														{res.deskripsi}
+													</p>
 												</div>
 											</div>
-										))
-									}
+										),
+									)}
 								</div>
 							</div>
 						</div>
@@ -344,21 +341,22 @@ export default async function Home({
 				<Suspense key={tarifID?.toString()} fallback={<TarifLoading />}>
 					<TarifModal id={tarifID?.toString()} />
 				</Suspense>
-
 			)}
 			{contactmodal && (
-				<Suspense key={formShown?.toString()} fallback={<TarifLoading />}>
+				<Suspense
+					key={formShown?.toString()}
+					fallback={<TarifLoading />}
+				>
 					<EmailModal shown={formShown?.toString()} />
-
 				</Suspense>
-
 			)}
 			{modalLayanan && (
-				<Suspense key={idlayanan?.toString()} fallback={<TarifLoading />}>
+				<Suspense
+					key={idlayanan?.toString()}
+					fallback={<TarifLoading />}
+				>
 					<ModalLayanan idLayanan={idlayanan?.toString()} />
-
 				</Suspense>
-
 			)}
 		</div>
 	);

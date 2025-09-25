@@ -21,8 +21,6 @@ export default  function DireksiCard(props: propsDireksi) {
     return (
              <div className=" max-w-[275px] ">
                 <Link href={url.toString()} scroll={false} className='block group'>
-
-
                   <div className="mx-auto text-center pt-6 pl-6 pr-6 pb-2 border-1 h-[350px] md:h-[400px] lg:h-[475px] border-gray-200 shadow-lg hover:border-main  hover:scale-105 hover:transition hover:duration-200  bg-white  rounded-3xl overflow-hidden relative">
                     <img src={props.file} className=' mx-auto h-42 md:h-42 lg:h-64' alt="" srcSet="" />
                     <div className="hover:text-main text-left py-4 md:py-8">

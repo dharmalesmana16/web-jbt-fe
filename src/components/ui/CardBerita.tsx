@@ -3,10 +3,10 @@ import React from "react";
 
 export type propsBerita = {
 	id: number,
-	nama: string,
+	judul: string,
 	tanggal: string,
 	deskripsi: any,
-	gambar: string,
+	cover: string,
 	link_published: string,
 	slug: string
 }
@@ -14,12 +14,12 @@ export type propsBerita = {
 export default function CardBerita(props: propsBerita) {
 	return (
 		<div className="relative px-2 ">
-			<img src={props.gambar} alt="" srcSet="" className=" rounded-lg h-[250px] brightness-50" />
+			<img src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/storage/image/berita/${props.cover}`} alt="" srcSet="" className=" rounded-lg h-[250px] brightness-50" />
 			<div className="absolute bottom-0 left-0 right-0 px-4 py-5  opacity-80  w-full	 md:max-w-sm flex flex-col">
 				<div className="h-full">
 
 				<h5 className="mb-2 text-sm md:text-xl font-bold tracking-tight text-white">
-					{props.nama.length > 100 ? `${props.nama.substring(0,95) + "..."}` : props.nama }
+					{props.judul.length > 100 ? `${props.judul.substring(0,95) + "..."}` : props.judul }
 				</h5>
 				</div>
 				

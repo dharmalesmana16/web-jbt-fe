@@ -14,6 +14,7 @@ export default function CardOffice() {
         }else{
             setIsOpen(false)
         }
+        
     },[])
     return (
         <div><div className="flex p-2 flex-col max-w-xl rounded-3xl  h-[575px] bg-white border border-gray-200  shadow-xl dark:white dark:border-white">

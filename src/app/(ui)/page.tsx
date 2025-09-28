@@ -2,14 +2,12 @@ import Link from "next/link";
 import React, { Suspense } from "react";
 import apiTarif from "@/api/tarif.json";
 import apiLayanan from "@/api/layanan.json";
-import apiBerita from "@/api/berita.json";
 import CardBerita, { propsBerita } from "@/components/ui/CardBerita";
 import { TarifLoading } from "@/components/ui/TarifLoading";
 import TarifModal from "@/components/ui/TarifModal";
 import TarifCard, { propsTarif } from "@/components/ui/TarifCard";
 import Jumbotron from "@/components/Jumbotron";
 import EmailModal from "@/components/ui/EmaiModal";
-import SliderLayout from "@/components/layout/SliderLayout";
 import CardLayanan, { propsLayanan } from "@/components/ui/CardLayanan";
 import ModalLayanan from "@/components/ui/Layanan/ModalLayanan";
 import Image from "next/image";
@@ -23,6 +21,7 @@ import CardTravoy from "@/components/ui/CardTravoy";
 import BarInformation from "@/components/ui/Home/BarInformation";
 import VideoInformation from "@/components/ui/Home/VideoInformation";
 import AchievementInformation from "@/components/ui/Home/AchievementInformation";
+import NewsInformation from "@/components/ui/Home/NewsInformation";
 
 export type Props = {
 	searchParams: Record<string, string> | null | undefined;
@@ -185,13 +184,7 @@ export default async function Home({
 					</div>
 				</div>
 				<div className="p-4 md:p-12 ">
-					<SliderLayout shown={4} infinite={true}>
-						{apiBerita["data"].map(
-							(res: propsBerita, idx: number) => (
-								<CardBerita key={idx} {...res} />
-							),
-						)}
-					</SliderLayout>
+				<NewsInformation />
 				</div>
 			</section>
 			<section className="bg-center mx-auto w-full  md:container bg-cover bg-no-repeat bg-[url('/image/sekilas-layanan.jpg')] bg-blue-900 bg-blend-multiply rounded-4xl my-12">

@@ -1,8 +1,8 @@
 import Axios from 'axios'
 
 const axios = Axios.create({
-  baseURL: "http://localhost:8000",
-  headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+  baseURL: "http://202.46.152.202:8001",
+  headers: { 'Content-Type': 'application/form-data' },
   xsrfCookieName: "XSRF-TOKEN",
   xsrfHeaderName: "X-XSRF-TOKEN"
 })

@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   },
   typescript:{
     ignoreBuildErrors:true
+  },
+   env: {
+    BASE_BE_URL: process.env.BE_URL,
   }
 };
 

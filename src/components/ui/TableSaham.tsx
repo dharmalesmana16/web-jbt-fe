@@ -25,9 +25,7 @@ export default function TableSaham() {
               <th scope="col" className="px-6 py-3">
                 Jumlah Saham (Lembar)
               </th>
-              <th scope="col" className="px-6 py-3">
-                Jumlah (Rp)
-              </th>
+              
               <th scope="col" className="px-6 py-3">
                 Kepemilikan (%)
               </th>
@@ -49,9 +47,7 @@ export default function TableSaham() {
                   <td className="px-6 py-4">
                     {res.jumlah_saham}
                   </td>
-                  <td className="px-6 py-4">
-                    {res.jumlah}
-                  </td>
+                 
                   <td className="px-6 py-4">
                     {res.kepemilikan}
                   </td>
@@ -64,7 +60,6 @@ export default function TableSaham() {
                 <th scope="row"></th>
                 <th scope="row" className="px-6 py-3 text-base">Total</th>
                 <td className="px-6 py-3">945.434</td>
-                <td className="px-6 py-3">945.434.000.000</td>
                 <td className="px-6 py-3">100.00</td>
             </tr>
         </tfoot>

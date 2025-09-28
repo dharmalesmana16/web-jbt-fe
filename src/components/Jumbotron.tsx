@@ -1,19 +1,34 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import axios from '@/app/lib/utils/axios';
 export default function Jumbotron() {
+    const [dataCarousel,setDataCarousel] = useState<any>([])
+    useEffect(() => {
+    axios.get("/api/carousel").then(function(res){
+        setDataCarousel(res.data.data);
+        // console.log(process.env.BACKEND_URL)
+    })
+      
+    }, [])
+    
   return (
     							
 
 
  <Carousel showArrows={true} autoPlay infiniteLoop showIndicators={true} showThumbs={false} showStatus={true}    >
-                <div className=''>
-                    <img src="/image/travoy.png" className='h-[300px] md:h-[675px] rounded-3xl' />
+    {
+        dataCarousel.map((res:any,idx:number)=>(
+
+                <div className='' key={idx}>
+                    <img src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/storage/image/carousel/${res.file}`} className='h-[300px] md:h-[675px] rounded-3xl' />
                 </div>
-                <div className=''>
+        ))
+    }
+                {/* <div className=''>
                     <img src="/image/sekilas-layanan.jpg" className='h-[300px] md:h-[675px] rounded-3xl' />
-                </div>
+                </div> */}
                
             </Carousel>
   )

@@ -1,9 +1,22 @@
+// "use client"
 import React from 'react'
 import Link from 'next/link'
 import Jumbotron from '@/components/ui/Berita/JumbotronBerita';
-import apiBerita from '@/api/berita.json'
+// import axios from '@/app/lib/utils/axios';
 
-export default function page() {
+export default async function page() {
+  // const [dataBerita,setDataBerita] = useState<any>([])
+  const data =await fetch(`http://202.46.152.202:8001/api/berita`, { next: { revalidate: 60 } })
+  // useEffect(() => {
+  const response = await data.json();
+  // console.log(response["data"])
+
+      // axios.get("/api/berita").then(function(res){
+      //   // setDataBerita(res.data.data);
+      //   console.log(res.data.data)
+      // })
+  // }, [])
+  
   return (
     <div>
       <section className='bg-[#F8FAFF] rounded-br-[3rem]  pt-28 top-full shadow-xl relative z-10 '>
@@ -19,17 +32,16 @@ export default function page() {
         </div>
       </section>
       <section className='pt-28'>
-
         <Jumbotron />
       </section>
       <section className='container mx-auto py-12'>
         <div className='grid grid-cols-2 md:grid-cols-3 gap-4 mx-auto w-sm md:w-full '>
 
           {
-            apiBerita["data"].map((res: any, idx: number) => (
+            response["data"].map((res: any, idx: number) => (
               <div className='flex flex-col md:w-96 w-full  mx-auto' key={idx}>
                 <div className="">
-                  <img src={res.gambar} className="rounded-3xl w-full h-[200px] md:h-[250px]" alt="" srcSet="" />
+                  <img src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/storage/image/berita/${res.cover}`} className="rounded-3xl w-full h-[200px] md:h-[250px]" alt="" srcSet="" />
                 </div>
                 <div className="flex flex-col md:flex-row md:justify-between mt-5">
                   <div className="bg-second p-1 rounded-xl w-42 text-center">
@@ -43,7 +55,7 @@ export default function page() {
 
                 </div>
                 <h1 className='mt-5 text-md md:text-xl tracking-wide font-semibold dark:text-gray-900'>
-                  {res.nama.length > 100 ? `${res.nama.substring(0,95) + "..."}` : res.nama }
+                  {res.judul.length > 100 ? `${res.judul.substring(0,95) + "..."}` : res.judul }
                   </h1>
                 <div className="py-5">
                   <a href={`/berita/${res.slug}`}

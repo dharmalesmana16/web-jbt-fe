@@ -6,7 +6,7 @@ import Jumbotron from '@/components/ui/Berita/JumbotronBerita';
 
 export default async function page() {
   // const [dataBerita,setDataBerita] = useState<any>([])
-  const data =await fetch(`http://202.46.152.202:8001/api/berita`, { next: { revalidate: 60 } })
+  const data =await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/berita`, { next: { revalidate: 60 } })
   // useEffect(() => {
   const response = await data.json();
   // console.log(response["data"])

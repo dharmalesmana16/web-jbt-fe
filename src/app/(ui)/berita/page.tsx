@@ -9,13 +9,7 @@ export default async function page() {
   const data =await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/berita`, { next: { revalidate: 60 } })
   // useEffect(() => {
   const response = await data.json();
-  // console.log(response["data"])
-
-      // axios.get("/api/berita").then(function(res){
-      //   // setDataBerita(res.data.data);
-      //   console.log(res.data.data)
-      // })
-  // }, [])
+ 
   
   return (
     <div>

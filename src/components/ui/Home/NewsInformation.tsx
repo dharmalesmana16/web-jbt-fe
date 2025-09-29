@@ -10,9 +10,10 @@ export default function NewsInformation() {
     useEffect(()=>{
         async function getData(){
 
-            await axios.get('http://202.46.152.202:8001/api/berita').then(function(resp){
-                setDataBerita(resp.data.data);
-            })
+             const data =await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/berita`, { next: { revalidate: 60 } })
+  // useEffect(() => {
+                const response = await data.json();
+                setDataBerita(response["data"])
         }
         getData();
     },[])

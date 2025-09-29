@@ -6,10 +6,13 @@ import axios from '@/app/lib/utils/axios';
 export default function Jumbotron() {
     const [dataCarousel,setDataCarousel] = useState<any>([])
     useEffect(() => {
-    axios.get("/api/carousel").then(function(res){
-        setDataCarousel(res.data.data);
-        // console.log(process.env.BACKEND_URL)
-    })
+    async function getData(){
+
+             const data =await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/carousel`, { next: { revalidate: 60 } })
+  // useEffect(() => {
+                const response = await data.json();
+                setDataCarousel(response["data"])
+        }
       
     }, [])
     

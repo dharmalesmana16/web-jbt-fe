@@ -10,7 +10,8 @@ const nextConfig: NextConfig = {
   },
    env: {
     BASE_BE_URL: process.env.BE_URL,
-  }
+  },
+  crossOrigin:'anonymous'
 };
 
 export default nextConfig;

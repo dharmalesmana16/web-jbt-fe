@@ -2,12 +2,13 @@
 import SliderLayout from '@/components/layout/SliderLayout'
 import React, { useEffect, useState } from 'react'
 import CardBerita, { propsBerita } from '../CardBerita'
-import axios from '@/app/lib/utils/axios'
+import axios from 'axios'
+
 
 export default function NewsInformation() {
     const [dataBerita,setDataBerita]=useState<any>([])
     useEffect(()=>{
-        axios.get('/api/berita').then(function(resp){
+        axios.get('http://202.46.152.202:8001/api/berita').then(function(resp){
             setDataBerita(resp.data.data);
         })
     },[])

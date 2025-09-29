@@ -2,8 +2,6 @@
 import SliderLayout from '@/components/layout/SliderLayout'
 import React, { useEffect, useState } from 'react'
 import CardBerita, { propsBerita } from '../CardBerita'
-import axios from 'axios'
-
 
 export default function NewsInformation() {
     const [dataBerita,setDataBerita]=useState<any>([])

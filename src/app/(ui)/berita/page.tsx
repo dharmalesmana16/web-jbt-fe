@@ -6,9 +6,9 @@ import Jumbotron from '@/components/ui/Berita/JumbotronBerita';
 
 export default async function page() {
   // const [dataBerita,setDataBerita] = useState<any>([])
-  const data =await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/berita`)
+  const data =await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/berita`,{ cache: 'no-store' })
   const response = await data.json();
-  console.log(response);
+  console.log(response)
   return (
     <div>
       <section className='bg-[#F8FAFF] rounded-br-[3rem]  pt-28 top-full shadow-xl relative z-10 '>

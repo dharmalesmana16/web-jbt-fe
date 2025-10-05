@@ -37,7 +37,7 @@ export default async function page() {
                 </div>
                 <div className="flex flex-col md:flex-row md:justify-between mt-5">
                   <div className="bg-second p-1 rounded-xl w-42 text-center">
-                    <p className='text-gray-950 font-normal text-md tracking-normal'>{res.tanggal}</p>
+                    <p className='text-gray-950 font-normal text-md tracking-normal'>{ new Date(res.tanggal).toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
                   </div>
                   {
                     res.link_published != null ? (<div className="">

@@ -25,7 +25,7 @@ export default function CardBerita(props: propsBerita) {
 				
 				<div className="flex flex-col md:flex-row justify-between h-full">
 		 			<div className="">
-		 				<p className='text-white text-md m font-normal text-md tracking-normal'>{props.tanggal}</p>
+		 				<p className='text-white text-md m font-normal text-md tracking-normal'>{new Date(props.tanggal).toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 		 			</div>
 		 			{
 		 				props.link_published != null ? (

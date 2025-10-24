@@ -46,7 +46,7 @@ export default function Nav() {
 					? "bg-white transition duration-500 shadow-md"
 					: "bg-opacity-0 bg-white transition duration-500") : "bg-white transition duration-500 shadow-md")
 			}>
-			<div className="container flex flex-wrap items-center justify-between mx-auto  ">
+			<div className="container flex flex-wrap items-center md:justify-between mx-auto  ">
 				
 					     <Link
 								href="/"
@@ -79,69 +79,70 @@ export default function Nav() {
 						/>
 					</svg>
 				</button>
+				<Link
+								href="/"
+								className="flex md:hidden ">
+								<Logo/>
+							  </Link>
 				<div
 					className={mobileMenu == false ? "hidden  w-full md:block md:w-auto" : `hidden w-full md:block md:w-auto`}
 					id="navbar-default">
 					<ul className="font-medium flex flex-col p-4 md:p-0 mt-4  rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0   ">
-											<li className="py-2 md:py-0">
-							 <Link
-								href="/"
-								className="items-center md:hidden ">
-								<Logo className="w-42 h-12" />
-							  </Link>
-						</li>
+										
 						<li className="py-2 md:py-0">
-							<Link
+							<a
 								href="/"
 								onClick={()=>setMobileMenu(!mobileMenu)}
 								className={"text-base text-main  rounded-sm dark:text-main  font-normal " + (path == "/" ? "bg-gray-100 py-2 px-3 font-semibold" :" hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}
 								aria-current="page">
 								Home
-							</Link>
+							</a>
 						</li>
 						<li className="py-2 md:py-0">
-							<Link
+							<a
 								href="/tentangkami"
 									onClick={()=>setMobileMenu(!mobileMenu)}
-								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") + "dark:text-main  font-normal " + (path == "/tentangkami" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
+								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") + "dark:text-main  font-normal " + (path == "/tentangkami" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200 hover:duration-300 py-2 px-3" )}>
 								Tentang
 								Kami
-							</Link>
+							</a>
 						</li>
 								<li className="py-2 md:py-0">
-							<Link
+							<a
 								href="/layanan"
 								onClick={()=>setMobileMenu(!mobileMenu)}
-								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") + "dark:text-main  font-normal " + (path == "/layanan" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
+								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") + "dark:text-main  font-normal " + (path == "/layanan" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200  hover:duration-300 py-2 px-3" )}>
 								Layanan
-							</Link>
+							</a>
 						</li>
 								<li className="py-2 md:py-0">
-							<Link
+							<a
 								href="/laporantahunan"
 								onClick={()=>setMobileMenu(!mobileMenu)}
-								className={"text-base text-main  rounded-sm " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") + "dark:text-main  font-normal " + (path == "/laporantahunan" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
+								className={"text-base text-main  rounded-sm " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") + "dark:text-main  font-normal " + (path == "/laporantahunan" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200  hover:duration-300 py-2 px-3" )}>
 								Laporan
 								Tahunan
-							</Link>
+							</a>
 						</li>
 								<li className="py-2 md:py-0">
-							<Link
+							<a
 								href="/berita"
 								onClick={()=>setMobileMenu(!mobileMenu)}
-								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") +  "dark:text-main  font-normal " + (path == "/berita" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200 border-gray-200 hover:duration-300 py-2 px-3" )}>
+								className={"text-base text-main  rounded-sm  " + (path == "/"  ? (bgNav ? "text-main " : "text-main ") : "text-main") +  "dark:text-main  font-normal " + (path == "/berita" ? "bg-gray-100 py-2 px-3 font-semibold" : "border-2 border-transparent hover:border-2 hover:border-gray-200  hover:duration-300 py-2 px-3" )}>
 								Berita
 								&
 								Publikasi
-							</Link>
+							</a>
 						</li>
 						{/* Mobile View */}
 					
 						{/* End Mobile View */}
 					</ul>
+					
 				</div>
 
 				<div className="hidden md:block">
+					
 					<Link
 						href="/hubungikami"
 						className="text-sm text-blue-800 font-semibold  bg-amber-300 p-3 rounded-xl">

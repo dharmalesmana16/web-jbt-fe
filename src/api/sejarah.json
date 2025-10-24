@@ -46,6 +46,30 @@
             "deskripsi":"Pada tanggal 1 Oktober 2017, PT Jasamarga Bali Tol mengambil inisiatif untuk sepenuhnya menerapkan pembayaran non-tunai di seluruh Gardu Tol yang ada di Jalan Tol Bali Mandara. Langkah ini diambil sesuai dengan Keputusan Menteri Pekerjaan Umum dan Perumahan Rakyat No. 16/KPTS/M/2017 tanggal 12 September 2017, yang menginstruksikan penggunaan uang elektronik di seluruh ruas tol di Indonesia mulai 31 Oktober 2017.",
             "gambar":"/image/office.jpg"
            
+        },
+        {
+            "id":6,
+            "nama": "2022",
+            "slug":"sejarah2022",
+            "icon":"/image/Icon/icon-lalin.png",
+            "deskripsi":["Dalam rangka mendukung pelaksanaan KTT G20 dan menjadikan Jalan Tol Bali Mandara sebagai salah satu jalur utama bagi para delegasi, PT Jasamarga Bali Tol melaksanakan serangkaian program beautifikasi untuk memperindah dan memperkuat citra Bali sebagai destinasi internasional.Beberapa kegiatan utama yang dilakukan antara lain:",
+        "\n\n1. Penanaman tanaman khas Bali di area akses, median, tapper, dan gerbang tol, serta penanaman 756.800 bibit mangrove di kawasan Interchange Ngurah Rai dan KM 3+600 B sebagai bentuk dukungan terhadap pelestarian lingkungan.", 
+                        "\n2. Pekerjaan coating atau pelapisan pada railing ruas Ngurah Rai–Nusa Dua, concrete barrier jalur motor dan mobil, serta tiang pancang, guna meningkatkan estetika dan ketahanan infrastruktur.", 
+                        "\n3. Penataan ulang dan redesain Gerbang Tol Benoa, Ngurah Rai, dan Nusa Dua dengan mengusung konsep Angkul-Angkul Bali, yang melambangkan kehangatan dan penyambutan khas budaya Bali.", 
+                        "\n4. Pemasangan ornamen khas Bali pada tiang penerangan jalan umum (PJU) di sepanjang Tol Bali Mandara untuk memperkuat nuansa budaya lokal.", 
+                        "\n5.Pembangunan Pembangkit Listrik Tenaga Surya (PLTS) sepanjang 1,5 km di jalur motor sebagai langkah nyata menuju pengelolaan jalan tol yang berwawasan lingkungan dan berkelanjutan." 
+                       ],
+            "gambar":"/image/office.jpg"
+           
+        },
+        {
+            "id":7,
+            "nama": "2024",
+            "slug":"sejarah2024",
+            "icon":"/image/Icon/icon-lalin.png",
+            "deskripsi":"Pada tahun 2024, PT Jasamarga Bali Tol meresmikan “Grha Bali Tol”, gedung kantor baru yang menjadi pusat operasional perusahaan. Peresmian dilaksanakan pada 23 Agustus 2024 oleh Direktur Utama PT Jasa Marga (Persero) Tbk, Bapak Subakti Syukur. Pembangunan gedung ini merupakan bagian dari pemenuhan persyaratan Sertifikat Laik Operasi (SLO) serta wujud komitmen perusahaan dalam menghadirkan fasilitas kerja yang representatif, modern, dan beridentitas budaya Bali.",
+            "gambar":"/image/office.jpg"
+           
         }
         
        

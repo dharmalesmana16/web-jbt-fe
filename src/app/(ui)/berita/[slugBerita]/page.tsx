@@ -39,18 +39,18 @@ export default async function detailBerita({
             </li>
           </ul>
         </div> */}
-        <div className="pt-8">
+        <div className="pt-4">
 
-          <div className="bg-second p-1 rounded-xl w-42 text-center">
-            <p className='text-gray-950 font-normal text-md tracking-normal'>{slug?.tanggal}</p>
+          <div className="bg-second p-1 rounded-xl w-42 text-center my-2">
+            <p className='text-gray-950 font-normal text-md tracking-normal'>{new Date(slug?.tanggal).toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
           </div>
           <h1 className="text-main text-2xl md:text-2xl tracking-wide font-bold ">
             {" "}
             {slug?.judul}
           </h1>
         </div>
-        <div className="grid grid-cols-1 gap-2 ">
-          <div dangerouslySetInnerHTML={{ __html: slug.deskripsi }} className="font-inter" />
+        <div className="grid grid-cols-1 gap-2 py-4 ">
+          <div dangerouslySetInnerHTML={{ __html: slug.deskripsi }} className="" style={{ lineHeight: '1.5' }} />
 
           {/* <p className="whitespace-pre-line text-justify text-gray-900 tracking-wide leading-loose text-md md:text-xl"> */}
           {/* {slug?.deskripsi} */}

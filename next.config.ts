@@ -11,7 +11,9 @@ const nextConfig: NextConfig = {
    env: {
     BASE_BE_URL: process.env.BE_URL,
   },
-  crossOrigin:'anonymous'
+  crossOrigin:'anonymous',
+  fastRefresh: true,
+  concurrentFeatures: true
 };
 
 export default nextConfig;

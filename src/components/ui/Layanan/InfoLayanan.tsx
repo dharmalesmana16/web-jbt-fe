@@ -22,93 +22,7 @@ export default function InfoLayanan({ slug }: formLayanan) {
     return (
         <div>
             <div className="bg-white p-12 rounded-3xl shadow-xl h-full">
-                {
-                    slug == "drivethru" && (
-
-                        <div>
-                            <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Layanan Drive Thru</h1>
-                            <hr className="w-28 md:w-34 text-second  border-t-8 md:border-t-12 " />
-                            <div className='py-5'>
-                                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                                    <div className="">
-                                        <Image
-                                            src={"/image/layanan/drivethru/gambar-satu.jpeg"}
-                                            alt="derek"
-                                            width={0}
-                                            height={0}
-                                            sizes='100vw'
-                                            className="h-[175px] w-full rounded-3xl shadow-xl"
-                                        />
-                                    </div>
-                                    <div className="">
-                                        <Image
-                                            src={"/image/layanan/drivethru/gambar-dua.jpeg"}
-                                            alt="derek"
-                                            width={0}
-                                            height={0}
-                                            sizes='100vw'
-                                                className="h-[175px] w-full rounded-3xl shadow-xl"
-                                        />
-                                    </div>
-                                    <div className="">
-                                        <Image
-                                            src={"/image/layanan/drivethru/gambar-tiga.jpeg"}
-                                            alt="derek"
-                                            width={0}
-                                            height={0}
-                                            sizes='100vw'
-                                                className="h-[175px] w-full rounded-3xl shadow-xl"
-                                        />
-                                    </div>
-                                </div>
-                                <div className="py-5">
-
-
-                                    <div className="bg-main-100 p-1 rounded-3xl w-24">
-
-                                        <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
-                                    </div>
-                                    <div className="py-5 ">
-
-                                        <p className='text-gray-700 list-outside dark:text-gray-400'>Untuk memberikan kemudahan bagi pengguna jalan, sejak tanggal 1 Maret 2018, PT Jasamarga Bali Tol menghadirkan inovasi berupa layanan Drive Thru untuk pengisian ulang uang elektronik, yang dikenal dengan nama Drive Thru UNIK (Uang Elektronik)
-                                            Layanan ini berlokasi di Pool Ruas PT Jasamarga Bali Tol, Jalan Pelabuhan Benoa, tepatnya di bawah Simpang Susun Benoa, dan beroperasi setiap hari mulai pukul 06.00 hingga 21.00 WITA.
-                                        </p>
-                                    </div>
-                                    <div className="bg-main-100 p-1 rounded-3xl w-48 mb-3 ">
-
-                                        <p className="text-main tracking-wide text-sm font-bold text-center">Layanan yang tersedia</p>
-                                    </div>
-                                    <ol className=" text-gray-900 list-decimal list-inside  dark:text-gray-400">
-                                        <li className="font-bold">
-                                            {/* <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" /> */}
-                                            Isi Ulang Tunai
-                                            <ul className="ps-5 mt-2 space-y-1 list-disc list-inside font-normal">
-                                                <li>Mandiri (e-money dan produk co-branding-nya)</li>
-                                                <li>BNI (TapCash)</li>
-                                                <li>BCA (Flazz)</li>
-                                            </ul>
-                                        </li>
-                                        <li className="font-bold">
-                                            {/* <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" /> */}
-                                            Isi Ulang Non Tunai (Debit / Transfer)
-                                            <ul className="ps-5 mt-2 space-y-1 list-disc list-inside font-normal">
-                                                <li>Mandiri (e-money dan produk co-branding-nya)</li>
-                                                <li>BNI (TapCash)</li>
-                                                <li>BCA (Flazz)</li>
-                                            </ul>
-                                        </li>
-
-
-
-
-
-                                    </ol>
-                                </div>
-                            </div>
-
-                        </div>
-                    )
-                }
+              
                 {
                     slug == "layanan-operasi" && (
                         <div>
@@ -275,7 +189,93 @@ export default function InfoLayanan({ slug }: formLayanan) {
                         </div>
                     )
                 }
-                
+                  {
+                    slug == "drivethru" && (
+
+                        <div>
+                            <h1 className='text-main font-black leading-loose text-xl md:text-3xl'>Layanan Drive Thru</h1>
+                            <hr className="w-28 md:w-34 text-second  border-t-8 md:border-t-12 " />
+                            <div className='py-5'>
+                                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/drivethru/gambar-satu.jpeg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                            className="h-[175px] w-full rounded-3xl shadow-xl"
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/drivethru/gambar-dua.jpeg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                                className="h-[175px] w-full rounded-3xl shadow-xl"
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <Image
+                                            src={"/image/layanan/drivethru/gambar-tiga.jpeg"}
+                                            alt="derek"
+                                            width={0}
+                                            height={0}
+                                            sizes='100vw'
+                                                className="h-[175px] w-full rounded-3xl shadow-xl"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="py-5">
+
+
+                                    <div className="bg-main-100 p-1 rounded-3xl w-24">
+
+                                        <p className="text-main tracking-wide text-sm font-bold text-center">Deskripsi</p>
+                                    </div>
+                                    <div className="py-5 ">
+
+                                        <p className='text-gray-700 list-outside dark:text-gray-400'>Untuk memberikan kemudahan bagi pengguna jalan, sejak tanggal 1 Maret 2018, PT Jasamarga Bali Tol menghadirkan inovasi berupa layanan Drive Thru untuk pengisian ulang uang elektronik, yang dikenal dengan nama Drive Thru UNIK (Uang Elektronik)
+                                            Layanan ini berlokasi di Pool Ruas PT Jasamarga Bali Tol, Jalan Pelabuhan Benoa, tepatnya di bawah Simpang Susun Benoa, dan beroperasi setiap hari mulai pukul 06.00 hingga 21.00 WITA.
+                                        </p>
+                                    </div>
+                                    <div className="bg-main-100 p-1 rounded-3xl w-48 mb-3 ">
+
+                                        <p className="text-main tracking-wide text-sm font-bold text-center">Layanan yang tersedia</p>
+                                    </div>
+                                    <ol className=" text-gray-900 list-decimal list-inside  dark:text-gray-400">
+                                        <li className="font-bold">
+                                            {/* <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" /> */}
+                                            Isi Ulang Tunai
+                                            <ul className="ps-5 mt-2 space-y-1 list-disc list-inside font-normal">
+                                                <li>Mandiri (e-money dan produk co-branding-nya)</li>
+                                                <li>BNI (TapCash)</li>
+                                                <li>BCA (Flazz)</li>
+                                            </ul>
+                                        </li>
+                                        <li className="font-bold">
+                                            {/* <FaRegCheckCircle className="w-5 h-5  text-main font-bold text-4xl me-2 shrink-0" /> */}
+                                            Isi Ulang Non Tunai (Debit / Transfer)
+                                            <ul className="ps-5 mt-2 space-y-1 list-disc list-inside font-normal">
+                                                <li>Mandiri (e-money dan produk co-branding-nya)</li>
+                                                <li>BNI (TapCash)</li>
+                                                <li>BCA (Flazz)</li>
+                                            </ul>
+                                        </li>
+
+
+
+
+
+                                    </ol>
+                                </div>
+                            </div>
+
+                        </div>
+                    )
+                }
             </div>
             {modalTarif && (
                 <Suspense key={tarifID?.toString()} fallback={<TarifLoading />}>

@@ -30,7 +30,7 @@ export default function CardPrestasi() {
                 {
                     data.map((res: propsPrestasi, idx: number) => (
                         <div key={idx} className="hover:translate-tranform hover:scale-102 hover:duration-300 p-2 ">
-                            <Link href={{ pathname: "http://localhost:3000/tentangkami", query: { prestasi:true,id: res.id } }}   scroll={false}>
+                            <Link href={{ pathname: `${process.env.NEXT_PUBLIC_DEVELOPMENT == 'local' ? "http://localhost:3000" : process.env.NEXT_PUBLIC_FE_URL}/tentangkami`, query: { prestasi:true,id: res.id } }}   scroll={false}>
                                 <img src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/storage/image/prestasi/${res.file}`} alt="" srcSet="" className="w-52 h-72 md:h-72" />
                             </Link>
                         </div>

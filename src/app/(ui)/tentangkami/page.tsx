@@ -220,7 +220,7 @@ export default async function page({ searchParams }: any) {
       )}
       {prestasiModal && (
         <Suspense key={id?.toString()} fallback={< DireksiLoading />}>
-          <PrestasiModal id={id?.toString()} />
+          <PrestasiModal id={id} />
         </Suspense>
       )}
     </div>

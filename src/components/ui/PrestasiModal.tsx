@@ -87,7 +87,7 @@ export default function PrestasiModal({ id }: any) {
                                                 <p className='text-gray-950 font-normal text-md tracking-normal'>Tahun : {new Date(
                                                     data?.tanggal
                                                 ).toLocaleDateString("id-ID", {
-                                                     "numeric",
+                                                    year: "numeric",
                                                 })}</p>
                                             </div>
                                             <div className="py-8">

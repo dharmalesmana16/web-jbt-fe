@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "@/globals.css";
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { useEffect } from "react";
+import { initFlowbite } from "flowbite";
 
 
 export const metadata: Metadata = {
@@ -13,14 +15,18 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>)
+
+{
+
+  
   return (
     <html lang="en">
       <body
         className={`antialiased font-inter `}
       >
 
-        <Nav></Nav>
+        <Nav/>
         <div className="  mx-auto min-h-screen over dark:bg-white">
 
 

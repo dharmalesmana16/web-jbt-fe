@@ -19,8 +19,8 @@ export default function BarInformation() {
                                 <img src="/image/Icon/motorway.png" className="h-12 md:h-16" alt="" srcSet="" />
                             </div>
                             <div>
-                                <h1 className="text-white font-bold text-xl md:text-4xl pb-4">12,8 KM</h1>
-                                <p className="text-white font-light text-md w-full tracking-wide">Panjang Jalan</p>
+                                <h1 className="text-white font-bold text-xl md:text-4xl pb-4">12,7 KM</h1>
+                                <p className="text-white font-light text-md w-full tracking-wide">Panjang Jalan (Main Road dan Access Road)</p>
                             </div>
                         </div>
                        

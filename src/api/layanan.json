@@ -17,16 +17,8 @@
             "icon":"/image/Icon/icon-konstruksi.png",
             "deskripsi":"Pengawasan teknologi canggih untuk jalan tol yang stabil."
            
-        },
-        {
-            "id":3,
-            "nama": "Layanan Drive Thru",
-            "link":"drivethru",
-            "icon":"/image/Icon/icon-drivethru.png",
-            "deskripsi":"Isi ulang dan beli uang elektronik tanpa turun dari kendaraan."
-           
         }
-     
+      
        
       
        

@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { FaArrowAltCircleRight } from 'react-icons/fa';
-import {  FaNewspaper } from 'react-icons/fa6'
+import { FaNewspaper } from 'react-icons/fa6'
 import { BiLogoPlayStore } from "react-icons/bi";
 import { FaApple } from "react-icons/fa";
 export default function CardTravoy() {
@@ -10,9 +10,8 @@ export default function CardTravoy() {
     return (
         <div>
             <div className="flex flex-col md:flex-row p-5 rounded-3xl  h-full bg-white border border-gray-200  shadow-xl dark:white dark:border-white">
-                <div className="md:basis-64">
-                    
-                    <img className="rounded-t-3xl mx-auto " src="/image/logo-travoy.png" alt="" />
+                <div className="md:basis-64 px-4">
+                    <img className=" mx-auto " src="/image/logo-travoy.png" alt="" />
                 </div>
                 <div className="md:basis-128 ">
 
@@ -63,7 +62,7 @@ export default function CardTravoy() {
                         type == "down" && (
                             <div className="py-2 w-full ">
                                 <div className='py-2'>
-                                    <div className=" group hover:border-second  bg-main border-2 rounded-3xl w-64 md:w-1/2">
+                                    <div className=" group hover:border-second  bg-gradient-to-r from-main-500 via-main-600 to-main-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-main-300 dark:focus:ring-main-800  rounded-3xl w-64 md:w-1/2">
                                         <a
                                             href="https://play.google.com/store/apps/details?id=com.jm.travoy"
                                             target="_blank"
@@ -76,7 +75,7 @@ export default function CardTravoy() {
                                     </div>
                                 </div>
                                 <div className='py-3'>
-                                    <div className=" group hover:border-second bg-main border-2 rounded-3xl w-64 md:w-1/2">
+                                    <div className=" group hover:border-second  bg-gradient-to-r from-main-500 via-main-600 to-main-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-main-300 dark:focus:ring-main-800  rounded-3xl w-64 md:w-1/2">
                                         <a
                                             href="https://apps.apple.com/id/app/travoy/id1494817947"
                                             target="_blank"

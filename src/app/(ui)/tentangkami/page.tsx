@@ -22,10 +22,8 @@ export default async function page({ searchParams }: any) {
   const headersList = await headers()
   const pathname = await headersList.get("x-pathname")
   const url = new URL(pathname ? pathname : "", process.env.FE_URL);
-
   const query = parameter.slug ? parameter.slug : "sejarah2013";
   const response = await apiSejarah["data"].find((item) => item.slug == query);
-
   return (
     <div>
       <section className='bg-[#F8FAFF] rounded-br-[3rem]  pt-28 top-full shadow-xl relative z-10 '>
@@ -54,16 +52,16 @@ export default async function page({ searchParams }: any) {
         <div className="max-w-xl md:container mx-auto  ">
           <div className="text-center">
             <div className="   py-12 lg:py-12 ">
-              <h1 className='text-main font-bold md:font-black text-xl tracking-normal py-2'>VISI</h1>
+              <h1 className='text-main font-bold md:font-black text-xl tracking-normal py-2'>Visi</h1>
               <hr className="w-16 md:w-24 text-second  mx-auto  border-t-8 md:border-t-12 " />
               <h1 className='text-main text-2xl md:text-5xl font-bold py-5'>“Menjadi Perusahaan Pengelola jalan tol terkemuka di Indonesia”</h1>
             </div>
-            <h1 className='text-main font-bold md:font-black text-xl tracking-normal   py-2'>MISI</h1>
+            <h1 className='text-main font-bold md:font-black text-xl tracking-normal   py-2'>Misi</h1>
             <hr className="w-16 md:w-24 text-second  mx-auto  border-t-8 md:border-t-12 " />
           </div>
           <CardMisi />
           <div className="text-center mx-auto py-12">
-            <h1 className='text-main font-bold md:font-black text-xl tracking-normal py-2'>TATA NILAI</h1>
+            <h1 className='text-main font-bold md:font-black text-xl tracking-normal py-2'>Tata Nilai</h1>
             <hr className="w-16 md:w-24 text-second  mx-auto  border-t-8 md:border-t-12 " />
             <Image
               src="/image/akhlak.png"
@@ -77,8 +75,15 @@ export default async function page({ searchParams }: any) {
           <CardTataNilai />
         </div>
       </section>
+      <section className="container mx-auto w-full p-12 md:p-12 min-h-[100vh] bg-cover bg-no-repeat  bg-white shadow-t-xl  rounded-t-4xl">
+        <div className="text-center mx-auto py-8">
+          <h1 className='text-main font-bold md:font-black text-xl tracking-normal py-2'>Jasamarga MOVE</h1>
+          <hr className="w-16 md:w-24 text-second  mx-auto  border-t-8 md:border-t-12 " />
+          <img src="/image/move.png" className="mx-auto rounded-t-[4rem] w-full h-[500px] md:h-[1000px] py-4" />
+        </div>
+      </section>
       {/* Section Sejarah */}
-      <section className="bg-center mx-auto w-full p-12 md:p-24 min-h-[100vh] bg-cover bg-no-repeat  bg-white shadow-t-xl  rounded-t-4xl">
+      <section className="bg-center mx-auto w-full p-4 md:p-12 min-h-[100vh] bg-cover bg-no-repeat  bg-white shadow-t-xl  rounded-t-4xl">
 
 
         <div className="container mx-auto  ">
@@ -153,7 +158,7 @@ export default async function page({ searchParams }: any) {
 
         </div>
         <div className="container mx-auto py-5">
-         <TableSaham/>
+          <TableSaham />
         </div>
 
       </section>

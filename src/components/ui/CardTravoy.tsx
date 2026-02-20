@@ -21,7 +21,7 @@ export default function CardTravoy() {
                         <div className="border-t-2 border-b-2 border-[#F4f4f4] p-2 pl-0 flex flex-row">
                             <div className="px-2">
 
-                                <button onClick={() => setType("desc")} className={"border-2   rounded-3xl text-left  p-2 inline-flex items-center  text-gray-900 cursor-pointer  " + (type == "desc" ? "border-main" : "font-normal border-main-100")}>
+                                <button onClick={() => setType("desc")} className={"border-2 hover:border-second hover:text-main  rounded-3xl text-left  p-2 inline-flex items-center  text-gray-900 cursor-pointer  " + (type == "desc" ? "border-main" : "font-normal border-main-100")}>
                                     <FaNewspaper className="inline-flex mr-2 w-5 h-5 text-main " />
                                     Deskripsi
                                 </button>

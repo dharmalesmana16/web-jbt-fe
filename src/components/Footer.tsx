@@ -159,7 +159,7 @@ export default function Footer() {
 				<div className="container sm:flex sm:items-center sm:justify-between  mx-auto">
 					<span className="text-sm text-gray-500 sm:text-center ">
 						<Link href="/" className="hover:underline">
-							PT. Jasamarga Bali Tol
+							PT Jasamarga Bali Tol
 						</Link>
 					</span>
 				</div>

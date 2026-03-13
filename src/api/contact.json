@@ -1,29 +1,26 @@
 {
-    "msg":"success",
-    "data":
-    [
-        {
-            "id":1,
-            "nama": "Call Center",
-            "deskripsi":"14080",
-            "icon":"/image/Icon/phone.png",
-            "link":"-"
-        },
-        {
-            "id":2,
-            "nama": "Telp Kantor",
-            "deskripsi":"(0361) 725326",
-            "icon":"/image/Icon/icon-cust-service.png",
-            "link":"-"
-        },
-        {
-            "id":3,
-            "nama": "E-mail",
-            "deskripsi":"corporate@jasamargabalitol.co.id",
-            "icon":"/image/Icon/emailnew.png",
-            "link":""
-        }
-      
-
-    ]
+	"msg": "success",
+	"data": [
+		{
+			"id": 1,
+			"nama": "Call Center",
+			"deskripsi": "133",
+			"icon": "/image/Icon/phone.png",
+			"link": "-"
+		},
+		{
+			"id": 2,
+			"nama": "Telp Kantor",
+			"deskripsi": "(0361) 725326",
+			"icon": "/image/Icon/icon-cust-service.png",
+			"link": "-"
+		},
+		{
+			"id": 3,
+			"nama": "E-mail",
+			"deskripsi": "corporate@jasamargabalitol.co.id",
+			"icon": "/image/Icon/emailnew.png",
+			"link": ""
+		}
+	]
 }

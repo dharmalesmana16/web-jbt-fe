@@ -130,7 +130,7 @@ export default function Footer() {
 										className="group hover:text-gray-900 text-sm tracking-light "
 									>
 										<FaSquarePhone className="text-lg inline-block group-hover:text-second duration-200" />{" "}
-										Call Center: 14080
+										Call Center: 133
 									</Link>
 								</li>
 								<li className="mb-4 ">

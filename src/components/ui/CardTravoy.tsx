@@ -9,7 +9,7 @@ export default function CardTravoy() {
 
     return (
         <div>
-            <div className="flex flex-col md:flex-row p-5 rounded-3xl  h-full bg-white border border-gray-200  shadow-xl dark:white dark:border-white">
+            <div className="flex flex-col md:flex-row p-5 rounded-3xl  h-full bg-white border border-gray-200  shadow-md dark:white dark:border-white">
                 <div className="md:basis-64 px-4">
                     <img className=" mx-auto " src="/image/logo-travoy.png" alt="" />
                 </div>

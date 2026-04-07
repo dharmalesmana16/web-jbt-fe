@@ -1,97 +1,86 @@
 {
-    "msg":"success",
-    "data":
-    [
-        {
-            "id":1,
-            "nama": "Piagam Penghargaan Walikota Denpasar",
-            "deskripsi":"Atas Atribusi dan bantuan Tanggung Jawab Sosial dan Lingkungan Perusahaan di Kota Denpasar",
-            "tahun":"17 Desember 2024",
-            "ext":".pdf",
-            "size":2.83,
-            "file":"/image/prestasi/piagam-penghargaan-walkot-denpasar.png"
-        
-        },
-         {
-            "id":2,
-            "nama": "Gold Award",
-            "deskripsi":"Penganugrahan BUMN CSR AWARD ke-VII Provinsi Bali Tahun 2024",
-            "tahun":"17 Desember 2024",
-            "ext":".pdf",
-            "size":24,
-            "file":"/image/prestasi/gold-award.png"
-        
-        },
-        {
-            "id":3,
-            "nama": "Pengelola Jalan Tol Terbaik I Kategori Jalan Tol Panjang Elevated",
-            "deskripsi":"Penilaian Jalan Tol Berkelanjutan 2024",
-            "tahun":"03 Desember 2024",
-            "ext":".pdf",
-            "size":24,
-            "file":"/image/prestasi/pengelola-jalan-tol.JPG"
-        
-        },
-        {
-            "id":4,
-            "nama": "Roadster Rescue Competition 2024",
-            "deskripsi":"Piagam Penghargaa Roadster Rescue Competition 2024, Juara Harapan II",
-            "tahun":"6 Februari 2024",
-            "ext":".pdf",
-            "size":24,
-            "file":"/image/prestasi/roadster-rescue.png"
-        
-        },
-        {
-            "id":5,
-            "nama": "P3DN (Penggunaan Produk Dalam Negeri) Terbaik",
-            "deskripsi":"Tim Peningkatan Penggunaan Produk Dalam Negeri (P3DN) Terbaik peringkat ke II",
-            "tahun":"16 Agustus 2025",
-            "ext":".pdf",
-            "size":24,
-            "file":"/image/prestasi/ptigadn.png"
-        
-        },
-        {
-            "id":6,
-            "nama": "Sertifikasi ISO 9001:2015",
-            "deskripsi":"Sertifikasi ISO 9001:2015 dalam sistem manajemen mutu",
-            "tahun":"24 Agustus 2023",
-            "ext":".pdf",
-            "size":24,
-            "file":"/image/prestasi/sertifikasi-iso-9001.jpg"
-        
-        },
-        {
-            "id":7,
-            "nama": "Sertifikasi ISO 14001:2015",
-            "deskripsi":"Sertifikasi ISO 14001:2015 dalam sistem manajemen lingkungan",
-            "tahun":"24 Agustus 2023",
-            "ext":".pdf",
-            "size":2,
-            "file":"/image/prestasi/sertifikasi-iso-14001.jpg"
-        
-        },
-        {
-            "id":8,
-            "nama": "Sertifikasi ISO 45001:2015",
-            "deskripsi":"Sertifikasi ISO 45001:2015 dalam sistem manajemen K3",
-            "tahun":"24 Agustus 2023",
-            "ext":".pdf",
-            "size":3,
-            "file":"/image/prestasi/sertifikasi-iso-45001.jpg"
-        
-        },
-        {
-            "id":9,
-            "nama": "Sertifikat Green Toll Road Indonesia",
-            "deskripsi":"Predikat Green Toll Road di Indonesia",
-            "tahun":"24 Agustus 2023",
-            "ext":".pdf",
-            "size":4,
-            "file":"/image/prestasi/green-toll-road.png"
-        
-        }
-    
-    ]
+	"msg": "success",
+	"data": [
+		{
+			"id": 1,
+			"nama": "Piagam Penghargaan Walikota Denpasar",
+			"deskripsi": "Atas Atribusi dan bantuan Tanggung Jawab Sosial dan Lingkungan Perusahaan di Kota Denpasar",
+			"tahun": "17 Desember 2024",
+			"ext": ".pdf",
+			"size": 2.83,
+			"file": "/image/prestasi/piagam-penghargaan-walkot-denpasar.png"
+		},
+		{
+			"id": 2,
+			"nama": "Gold Award",
+			"deskripsi": "Penganugrahan BUMN CSR AWARD ke-VII Provinsi Bali Tahun 2024",
+			"tahun": "17 Desember 2024",
+			"ext": ".pdf",
+			"size": 24,
+			"file": "/image/prestasi/gold-award.png"
+		},
+		{
+			"id": 3,
+			"nama": "Pengelola Jalan Tol Terbaik I Kategori Jalan Tol Panjang Elevated",
+			"deskripsi": "Penilaian Jalan Tol Berkelanjutan 2024",
+			"tahun": "03 Desember 2024",
+			"ext": ".pdf",
+			"size": 24,
+			"file": "/image/prestasi/pengelola-jalan-tol.JPG"
+		},
+		{
+			"id": 4,
+			"nama": "Roadster Rescue Competition 2025",
+			"deskripsi": "Piagam Penghargaa Roadster Rescue Competition 2024, Juara Harapan II",
+			"tahun": "6 Februari 2024",
+			"ext": ".pdf",
+			"size": 24,
+			"file": "/image/prestasi/roadster-rescue.png"
+		},
+		{
+			"id": 5,
+			"nama": "P3DN (Penggunaan Produk Dalam Negeri) Terbaik",
+			"deskripsi": "Tim Peningkatan Penggunaan Produk Dalam Negeri (P3DN) Terbaik peringkat ke III",
+			"tahun": "16 Agustus 2025",
+			"ext": ".pdf",
+			"size": 24,
+			"file": "/image/prestasi/ptigadn.png"
+		},
+		{
+			"id": 6,
+			"nama": "Sertifikasi ISO 9001:2015",
+			"deskripsi": "Sertifikasi ISO 9001:2015 dalam sistem manajemen mutu",
+			"tahun": "24 Agustus 2023",
+			"ext": ".pdf",
+			"size": 24,
+			"file": "/image/prestasi/sertifikasi-iso-9001.jpg"
+		},
+		{
+			"id": 7,
+			"nama": "Sertifikasi ISO 14001:2015",
+			"deskripsi": "Sertifikasi ISO 14001:2015 dalam sistem manajemen lingkungan",
+			"tahun": "24 Agustus 2023",
+			"ext": ".pdf",
+			"size": 2,
+			"file": "/image/prestasi/sertifikasi-iso-14001.jpg"
+		},
+		{
+			"id": 8,
+			"nama": "Sertifikasi ISO 45001:2015",
+			"deskripsi": "Sertifikasi ISO 45001:2015 dalam sistem manajemen K3",
+			"tahun": "24 Agustus 2023",
+			"ext": ".pdf",
+			"size": 3,
+			"file": "/image/prestasi/sertifikasi-iso-45001.jpg"
+		},
+		{
+			"id": 9,
+			"nama": "Sertifikat Green Toll Road Indonesia",
+			"deskripsi": "Predikat Green Toll Road di Indonesia",
+			"tahun": "24 Agustus 2023",
+			"ext": ".pdf",
+			"size": 4,
+			"file": "/image/prestasi/green-toll-road.png"
+		}
+	]
 }

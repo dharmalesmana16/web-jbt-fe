@@ -5,23 +5,23 @@ import { FaClock, FaClockRotateLeft, FaLocationDot, FaNewspaper, FaPhone } from 
 export default function CardOffice() {
     const [type, setType] = useState("desc");
     const [isOpen, setIsOpen] = useState(true);
-    useEffect(()=>{
+    useEffect(() => {
         const d = new Date();
         const hour = d.getHours();
         const day = d.getDay();
-        if((hour > 8 && hour < 18) && (day >=1 && day <=5 )){
+        if ((hour > 8 && hour < 18) && (day >= 1 && day <= 5)) {
             setIsOpen(true)
-        }else{
+        } else {
             setIsOpen(false)
         }
-        
-    },[])
+
+    }, [])
     return (
-        <div><div className="flex p-2 flex-col max-w-xl rounded-3xl  h-[575px] bg-white border border-gray-200  shadow-xl dark:white dark:border-white">
+        <div><div className="flex p-2 flex-col max-w-xl rounded-3xl  h-[575px] bg-white border border-gray-200  shadow-md dark:white dark:border-white">
             <div className="relative ">
-                <img className="w-full rounded-t-3xl " src="/image/grhabalitol.jpg" alt="" />
+                <img className="w-full rounded-t-3xl " src="/image/grha.jpeg" alt="" />
             </div>
-            <div  className="rounded-t-3xl -top-28   duration-1000  bg-white p-5 h-[225px] hover:-top-20 hover:duration-500 relative z-10">
+            <div className="rounded-t-3xl -top-28   duration-1000  bg-white p-5 h-[225px] hover:-top-20 hover:duration-500 relative z-10">
                 <h5 className=" text-xl text-left font-black tracking-tight text-main ">Grha Bali Tol</h5>
                 <div className="py-2">
 
@@ -92,17 +92,17 @@ export default function CardOffice() {
                                     </div>
                                     <div>
                                         {
-                                            isOpen ==true ? (
+                                            isOpen == true ? (
 
-                                        <div className="bg-lime-400 p-1 rounded-3xl w-16">
-                                            <p className="text-white tracking-wide text-sm font-normal text-center">Buka</p>
-                                        </div>
+                                                <div className="bg-lime-400 p-1 rounded-3xl w-16">
+                                                    <p className="text-white tracking-wide text-sm font-normal text-center">Buka</p>
+                                                </div>
                                             ) :
-                                            (
-                                                 <div className="bg-red-400 p-1 rounded-3xl w-16">
-                                            <p className="text-white tracking-wide text-sm font-normal text-center">Tutup</p>
-                                        </div> 
-                                            )
+                                                (
+                                                    <div className="bg-red-400 p-1 rounded-3xl w-16">
+                                                        <p className="text-white tracking-wide text-sm font-normal text-center">Tutup</p>
+                                                    </div>
+                                                )
                                         }
                                     </div>
                                 </div>

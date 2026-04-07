@@ -201,21 +201,15 @@ export default async function Home({
 				</div>
 				<section className="py-2  container mx-auto">
 					<div className="py-18">
-						<a className="" href={""} target="_blank">
-							<Image
-								src={"/image/Travoy.png"}
-								alt="travoy"
-								width={0}
-								height={0}
-								sizes="100vw"
-								className="w-full h-[30vh] md:h-[70vh] "
-							/>
-						</a>
+
+						<div className=" mx-auto bg-white rounded-3xl shadow-md">
+							<img src="/image/newtravoy.png" className="md:h-[100vh] mx-auto" alt="" srcSet="" />
+						</div>
 					</div>
 					<div className="grid md:grid-cols-2 gap-4">
 						<CardTravoy />
 						<div className=" ">
-							<div className="rounded-3xl p-5 bg-main-900 mx-auto w-full h-full shadow-xl">
+							<div className="rounded-3xl p-5 bg-main-900 mx-auto w-full h-full shadow-lg">
 								<h1 className="text-white font-black text-md md:text-2xl text-center">
 									Hubungi Kami
 								</h1>

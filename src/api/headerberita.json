@@ -1,0 +1,31 @@
+{
+	"msg": "success",
+	"data": [
+		{
+			"id": 1,
+			"image": "1.png",
+            "deskripsi":""
+		},
+		{
+			"id": 2,
+			"image": "2.png",
+            "deskripsi":""
+		},
+		{
+			"id": 3,
+			"image": "3.png",
+            "deskripsi":""
+		},
+		{
+			"id": 4,
+			"image": "4.png",
+            "deskripsi":""
+		},
+		{
+			"id": 5,
+			"image": "5.png",
+            "deskripsi":""
+		}
+	
+	]
+}

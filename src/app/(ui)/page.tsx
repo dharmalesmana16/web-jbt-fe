@@ -21,6 +21,9 @@ import BarInformation from "@/components/ui/Home/BarInformation";
 import VideoInformation from "@/components/ui/Home/VideoInformation";
 import AchievementInformation from "@/components/ui/Home/AchievementInformation";
 import NewsInformation from "@/components/ui/Home/NewsInformation";
+import { TbWorld } from "react-icons/tb";
+import { BsMailbox } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 
 export type Props = {
 	searchParams: Record<string, string> | null | undefined;
@@ -164,7 +167,6 @@ export default async function Home({
 				</div>
 			</section>
 			<section className="bg-center mx-auto w-full  md:container bg-cover bg-no-repeat bg-[url('/image/sekilas-layanan.jpg')] bg-blue-900 bg-blend-multiply rounded-4xl my-12">
-
 				<NewsInformation />
 			</section>
 			<section className="bg-center mx-auto w-full  md:container bg-cover bg-no-repeat bg-[url('/image/sekilas-layanan.jpg')] bg-blue-900 bg-blend-multiply rounded-4xl my-12">
@@ -201,15 +203,19 @@ export default async function Home({
 				</div>
 				<section className="py-2  container mx-auto">
 					<div className="py-18">
-
 						<div className=" mx-auto bg-white rounded-3xl shadow-md">
-							<img src="/image/newtravoy.png" className="md:h-[100vh] mx-auto" alt="" srcSet="" />
+							<img
+								src="/image/newtravoy.png"
+								className="md:h-[100vh] mx-auto"
+								alt=""
+								srcSet=""
+							/>
 						</div>
 					</div>
 					<div className="grid md:grid-cols-2 gap-4">
 						<CardTravoy />
 						<div className=" ">
-							<div className="rounded-3xl p-5 bg-main-900 mx-auto w-full h-full shadow-lg">
+							<div className="rounded-3xl p-4 bg-main-900 mx-auto w-full h-full shadow-lg">
 								<h1 className="text-white font-black text-md md:text-2xl text-center">
 									Hubungi Kami
 								</h1>
@@ -269,6 +275,47 @@ export default async function Home({
 											</div>
 										),
 									)}
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-8">
+						<div className="">
+							<img
+								src="/image/whistle.PNG"
+								className="w-full h-full object-fit rounded-2xl"
+								alt=""
+							/>
+						</div>
+						<div className="flex flex-col gap-4">
+							<div className="bg-white rounded-3xl p-4 shadow-sm">
+								<div className="flex gap-2 items-center">
+									<div className="p-2 md:p-2 bg-second rounded-2xl w-14 container  hover:bg-white hover:duration-500">
+										<TbWorld className="text-center text-main w-8 h-8 mx-auto me-auto flex items-center" />
+									</div>
+									<a
+										href="https://idn.deloitte-halo.com/whistleblowing.tips/wbs/@jasamarga/?Pg=makereport"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="text-sm hover:text-main hover:underline"
+									>
+										https://idn.deloitte-halo.com/whistleblowing.tips/wbs/@jasamarga/?Pg=makereport
+									</a>
+								</div>
+							</div>
+							<div className="bg-white rounded-3xl p-4 shadow-sm">
+								<div className="flex gap-2 items-center">
+									<div className="p-2 md:p-2 bg-second rounded-2xl w-14 container  hover:bg-white hover:duration-500">
+										<MdEmail className="text-center text-main w-8 h-8 mx-auto me-auto flex items-center" />
+									</div>
+									<a
+										href="mailto:jasamarga.wbs@tip​​offs.info"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="text-sm hover:text-main hover:underline"
+									>
+										jasamarga.wbs@tip​​offs.info
+									</a>
 								</div>
 							</div>
 						</div>

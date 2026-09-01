@@ -1,151 +1,135 @@
 {
-    "msg":"success",
-    "data":
-    [
-        {
-            "id":1,
-            "nama": "Laporan Tahun 2024",
-            "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
-            "tahun":"2024",
-            "size":234,
-            "ext":".pdf",
-            "file":"/doc/laporan-2024.pdf",
-            "cover":"/image/report/2024.png"
-
-        
-        },
-          {
-            "id":2,
-            "nama": "Laporan Tahun 2023",
-            "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
-            "tahun":"2023",
-            "size":275,
-            "ext":".pdf",
-            "file":"/doc/laporan-2023.pdf",
-            "cover":"/image/report/2023.png"
-
-        
-        },
-          {
-            "id":3,
-            "nama": "Laporan Tahun 2022",
-            "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
-            "tahun":"2022",
-            "size":32,
-            "ext":".pdf",
-            "file":"/doc/laporan-2022.pdf",
-            "cover":"/image/report/2022.png"
-
-        
-        },
-          {
-            "id":4,
-            "nama": "Laporan Tahun 2021",
-            "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
-            "tahun":"2021",
-            "size":25,
-            "ext":".pdf",
-            "file":"/doc/laporan-2021.pdf",
-            "cover":"/image/report/2021.png"
-
-        
-        },
-          {
-            "id":5,
-            "nama": "Laporan Tahun 2020",
-            "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
-            "tahun":"2020",
-            "size":29,
-            "ext":".pdf",
-            "file":"/doc/laporan-2020.pdf",
-            "cover":"/image/report/2020.png"
-
-        
-        },
-          {
-            "id":6,
-            "nama": "Laporan Tahun 2019",
-            "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
-            "tahun":"2019",
-            "size":31,
-            "ext":".pdf",
-            "file":"/doc/laporan-2019.pdf",
-            "cover":"/image/report/2019.png"
-
-        
-        },
-          {
-            "id":7,
-            "nama": "Laporan Tahun 2018",
-            "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
-            "tahun":"2018",
-            "size":28,
-            "ext":".pdf",
-            "file":"/doc/laporan-2018.pdf",
-            "cover":"/image/report/2018.png"
-
-        
-        },
-          {
-            "id":8,
-            "nama": "Laporan Tahun 2017",
-            "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
-            "tahun":"2017",
-            "size":29.4,
-            "ext":".pdf",
-            "file":"/doc/laporan-2017.pdf",
-            "cover":"/image/report/2017.jpg"
-
-        
-        },
-          {
-            "id":9,
-            "nama": "Laporan Tahun 2016",
-            "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
-            "tahun":"2016",
-            "size":65,
-            "ext":".pdf",
-            "file":"/doc/laporan-2016.pdf",
-            "cover":"/image/report/2016.png"
-
-        
-        },
-          {
-            "id":10,
-            "nama": "Laporan Tahun 2015",
-            "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
-            "tahun":"2015",
-            "size":32,
-            "ext":".pdf",
-            "file":"/doc/laporan-2015.pdf",
-            "cover":"/image/report/2015.png"
-
-        
-        },
-          {
-            "id":11,
-            "nama": "Laporan Tahun 2014",
-            "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
-            "tahun":"2014",
-            "size":113,
-            "ext":".pdf",
-            "file":"/doc/laporan-2014.pdf",
-            "cover":"/image/report/2014.jpg"
-
-        
-        },
-          {
-            "id":12,
-            "nama": "Laporan Tahun 2013",
-            "deskripsi":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
-            "tahun":"2013",
-            "size":88,
-            "ext":".pdf",
-            "file":"/doc/laporan-2013.pdf",
-            "cover":"/image/report/2013.jpg"
-
-        
-        }
-    
-    ]
+	"msg": "success",
+	"data": [
+		{
+			"id": 1,
+			"nama": "Laporan Tahun 2025",
+			"deskripsi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+			"tahun": "2025",
+			"size": 512,
+			"ext": ".pdf",
+			"file": "/doc/laporan-2025.pdf",
+			"cover": "/image/report/2025.png"
+		},
+		{
+			"id": 2,
+			"nama": "Laporan Tahun 2024",
+			"deskripsi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+			"tahun": "2024",
+			"size": 234,
+			"ext": ".pdf",
+			"file": "/doc/laporan-2024.pdf",
+			"cover": "/image/report/2024.png"
+		},
+		{
+			"id": 3,
+			"nama": "Laporan Tahun 2023",
+			"deskripsi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+			"tahun": "2023",
+			"size": 275,
+			"ext": ".pdf",
+			"file": "/doc/laporan-2023.pdf",
+			"cover": "/image/report/2023.png"
+		},
+		{
+			"id": 4,
+			"nama": "Laporan Tahun 2022",
+			"deskripsi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+			"tahun": "2022",
+			"size": 32,
+			"ext": ".pdf",
+			"file": "/doc/laporan-2022.pdf",
+			"cover": "/image/report/2022.png"
+		},
+		{
+			"id": 5,
+			"nama": "Laporan Tahun 2021",
+			"deskripsi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+			"tahun": "2021",
+			"size": 25,
+			"ext": ".pdf",
+			"file": "/doc/laporan-2021.pdf",
+			"cover": "/image/report/2021.png"
+		},
+		{
+			"id": 6,
+			"nama": "Laporan Tahun 2020",
+			"deskripsi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+			"tahun": "2020",
+			"size": 29,
+			"ext": ".pdf",
+			"file": "/doc/laporan-2020.pdf",
+			"cover": "/image/report/2020.png"
+		},
+		{
+			"id": 7,
+			"nama": "Laporan Tahun 2019",
+			"deskripsi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+			"tahun": "2019",
+			"size": 31,
+			"ext": ".pdf",
+			"file": "/doc/laporan-2019.pdf",
+			"cover": "/image/report/2019.png"
+		},
+		{
+			"id": 8,
+			"nama": "Laporan Tahun 2018",
+			"deskripsi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+			"tahun": "2018",
+			"size": 28,
+			"ext": ".pdf",
+			"file": "/doc/laporan-2018.pdf",
+			"cover": "/image/report/2018.png"
+		},
+		{
+			"id": 9,
+			"nama": "Laporan Tahun 2017",
+			"deskripsi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+			"tahun": "2017",
+			"size": 29.4,
+			"ext": ".pdf",
+			"file": "/doc/laporan-2017.pdf",
+			"cover": "/image/report/2017.jpg"
+		},
+		{
+			"id": 10,
+			"nama": "Laporan Tahun 2016",
+			"deskripsi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+			"tahun": "2016",
+			"size": 65,
+			"ext": ".pdf",
+			"file": "/doc/laporan-2016.pdf",
+			"cover": "/image/report/2016.png"
+		},
+		{
+			"id": 11,
+			"nama": "Laporan Tahun 2015",
+			"deskripsi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+			"tahun": "2015",
+			"size": 32,
+			"ext": ".pdf",
+			"file": "/doc/laporan-2015.pdf",
+			"cover": "/image/report/2015.png"
+		},
+		{
+			"id": 12,
+			"nama": "Laporan Tahun 2014",
+			"deskripsi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+			"tahun": "2014",
+			"size": 113,
+			"ext": ".pdf",
+			"file": "/doc/laporan-2014.pdf",
+			"cover": "/image/report/2014.jpg"
+		},
+		{
+			"id": 13,
+			"nama": "Laporan Tahun 2013",
+			"deskripsi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut cum fugiat odio mollitia alias molestiae consectetur, laboriosam exercitationem, consequuntur voluptates ullam soluta dolorum magnam vel, voluptate iste. Voluptatem expedita modi vel temporibus ad consectetur, sapiente ipsum cupiditate pariatur eveniet quaerat.",
+			"tahun": "2013",
+			"size": 88,
+			"ext": ".pdf",
+			"file": "/doc/laporan-2013.pdf",
+			"cover": "/image/report/2013.jpg"
+		}
+	]
 }

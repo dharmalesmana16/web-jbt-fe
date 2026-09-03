@@ -189,7 +189,7 @@ export default async function page({ searchParams }: any) {
 						Susunan Pemegang Saham
 					</h1>
 					<p className="text-gray-500 py-5 text-base tracking-wide text-center">
-						Ikhtisiar Pemegang Saham PT Jasamarga Bali Tol
+						Ikhtisar Pemegang Saham PT Jasamarga Bali Tol
 					</p>
 					<hr className="w-28 md:w-34 text-second  mx-auto  border-t-8 md:border-t-12 " />
 				</div>

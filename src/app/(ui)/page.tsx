@@ -282,7 +282,7 @@ export default async function Home({
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-8">
 						<div className="">
 							<img
-								src="/image/whistle.PNG"
+								src="/image/whistle.png"
 								className="w-full h-full object-fit rounded-2xl"
 								alt=""
 							/>
@@ -297,7 +297,7 @@ export default async function Home({
 										href="https://idn.deloitte-halo.com/whistleblowing.tips/wbs/@jasamarga/?Pg=makereport"
 										target="_blank"
 										rel="noopener noreferrer"
-										className="text-sm hover:text-main hover:underline"
+										className="text-sm hover:text-main hover:underline dark:text-black"
 									>
 										https://idn.deloitte-halo.com/whistleblowing.tips/wbs/@jasamarga/?Pg=makereport
 									</a>
@@ -312,7 +312,7 @@ export default async function Home({
 										href="mailto:jasamarga.wbs@tip​​offs.info"
 										target="_blank"
 										rel="noopener noreferrer"
-										className="text-sm hover:text-main hover:underline"
+										className="text-sm hover:text-main hover:underline dark:text-black"
 									>
 										jasamarga.wbs@tip​​offs.info
 									</a>
